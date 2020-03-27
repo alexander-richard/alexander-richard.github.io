@@ -1,4 +1,28 @@
-,Number,Name_of_Covered_Entity,latitude,longitude,State,Business_Associate_Involved,Individuals_Affected,Date_of_Breach,Type_of_Breach,Location_of_Breached_Information,Date_Posted_or_Updated,Summary,breach_start,breach_end,year
+Column1,Number,Name_of_Covered_Entity,latitude,longitude,State,Business_Associate_Involved,Individuals_Affected,Date_of_Breach,Type_of_Breach,Location_of_Breached_Information,Date_Posted_or_Updated,Summary,breach_start,breach_end,year
+141,140,UNCG Speech and Hearing Center,35.759573,-79.0193,NC,,2300,1/1/1997,Hack/It Inc.,Desktop Computer,2014-01-23,,1997-01-01,NA,1997
+1030,1029,UMass Memorial Medical Center,42.407211,-71.382437,MA,,2387,5/6/2002,Unauth Acc/Dis,"Electronic Medical Record, Paper",2014-05-27,,2002-05-06,NA,2002
+212,211,Riverside Mercy Hospital and Ohio/Mercy Diagnostics,40.417287,-82.907123,OH,,1000,3/29/2003,Improp. Disp,Paper,2014-01-23,,2003-03-29,NA,2003
+272,271,SW General Inc,34.048928,-111.093731,AZ,,566,5/1/2004,Theft,Paper,2014-01-23,,2004-05-01,NA,2004
+521,520,Duke University Health System,35.759573,-79.0193,NC,,591,04/21/2004-02/16/2012,Unauth Acc/Dis,Other,2014-01-23,,2004-04-21,2012-02-16,2004
+780,779,Harris County,31.968599,-99.901813,TX,,21000,08/15/2005 - 06/14/2007,Unauth Acc/Dis,Desktop Computer,2014-01-23,,2005-08-15,2007-06-14,2005
+891,890,Methodist Dallas Medical Center,31.968599,-99.901813,TX,,44000,09/01/2005 - 08/01/2013,Unauth Acc/Dis,Other,2014-01-23,,2005-09-01,2013-08-01,2005
+816,815,"South Shore Physicians, PC",43.299428,-74.217933,NY,,8000,01/01/2006 - 01/12/2012,Theft,Network Server,2014-01-23,,2006-01-01,2012-01-12,2006
+656,655,South Shore Medical Center,42.407211,-71.382437,MA,"Clearpoint Design, Inc.",4100,01/01/2007-11/15/2012,Hack/It Inc.,Network Server,2014-01-23,,2007-01-01,2012-11-15,2007
+97,96,"University of Louisville Research Foundation, Inc., DBA The Kidney Disease Program",37.839333,-84.270018,KY,,708,10/1/2008,Hack/It Inc.,Network Server,2014-01-23,,2008-10-01,NA,2008
+188,187,Puerto Rico Department of Health,18.220833,-66.590149,PR,"Triple-S Management, Corp.; Triple-S Salud, Inc.; ",475000,10/3/2008,Unauth Acc/Dis,Network Server,2014-01-23,,2008-10-03,NA,2008
+208,207,Pinnacle Health System,41.203322,-77.194525,PA,"Gair Medical Transcription Services, Inc.",1085,10/1/2008,Unauth Acc/Dis,Network Server,2014-01-23,"Pinnacle Health Systems was notified that a business associate, a medical transcription service, had a server compromised in which reports of Pinnacle patients could be viewed online.  The server compromise involved the protected health information of 1085 individuals.  The protected health information involved in the breach included names, Medicaid ID numbers, dates of birth, and primary physicians.  In response to this incident, the covered entity took steps to enforce the requirements of the Privacy & Security Rules.  The covered entity immediately discontinued its relationship with the business associate and engaged another medical transcription service.  The covered entity also contracted with forensic consultants to ensure that the cause of the compromise was found that that all traces of breached medical reports were removed from online and inaccessible in the future.  
+
+",2008-10-01,NA,2008
+223,222,OhioHealth Corporation dba Grant Medical Center,40.417287,-82.907123,OH,,501,1/1/2008,Theft,"Laptop, Desktop Computer",2014-01-23,,2008-01-01,NA,2008
+322,321,Jackson Health System,27.664827,-81.515754,FL,,1562,10/1/2008,Unauth Acc/Dis,"Other, Electronic Medical Record",2014-01-23,,2008-10-01,NA,2008
+481,480,Duke University Health System,35.759573,-79.0193,NC,,1370,07/01/2008 - 11/30/2011,Unauth Acc/Dis,Other,2014-04-23,,2008-07-01,2011-11-30,2008
+565,564,Harris County Hospital District,31.968599,-99.901813,TX,,2875,04/14/2008 - 02/28/2011,Theft,"Electronic Medical Record, Paper",2014-04-23,,2008-04-14,2011-02-28,2008
+923,922,"Triple-S Salud, Inc.",18.220833,-66.590149,PR,"Triple-C, Inc.",8000,10/3/2008,"Theft, Unauth Acc/Dis",Network Server,2014-01-24,,2008-10-03,NA,2008
+964,963,Iowa Dept. of Human Services,41.878003,-93.097702,IA,,2042,12/1/2008,Other,"Laptop, E-mail Portable Electronic Device",2014-04-21,,2008-12-01,NA,2008
+976,975,"HealthPartners, Inc.",46.729553,-94.6859,MN,,27839,1/7/2008,Loss,"Laptop, Desktop Computer Portable Electronic Device",2014-06-20,,2008-01-07,NA,2008
+977,976,"Group Health Plan, Inc. Medical Benefit Plan",46.729553,-94.6859,MN,"HealthPartners Administrators, Inc.",796,1/7/2008,Loss,"Laptop, Desktop Computer Portable Electronic Device",2014-04-21,,2008-01-07,NA,2008
+978,977,State Employee Group Insurance Plan,46.729553,-94.6859,MN,"HealthPartners Administrators, Inc.",1699,1/7/2008,Loss,"Laptop, Desktop Computer Portable Electronic Device",2014-04-21,,2008-01-07,NA,2008
+979,978,University of Minnesota Employee Benefits,46.729553,-94.6859,MN,"HealthPartners Administrators, Inc.",715,1/7/2008,Loss,"Laptop, Desktop Computer Portable Electronic Device",2014-04-21,,2008-01-07,NA,2008
 1,0,Brooke Army Medical Center,31.968599,-99.901813,TX,,1000,10/16/2009,Theft,Paper,2014-06-30,"A binder containing the protected health information (PHI) of up to 1,272 individuals was stolen from a staff member's vehicle.  The PHI included names, telephone numbers, detailed treatment notes, and possibly social security numbers.  In response to the breach, the covered entity (CE) sanctioned the workforce member and developed a new policy requiring on-call staff members to submit any information created during their shifts to the main office instead of adding it to the binder.  Following OCR's investigation, the CE notified the local media about the breach.",2009-10-16,NA,2009
 2,1,"Mid America Kidney Stone Association, LLC",37.964253,-91.831833,MO,,1000,9/22/2009,Theft,Network Server,2014-05-30,"Five desktop computers containing unencrypted electronic protected health information (e-PHI) were stolen from the covered entity (CE).  Originally, the CE reported that over 500 persons were involved, but subsequent investigation showed that about 260 persons were involved.  The ePHI included demographic and financial information. The CE provided breach notification to affected individuals and HHS.  Following the breach, the CE improved physical security by installing motion detectors and alarm systems security monitoring.  It improved technical safeguards by installing enhanced antivirus and encryption software.  As a result of OCR's investigation the CE updated its computer password policy.  ",2009-09-22,NA,2009
 3,2,Alaska Department of Health and Social Services,63.588753,-154.493062,AK,,501,10/12/2009,Theft,Other Portable Electronic Device,2014-01-23,,2009-10-12,NA,2009
@@ -54,15 +78,10 @@
 ",2009-12-15,NA,2009
 26,25,Children's Medical Center of Dallas,31.968599,-99.901813,TX,,3800,11/19/2009,Loss,Other Portable Electronic Device,2014-01-23,,2009-11-19,NA,2009
 27,26,Concentra,31.968599,-99.901813,TX,,900,11/19/2009,Theft,Laptop,2014-01-23,,2009-11-19,NA,2009
-28,27,Ashley and Gray DDS,37.964253,-91.831833,MO,,9309,1/10/2010,Theft,Desktop Computer,2014-01-23,,2010-01-10,NA,2010
 29,28,Advocate Health Care,40.633125,-89.398528,IL,,812,11/24/2009,Theft,Laptop,2014-01-23,"On November 24, 2009, an Advocate nurse's laptop computer was stolen.  The missing laptop computer contained the protected health information of approximately 812 individuals.  The protected health information involved in the breach included name, address, dates of birth, social security numbers, insurance information, medication, and diagnoses. Following the breach, Advocate specifically addressed mobile device security and accepted use. Additionally, OCR's investigation resulted in Advocate workforce members that use mobile devices are now required to fill out and submit an acknowledgment form that establish proper administrative, technical, and physical security safeguards.  
 
 ",2009-11-24,NA,2009
-30,29,The Methodist Hospital,31.968599,-99.901813,TX,,689,1/18/2010,Theft,Other,2014-01-23,"An unencrypted laptop computer was stolen from the covered entity's unlocked testing office.  The laptop computer contained the protected health information of approximately 689 individuals.  The protected health information involved in the breach included names, dates of birth, Social Security numbers, and the age, gender, race, and medication information of affected individuals.  Following the breach, the covered entity restricted the storage of electronic protected health information to network drives.  Additionally, OCR's investigation resulted in the covered entity improving their physical safeguards and in retraining employees.
-
-",2010-01-18,NA,2010
 31,30,"University of California, San Francisco",36.778261,-119.417932,CA,,7300,11/30/2009,Theft,Laptop,2014-01-23,,2009-11-30,NA,2009
-32,31,Carle Clinic Association,40.633125,-89.398528,IL,,1300,1/13/2010,Theft,"Other, Paper",2014-01-23,,2010-01-13,NA,2010
 33,32,Educators Mutual Insurance Association of Utah ,39.32098,-111.093731,UT,Health Behavior Innovations (HBI),5700,12/27/2009,Theft,Other,2014-01-23,,2009-12-27,NA,2009
 34,33,University Medical Center of Southern Nevada,38.80261,-116.419389,NV,,5103,10/31/2009,Theft,Paper,2014-01-23,"Between the dates of July 31, 2009 and November 19, 2009, a former UMC volunteer faxed patient face sheets to an attorney who used the sheets to contact prospective clients.  Although UMC only had proof of two disclosures, it chose to notify all 5,301 individuals that could have been affected by the breach.  The protected health information involved in the breach included names, addresses, dates of birth, social security numbers, and diagnoses.  Following the breach, UMC conducted an internal investigation, notified all 5,301 individuals, notified the media, and notified the Secretary.  Additionally, UMC reformulated face sheets so that they no longer include full social security numbers and provided all possible affected individuals with a year of free credit monitoring.  As a result of this breach, at least one person has been indicted on one count of conspiracy to illegally disclose personal health information in violation of the HIPAA
 
@@ -71,6 +90,52 @@
 36,35,Brown University,41.580095,-71.477429,RI,Blue Cross Blue Shield of RI,528,12/11/2009,Other,Paper,2014-01-23,"On January 5, 2010, BCBSRI was notified that a 16 page report pertaining to Brown University's health plan was impermissibly disclosed to two other BCBSRI agents.  The reports contained the PHI of approximately 528 individuals.  The PHI involved: first and last names, dates of service, cost of medical care provided, and member identification numbers.  Following the breach, BCBSRI recovered the reports, received written assurances that any electronic copies of the reports were deleted, notified affected individuals of the breach, implemented new procedure for all outgoing correspondence, and is in the process of auditing all affected members' claim history to ensure no fraud.
 
 ",2009-12-11,NA,2009
+39,38,Cardiology Consultants/Baptist Health Care Corporation,27.664827,-81.515754,FL,,8000,12/19/2009,Theft,Desktop Computer,2014-06-30,"A desktop computer that contained the e-PHI of approximately 8,000 individuals was stolen from the covered entity's (CE) locked medical suite.  The PHI involved in the breach included names, dates of birth, medical record numbers, ultrasound information, exam dates, and reasons for the ultrasound.  The computer that was stolen used proprietary software and a special electronic key to access the PHI.  The CE provided breach notification to affected individuals, HHS, and the media and posted substitute notification on its website.  Following the breach, the CE worked with law enforcement to identify the possible suspect.  The CE upgraded its facility access controls to include proximity card readers for every location that stores PHI.  As a result of OCR's investigation the CE updated its risk analysis and carried out additional risk management activities.  
+
+
+
+",2009-12-19,NA,2009
+40,39,"State of TN, Bureau of TennCare",35.517491,-86.580447,TN,,3900,12/23/2009,Theft,Paper,2014-06-24,"The covered entity (CE) mailed the wrong information to 3,900 individuals based on a corrupted data file it received from a state agency.  The types of PHI involved were names, dates of birth, social security numbers, member identification numbers, and in some cases, diagnoses, treatments, conditions, and medications.  Following the breach, the CE immediately fixed the corrupted file and mailed corrected letters.  The CE provided breach notification to HHS, the media, and affected individuals and provided substitute notification by posting on its website.  It also offered affected individuals one year of free credit monitoring and comprehensive credit services.  The CE also worked with the state agency to implement a new procedure to improve safeguards for PHI.  OCR obtained assurances that the CE implemented the corrective action listed above.
+
+
+
+",2009-12-23,NA,2009
+43,42,Advanced NeuroSpinal Care,36.778261,-119.417932,CA,,3500,12/30/2009,Theft,Network Server,2014-04-22,"A computer containing the electronic protected health information (ePHI) of 3,500 individuals was stolen from the office of a covered entity (CE).  The ePHI included patient names, addresses, dates of birth, social security numbers, driver's licenses, claims information, diagnoses, and conditions. As a result of the loss, the CE upgraded the alarm system and replaced the server housing and storage security lock-up.  The CE also notified affected individuals, the media, appropriate government agencies, and law enforcement.  In addition, the CE established an office-based hotline to assist affected individuals.  As a result of OCR's investigation, the CE has implemented regularly scheduled security risk analyses and has installed window bars, roll down shutters, four video surveillance cameras, and other physical security measures to prevent theft.",2009-12-30,NA,2009
+44,43,Aspen Dental Care P.C.,39.550051,-105.782067,CO,,2500,10/4/2009,Theft,Other,2014-06-30,"A computer hard drive containing encrypted patient records was stolen from the covered entity's (CE) safe.  The hard drive contained clinical and demographic information of approximately 2,500 patients.  Following the breach, the CE provided additional training to its staff.  OCR obtained assurances that the CE implemented the corrective action listed above.
+
+
+
+",2009-10-04,NA,2009
+46,45,Wyoming Department of Health,43.075968,-107.290284,WY,,9023,12/2/2009,Unauth Access,Network Server,2014-01-23,,2009-12-02,NA,2009
+64,63,"Affinity Health Plan, Inc.",43.299428,-74.217933,NY,,344579,11/24/2009,Theft,Other,2014-05-28,,2009-11-24,NA,2009
+68,67,Blue Cross & Blue Shield of Rhode Island,41.580095,-71.477429,RI,,12000,12/20/2009,Theft,Paper,2014-06-30,"A covered entity (CE) donated a file cabinet containing the protected health information (PHI) of 12,000 individuals before cleaning it out.  The PHI included members' names, addresses, telephone numbers, social security numbers, and Medicare identification numbers.  The covered entity (CE) provided breach notification to HHS, the affected individuals, and media, and offered all affected individuals free credit monitoring for a period of one year.  Following the breach, the CE sanctioned the employees involved in the incident and held a mandatory training regarding the HIPAA Privacy and Security Rule for all departments involved in the breach. The CE also revised the policy for office moves.  OCR obtained assurances that the CE implemented the corrective action listed above.
+
+
+
+",2009-12-20,NA,2009
+74,73,South Texas Veterans Health Care System,31.968599,-99.901813,TX,,1430,9/30/2009,Loss,Paper,2014-01-23,,2009-09-30,NA,2009
+87,86,Omaha Construction Industry Health and Welfare Plan,41.492537,-99.901813,NE,DeBoer & Associates,800,1/11/2009,Theft,Laptop,2014-01-23,,2009-01-11,NA,2009
+93,92,"AvMed, Inc.",27.664827,-81.515754,FL,,1220000,12/10/2009,Theft,Laptop,2014-06-30,"Two laptop computers with questionable encryption (each containing the electronic protected health information (ePHI) of 350,000 individuals) were stolen from the covered entity's (CE) premises.  The types of ePHI involved included demographic and clinical information, diagnoses/conditions, medications, lab results, and other treatment data.  After discovering the breach, the CE reported the theft to law enforcement and worked with the local police to recover the laptops.  As a result of OCR's investigation, the CE developed and implemented new policies and procedures to comply with the Security Rule.  The CE also provided breach notification to all affected individuals, HHS, and the media and placed an accounting of disclosures in the medical records of all affected individuals.",2009-12-10,NA,2009
+123,122,The University of Texas at Arlington,31.968599,-99.901813,TX,,27000,2/19/2009,Hack/It Inc.,Network Server,2014-01-23,"A file server at the Office of Health Services was compromised and impermissibly accessed.  The compromise potentially exposed the prescription records of 27,000 individuals to an unauthorized source.  The protected health information involved in the breach included names, addresses diagnostic codes, name of medication prescribed, medication costs and some social security numbers.  Following the discovery of the breach, UTA removed the server from the network, notified the affected individuals and notified local media.  Following the breach, the covered entity also replaced the operating system and implemented additional technical safeguards.  
+
+",2009-02-19,NA,2009
+127,126,"WellPoint, Inc.",40.551217,-85.602364,IN,,31700,11/3/2009,Hack/It Inc.,Network Server,2014-01-23,,2009-11-03,NA,2009
+158,157,Mayo Clinic,46.729553,-94.6859,MN,,1740,7/15/2009,Unauth Acc/Dis,Electronic Medical Record,2014-01-23,,2009-07-15,NA,2009
+186,185,"BlueCross BlueShield of Tennessee, Inc.",35.517491,-86.580447,TN,,1023209,10/2/2009,Theft,Other,2014-01-23,,2009-10-02,NA,2009
+204,203,University of Tennessee Medical Center,35.517491,-86.580447,TN,,8200,9/23/2009,Improp. Disp,Paper,2014-01-23,,2009-09-23,NA,2009
+337,336,Mills-Peninsula Health Services,36.778261,-119.417932,CA,,1500,11/1/2009,Unauth Acc/Dis,Paper,2014-01-23,,2009-11-01,NA,2009
+427,426,Molina Healthcare of California,36.778261,-119.417932,CA,,11081,9/23/2009,Other,Paper,2014-01-23,,2009-09-23,NA,2009
+456,455,Motion Picture Industry Health Plans (MPI),36.778261,-119.417932,CA,,703,09/23/2009 - 12/02/2011,Other,Other,2014-02-14,,2009-09-23,2011-12-02,2009
+537,536,Memorial Sloan-Kettering Cancer Center,43.299428,-74.217933,NY,,568,08/13/2009-04/12/2012,Theft,E-mail,2014-06-03,"The covered entity's (CE) staff member disclosed an unencrypted Microsoft Excel graph to a non-covered entity physician who re-disclosed it to a medical education organization to be used  in a presentation.  In addition, the medical education organization posted the presentation slides on its website.  The graph contained the protected health information (PHI) of 569 individuals and included names, telephone numbers, social security numbers, ages, cities and states of residence, medical record numbers, and clinical information.  Upon discovery of the breach, the CE ensured that the information was removed from the website and deleted, sanctioned the workforce member responsible, and retrained its workforce on the use of a data loss prevention tool and the risks of embedded PHI.  As a result of OCR's investigation, the CE provided OCR with evidence of its technical safeguards and security awareness initiatives and provided assurance that it implemented the corrective action listed above.",2009-08-13,2012-04-12,2009
+715,714,University of Florida,27.664827,-81.515754,FL,,14519,03/01/2009 - 10/25/2012,"Theft, Unauth Acc/Dis",Network Server,2014-01-23,,2009-03-01,2012-10-25,2009
+819,818,Missouri Department of Social Services,37.964253,-91.831833,MO,"InfoCrossing, Inc.",25461,12/21/2009 - 06/07/2013,Unauth Acc/Dis,Paper,2014-02-12,,2009-12-21,2013-06-07,2009
+850,849,BRONX-LEBANON HOSPITAL CENTER,43.299428,-74.217933,NY,PROFESSIONAL TRANSCRIPTION SERVICES,10930,9/23/2009,Unauth Acc/Dis,Network Server,2014-01-23,,2009-09-23,NA,2009
+851,850,"Martin Luther King Jr. Health Center, Inc.",43.299428,-74.217933,NY,PROFESSIONAL TRANSCRIPTION SERVICES,37000,9/23/2009,Unauth Acc/Dis,Network Server,2014-01-23,,2009-09-23,NA,2009
+28,27,Ashley and Gray DDS,37.964253,-91.831833,MO,,9309,1/10/2010,Theft,Desktop Computer,2014-01-23,,2010-01-10,NA,2010
+30,29,The Methodist Hospital,31.968599,-99.901813,TX,,689,1/18/2010,Theft,Other,2014-01-23,"An unencrypted laptop computer was stolen from the covered entity's unlocked testing office.  The laptop computer contained the protected health information of approximately 689 individuals.  The protected health information involved in the breach included names, dates of birth, Social Security numbers, and the age, gender, race, and medication information of affected individuals.  Following the breach, the covered entity restricted the storage of electronic protected health information to network drives.  Additionally, OCR's investigation resulted in the covered entity improving their physical safeguards and in retraining employees.
+
+",2010-01-18,NA,2010
+32,31,Carle Clinic Association,40.633125,-89.398528,IL,,1300,1/13/2010,Theft,"Other, Paper",2014-01-23,,2010-01-13,NA,2010
 37,36,MMM Heath Care Inc. ,18.220833,-66.590149,PR,"MSO of Puerto Rico, Inc. ",1907,2/4/2010,Theft,Paper,2014-06-03,"The covered entity's (CE) business associate (BA) erroneously merged two lists which led to the disclosure of protected health information (PHI) of 1,907 individuals.  The PHI included names, internal identification numbers, and the number of emergency room visits.  Upon discovery of the breach, the CE's BA established a quality control process in order to ensure adequate safeguards for that letters that are sent by mail.  As a result of OCR's investigation, the CE created and implemented additional policies and procedures for quality control of mailings.  The CE also provided training to all staff on its revised privacy and security policies and procedures.
 
 
@@ -83,28 +148,11 @@
 
 
 ",2010-02-04,NA,2010
-39,38,Cardiology Consultants/Baptist Health Care Corporation,27.664827,-81.515754,FL,,8000,12/19/2009,Theft,Desktop Computer,2014-06-30,"A desktop computer that contained the e-PHI of approximately 8,000 individuals was stolen from the covered entity's (CE) locked medical suite.  The PHI involved in the breach included names, dates of birth, medical record numbers, ultrasound information, exam dates, and reasons for the ultrasound.  The computer that was stolen used proprietary software and a special electronic key to access the PHI.  The CE provided breach notification to affected individuals, HHS, and the media and posted substitute notification on its website.  Following the breach, the CE worked with law enforcement to identify the possible suspect.  The CE upgraded its facility access controls to include proximity card readers for every location that stores PHI.  As a result of OCR's investigation the CE updated its risk analysis and carried out additional risk management activities.  
-
-
-
-",2009-12-19,NA,2009
-40,39,"State of TN, Bureau of TennCare",35.517491,-86.580447,TN,,3900,12/23/2009,Theft,Paper,2014-06-24,"The covered entity (CE) mailed the wrong information to 3,900 individuals based on a corrupted data file it received from a state agency.  The types of PHI involved were names, dates of birth, social security numbers, member identification numbers, and in some cases, diagnoses, treatments, conditions, and medications.  Following the breach, the CE immediately fixed the corrupted file and mailed corrected letters.  The CE provided breach notification to HHS, the media, and affected individuals and provided substitute notification by posting on its website.  It also offered affected individuals one year of free credit monitoring and comprehensive credit services.  The CE also worked with the state agency to implement a new procedure to improve safeguards for PHI.  OCR obtained assurances that the CE implemented the corrective action listed above.
-
-
-
-",2009-12-23,NA,2009
 41,40,Lucille Packard Children's Hospital,36.778261,-119.417932,CA,,532,1/11/2010,Other,Desktop Computer,2014-01-23,,2010-01-11,NA,2010
 42,41,University of New Mexico Health Sciences Center,34.97273,-105.032363,NM,,1900,2/8/2010,Other,Desktop Computer,2014-01-23,,2010-02-08,NA,2010
-43,42,Advanced NeuroSpinal Care,36.778261,-119.417932,CA,,3500,12/30/2009,Theft,Network Server,2014-04-22,"A computer containing the electronic protected health information (ePHI) of 3,500 individuals was stolen from the office of a covered entity (CE).  The ePHI included patient names, addresses, dates of birth, social security numbers, driver's licenses, claims information, diagnoses, and conditions. As a result of the loss, the CE upgraded the alarm system and replaced the server housing and storage security lock-up.  The CE also notified affected individuals, the media, appropriate government agencies, and law enforcement.  In addition, the CE established an office-based hotline to assist affected individuals.  As a result of OCR's investigation, the CE has implemented regularly scheduled security risk analyses and has installed window bars, roll down shutters, four video surveillance cameras, and other physical security measures to prevent theft.",2009-12-30,NA,2009
-44,43,Aspen Dental Care P.C.,39.550051,-105.782067,CO,,2500,10/4/2009,Theft,Other,2014-06-30,"A computer hard drive containing encrypted patient records was stolen from the covered entity's (CE) safe.  The hard drive contained clinical and demographic information of approximately 2,500 patients.  Following the breach, the CE provided additional training to its staff.  OCR obtained assurances that the CE implemented the corrective action listed above.
-
-
-
-",2009-10-04,NA,2009
 45,44,Shands at UF,27.664827,-81.515754,FL,,12580,1/27/2010,Theft,Laptop,2014-01-23,"A laptop containing certain information collected on approximately 12,580 individuals referred to Shands at UF GI Clinical Services was stolen from the private residence of an employee.  The stolen information included patient names, social security numbers, and medical record numbers.  As a result of the incident, the employee was counseled by her supervisor, issued written corrective action with a 3-day suspension, and provided additional HIPAA training.  OCR reviewed Shands at UF's most recent Risk Analysis and Risk Management Plans and they revealed no high risk findings related to encryption, workstation use, or physical security.  OCR's investigation found that Shands at UF has implemented appropriate technical safeguards, such as secure VPN network connections and network storage for workforce usage, encrypted USB portable flash drives, and PGP whole disk encryption.  
 
 ",2010-01-27,NA,2010
-46,45,Wyoming Department of Health,43.075968,-107.290284,WY,,9023,12/2/2009,Unauth Access,Network Server,2014-01-23,,2009-12-02,NA,2009
 47,46,Thrivent Financial for Lutherans,43.78444,-88.787868,WI,,9500,1/29/2010,Theft,Laptop,2014-01-23,"On January 29, 2010, there was a break-in at one of the Thrivent's offices and five laptop computers were stolen; four of the five laptops were recovered.  The missing laptop computer contained the protected health information of approximately 9,400 individuals.    The protected health information involved in the breach included name, address, date of birth, social security number, prescription drugs, medical condition, age, weight, etc. Thrivent provided OCR with additional controls to remedy causes of security breach at various stages of implementation.  The actions taken by the CE prior to OCR's formal investigation brought the CE into compliance. 
 
 ",2010-01-29,NA,2010
@@ -132,17 +180,11 @@
 63,62,Pediatric Sports and Spine Associates,31.968599,-99.901813,TX,,955,2/10/2010,Theft,Laptop,2014-01-23,"An unencrypted laptop was stolen from an employee's vehicle.  The laptop contained the protected health information of approximately 955 individuals.  The protected health information involved in the breach included names, addresses, dates of birth, social security numbers, diagnoses, medications and other treatment information.  Following the discovery of the breach, the covered entity revised policies, retrained staff and implemented additional physical and technical safeguards including encryption software.  The covered entity also removed the stolen laptop's access to the server, sanctioned the involved employee, notified the affected individuals and notified the local media.  
 
 ",2010-02-10,NA,2010
-64,63,"Affinity Health Plan, Inc.",43.299428,-74.217933,NY,,344579,11/24/2009,Theft,Other,2014-05-28,,2009-11-24,NA,2009
 65,64,Tomah Memorial Hospital,43.78444,-88.787868,WI,,600,3/19/2010,Other,Other,2014-01-23,,2010-03-19,NA,2010
 66,65,"Praxair Healthcare Services, Inc. (Home Care Supply in NY)",41.603221,-73.087749,CT,,54165,2/18/2010,Theft,Laptop,2014-01-23,"A laptop computer was stolen from the covered entity's office by a former employee after it had been damaged. The laptop computer contained the PHI of approximately 54,165 individuals.  The computer contained a limited amount of PHI, including client names and one or more of the following: addresses, phone numbers, social security numbers, insurance provider names and policy numbers, medical diagnostic codes or medical equipment.  Following the breach, the covered entity notified all affected individuals, the media, and HHS of the breach. Additionally, the covered entity completed its laptop encryption project to cover all PHI stored on computers in the office.  Additionally, OCR's investigation resulted in the covered entity reinforcing the requirements of HIPAA to its employees.
 
 ",2010-02-18,NA,2010
 67,66,Massachusetts Eye and Ear Infirmary,42.407211,-71.382437,MA,,3594,2/19/2010,Theft,Laptop,2014-01-23,,2010-02-19,NA,2010
-68,67,Blue Cross & Blue Shield of Rhode Island,41.580095,-71.477429,RI,,12000,12/20/2009,Theft,Paper,2014-06-30,"A covered entity (CE) donated a file cabinet containing the protected health information (PHI) of 12,000 individuals before cleaning it out.  The PHI included members' names, addresses, telephone numbers, social security numbers, and Medicare identification numbers.  The covered entity (CE) provided breach notification to HHS, the affected individuals, and media, and offered all affected individuals free credit monitoring for a period of one year.  Following the breach, the CE sanctioned the employees involved in the incident and held a mandatory training regarding the HIPAA Privacy and Security Rule for all departments involved in the breach. The CE also revised the policy for office moves.  OCR obtained assurances that the CE implemented the corrective action listed above.
-
-
-
-",2009-12-20,NA,2009
 69,68,South Carolina Department of Health and Environmental Control,33.836081,-81.163725,SC,,2850,2/17/2010,Improp. Disp,Paper,2014-01-23,,2010-02-17,NA,2010
 70,69,St. Joseph Heritage Healthcare,36.778261,-119.417932,CA,,22012,3/6/2010,Theft,Desktop Computer,2014-01-23,"22 computers were stolen from Clinical Management Service office.Five of the stolen computers contained the protected health information of approximately 22,012 individuals. The protected health information involved in the breach included name, date of birth, social security number, referral number, encounter number, facility, member ID, diagnosis, procedure, and/or diagnosis code. As a result of this incident, St. Joseph notified the potentially affected individuals, notified the local media, installed security cameras, re-trained employees, and installed encryption software on all laptops and Computers enterprise-wide. OCR's investigation resulted in the covered entity improving their physical and technological safeguards and retraining employees.
 
@@ -150,7 +192,6 @@
 71,70,Medical Center At Bowling Green,37.839333,-84.270018,KY,,5148,3/24/2010,Theft,Other Portable Electronic Device,2014-01-23,,2010-03-24,NA,2010
 72,71,GENERAL AGENCIES WELFARE BENEFITS PROGRAM,35.517491,-86.580447,TN,TOWERS WATSON,1874,2/5/2010,Loss,Other,2014-01-23,,2010-02-05,NA,2010
 73,72,UnitedHealth Group health plan single affiliated covered entity,46.729553,-94.6859,MN,,735,3/2/2010,Theft,"Other, Paper",2014-01-23,,2010-03-02,NA,2010
-74,73,South Texas Veterans Health Care System,31.968599,-99.901813,TX,,1430,9/30/2009,Loss,Paper,2014-01-23,,2009-09-30,NA,2009
 75,74,Rockbridge Area Community Services,37.431573,-78.656894,VA,,500,3/12/2010,Theft,"Laptop, Desktop Computer",2014-01-23,,2010-03-12,NA,2010
 76,75,"Emergency Healthcare Physicians, Ltd.",40.633125,-89.398528,IL,"Millennium Medical Management Resources, Inc.",180111,2/27/2010,Theft,Other Portable Electronic Device,2014-01-23,,2010-02-27,NA,2010
 77,76,VA Eastern Colorado Health Care System,39.550051,-105.782067,CO,,649,1/19/2010,Theft,Paper,2014-06-19,"A covered entity's (CE's) employee placed paper records containing protected health information (PHI) in an unsecured box that was left undiscovered in a public parking garage for four days.  The box contained the PHI of 649 patients.  The PHI included treatment records, productivity reports, coding information, names, medical treatments, conditions, diagnoses, and social security numbers.  Upon discovery of the breach, the CE notified the affected individuals and provided credit protection to those whose social security numbers had been breached.  The CE provided OCR with copies of its breach prevention policies and procedures. Following OCR's investigation, the employee who left the records resigned from her position and the CE improved its breach response procedures. ",2010-01-19,NA,2010
@@ -165,7 +206,6 @@
 84,83,"State of New Mexico Human Services Department, Medical Assistance Division",34.97273,-105.032363,NM,DentaQuest,9600,3/20/2010,Theft,Laptop,2014-01-23,,2010-03-20,NA,2010
 85,84,Oconee Physician Practices,33.836081,-81.163725,SC,,653,5/9/2010,Theft,Laptop,2014-01-23,,2010-05-09,NA,2010
 86,85,University of Rochester Medical Center and Affiliates,43.299428,-74.217933,NY,,2628,4/19/2010,Other,Paper,2014-01-23,,2010-04-19,NA,2010
-87,86,Omaha Construction Industry Health and Welfare Plan,41.492537,-99.901813,NE,DeBoer & Associates,800,1/11/2009,Theft,Laptop,2014-01-23,,2009-01-11,NA,2009
 88,87,"City of Charlotte, NC (Health Plan)",35.759573,-79.0193,NC,,5220,2/3/2010,Loss,Other,2014-01-23,,2010-02-03,NA,2010
 89,88,VA North Texas Health Care System,31.968599,-99.901813,TX,,4083,5/4/2010,Improp. Disp,Paper,2014-01-23,,2010-05-04,NA,2010
 90,89,Rainbow Hospice and Palliative Care,40.633125,-89.398528,IL,,1000,4/12/2010,Theft,Laptop,2014-01-23,"An employee's laptop was stolen out of her bag while she was making an admission visit in a patient's home.  The evidence showed that although the covered entity had a policy of encrypting and password-protecting its computers, this particular computer did not require a password most of the time.  The invoices contained the protected health information (PHI) of approximately 1,000 individuals.  The PHI stored on the laptop included names, addresses, dates of birth, phone numbers, Social Security numbers, Medicare numbers, electronic health records and commercial insurance information.  Following the breach, the covered entity notified its clients of the incident, placed notice on its website and in The Daily Herald, sanctioned the employee for changing the security settings on the laptop in question, and established stringent computer security guidelines, and retrained its staff in the new requirements, with the intention of preventing a similar event from occurring again.
@@ -173,7 +213,6 @@
 ",2010-04-12,NA,2010
 91,90,Cincinnati Childrens Hospital Medical Center ,40.417287,-82.907123,OH,,60998,3/27/2010,Theft,Laptop,2014-01-23,,2010-03-27,NA,2010
 92,91,Occupational Health Partners,39.011902,-98.484246,KS,,1105,5/12/2010,Theft,Laptop,2014-01-23,,2010-05-12,NA,2010
-93,92,"AvMed, Inc.",27.664827,-81.515754,FL,,1220000,12/10/2009,Theft,Laptop,2014-06-30,"Two laptop computers with questionable encryption (each containing the electronic protected health information (ePHI) of 350,000 individuals) were stolen from the covered entity's (CE) premises.  The types of ePHI involved included demographic and clinical information, diagnoses/conditions, medications, lab results, and other treatment data.  After discovering the breach, the CE reported the theft to law enforcement and worked with the local police to recover the laptops.  As a result of OCR's investigation, the CE developed and implemented new policies and procedures to comply with the Security Rule.  The CE also provided breach notification to all affected individuals, HHS, and the media and placed an accounting of disclosures in the medical records of all affected individuals.",2009-12-10,NA,2009
 94,93,UnitedHealth Group health plan single affiliated covered entity,46.729553,-94.6859,MN,,16291,1/26/2010,Other,Paper,2014-01-23,"Paper correspondence to certain members in UnitedHealth's prescription drug plans were in advertently sent to the incorrect temporary address due to a database administration error.  Approximately 16,291 individuals were affected by the breach. UnitedHealth member's name, plan number and in some instances, date of birth and/or limited medical information. United Health reported that it stopped using PDI's proprietary database for address updates and made outbound verifications calls to members to get accurate temporary addresses.   United Health reported that it revised its address update process.   
 
 ",2010-01-26,NA,2010
@@ -181,7 +220,6 @@
 96,95,"Nihal Saran, MD ",44.314844,-85.602364,MI,,2300,5/2/2010,Theft,Laptop,2014-01-23,"A password protected laptop computer containing protected health information (PHI) was stolen from Dr. Saran's personal residence.  The laptop contained the PHI of approximately 2,300 individuals.  The PHI stored on the laptop included patients' names, addresses, dates of birth, Social Security numbers, insurance information, and diagnoses.  Following the breach, Dr. Saran notified the Northville Township Police Department of the theft, contacted the individuals reasonably believed to have been affected by the breach, sent a notice of the breach to the Detroit Free Press and the Monroe News, and installed encryption software for its billing software.
 
 ",2010-05-02,NA,2010
-97,96,"University of Louisville Research Foundation, Inc., DBA The Kidney Disease Program",37.839333,-84.270018,KY,,708,10/1/2008,Hack/It Inc.,Network Server,2014-01-23,,2008-10-01,NA,2008
 98,97,St. Jude Children's Research Hospital,35.517491,-86.580447,TN,,1745,4/19/2010,Loss,Laptop,2014-01-23,,2010-04-19,NA,2010
 99,98,TennCare,35.517491,-86.580447,TN,DentaQuest,10515,3/20/2010,Theft,Laptop,2014-06-20,"A car containing an unencrypted laptop computer was stolen from West Monroe Partners, a contractor for the covered entity's (CE) business associate (BA), DentaQuest.  The laptop stored a database containing the electronic protected health information (ePHI) of approximately 76,000 individuals, including data on 10,515 of the CE's members.  The types of PHI involved in the breach included names, social security numbers, dates, and certain provider identification numbers.  The CE and BA worked together to provide breach notification to affected individuals and the media, and offered free credit monitoring and enhanced credit services to affected individuals for one year. The CE reported the breach to HHS and provided substitute notification on its website.  The BA implemented procedures to ensure that any third party laptops connecting to its network employ disk encryption.  Further, the BA established a policy to prohibit contractors from storing PHI on laptops.  The breach incident involved a BA and occurred prior to the September 23, 2013, compliance date.  OCR verified that the CE had a proper BA agreement in place that restricted the BA's use and disclosure of PHI and required the BA to safeguard all PHI.
 
@@ -215,13 +253,9 @@
 120,119,"DC Chartered Health Plan, Inc",38.905985,-77.033418,DC,,540,5/26/2010,Theft,Laptop,2014-01-23,,2010-05-26,NA,2010
 121,120,Montefiore Medical Center,43.299428,-74.217933,NY,,23753,6/9/2010,Theft,Desktop Computer,2014-06-19,"OCR opened an investigation of the covered entity (CE), Montefiore Medical Center, after it reported three unencrypted desktop computers were stolen that contained the electronic protected health information (ePHI) of 23,753 individuals.  The ePHI included names, medical record numbers, dates of birth, parent or guardian contact numbers, asthma diagnoses, vaccination information, and number of visits to the school health clinic.  Upon discovery of the breach, the CE filed a police report and provided breach notification to affected individuals, HHS, and the media.  As a result of OCR's investigation, the CE updated its building alarm to include additional motion sensors and installed surveillance cameras.  Further, the CE encrypted all of its computers, advised that no ePHI is stored on desktop hard drives, removed all ePHI from its computers, and stored ePHI on the centralized secured network servers.  The CE also revised its policy and procedure on password management and provided training to all staff on its new policy.",2010-06-09,NA,2010
 122,121,Medina County OB/GYN,40.417287,-82.907123,OH,,1200,6/13/2010,Improp. Disp,Paper,2014-01-23,,2010-06-13,NA,2010
-123,122,The University of Texas at Arlington,31.968599,-99.901813,TX,,27000,2/19/2009,Hack/It Inc.,Network Server,2014-01-23,"A file server at the Office of Health Services was compromised and impermissibly accessed.  The compromise potentially exposed the prescription records of 27,000 individuals to an unauthorized source.  The protected health information involved in the breach included names, addresses diagnostic codes, name of medication prescribed, medication costs and some social security numbers.  Following the discovery of the breach, UTA removed the server from the network, notified the affected individuals and notified local media.  Following the breach, the covered entity also replaced the operating system and implemented additional technical safeguards.  
-
-",2009-02-19,NA,2009
 124,123,Aetna,41.603221,-73.087749,CT,,6372,3/29/2010,Improp. Disp,Paper,2014-01-23,,2010-03-29,NA,2010
 125,124,Charles Mitchell MD,31.968599,-99.901813,TX,,6873,6/27/2010,Theft,Desktop Computer,2014-06-30,"A burglary occurred at the covered entity's (CE) facility and two desktop computers containing protected health information (PHI) were stolen.  Approximately 6873 individuals were affected.  The PHI involved included names, addresses, dates of birth, social security numbers, diagnoses and conditions, medications, and other treatment information.  OCR closed this investigation after determining that the individual who reported the breach worked for a CE no longer in existence.",2010-06-27,NA,2010
 126,125,Humana Inc [case 4486],37.839333,-84.270018,KY,Matrix Imaging,2631,6/25/2010,Other,Paper,2014-01-23,,2010-06-25,NA,2010
-127,126,"WellPoint, Inc.",40.551217,-85.602364,IN,,31700,11/3/2009,Hack/It Inc.,Network Server,2014-01-23,,2009-11-03,NA,2009
 128,127,Carolina Center for Development and Rehabilitation,35.759573,-79.0193,NC,,1590,6/24/2010,Theft,Paper,2014-06-30,"The covered entity's (CE) staff inadvertently sent twenty-three boxes containing the protected health information (PHI) of 1,590 patients to a recycling center.  The PHI included patients' full names, addresses, dates of birth, social security numbers, insurance identification numbers, driver's license numbers, diagnoses, medication information, checking and savings account numbers, credit and debit card numbers, and photographs of the patients.  Following the breach, the CE immediately took steps for the records to be returned.  The CE notified HHS, the media, and all individuals affected by the breach, and established a toll free number for patients to call for more information.  The CE cooperated with the state attorney general's investigation and suspended the responsible staff members.  Following OCR's investigation, the CE placed a record into its accounting of disclosure log for each individual affected and terminated the employment of the staff involved in the breach.  In addition, the CE revised its policies and procedures regarding the rights of individuals and safeguards for PHI, and re-trained staff.  ",2010-06-24,NA,2010
 129,128,Trinity Health Corporation Welfare Benefit Plan,44.314844,-85.602364,MI,Mercer,1073,3/29/2010,Loss,Other,2014-01-23,,2010-03-29,NA,2010
 130,129,Texas Children's Hospital,31.968599,-99.901813,TX,,694,5/13/2010,Theft,Laptop,2014-01-23,,2010-05-13,NA,2010
@@ -243,7 +277,6 @@
 
 ",2010-06-07,NA,2010
 140,139,"Thomas Jefferson University Hospitals, Inc.",41.203322,-77.194525,PA,,21000,6/14/2010,Theft,Laptop,2014-01-23,,2010-06-14,NA,2010
-141,140,UNCG Speech and Hearing Center,35.759573,-79.0193,NC,,2300,1/1/1997,Hack/It Inc.,Desktop Computer,2014-01-23,,1997-01-01,NA,1997
 142,141,Idaho Power Group Health Plan,44.068202,-114.742041,ID,Mercer Health & Benefits,5500,3/29/2010,Loss,Other,2014-01-23,"Idaho Power Group Health Plan's business associate, Mercer Health and Benefits, lost a backup tape as it was being sent via FEDEX from Boise to Seattle. The backup tape contained information of about 375,000 individuals that Mercer serviced. The total affected at Idaho Power was about 5,500 current and former employees and their dependents. The protected health information involved included names, addresses, dates of birth, and social security numbers. Although Mercer concluded that the lost tape was configured so that even a sophisticated user would be unlikely to be able to access the data within, both Mercer and Idaho Power notified all possible affected individuals and offered free credit protection services. To prevent a similar breach from occurring in the future, Mercer now stores backup tapes through a third party vendor who offers secure transport services. Mercer's Boise office now encrypts backup tapes. Following the incident, Idaho Power renegotiated its contract with Mercer and continues to evaluate its business relationship with Mercer.
 
 ",2010-03-29,NA,2010
@@ -268,7 +301,6 @@
 
 ",2010-08-16,NA,2010
 157,156,"Curtis R. Bryan, M.D.",37.431573,-78.656894,VA,,2739,7/12/2010,Theft,Laptop,2014-01-23,,2010-07-12,NA,2010
-158,157,Mayo Clinic,46.729553,-94.6859,MN,,1740,7/15/2009,Unauth Acc/Dis,Electronic Medical Record,2014-01-23,,2009-07-15,NA,2009
 159,158,LabCorp Patient Service Center,38.80261,-116.419389,NV,,507,8/2/2010,Theft,Paper,2014-01-23,,2010-08-02,NA,2010
 160,159,The Kent Center ,41.580095,-71.477429,RI,,1361,7/13/2010,Theft,Paper,2014-01-23,,2010-07-13,NA,2010
 161,160,"Pediatric and Adult Allergy, PC",41.878003,-93.097702,IA,,19222,7/11/2010,Loss,Other Portable Electronic Device,2014-01-23,,2010-07-11,NA,2010
@@ -328,9 +360,7 @@ NYP has paid OCR a monetary settlement of $3,300,000 and CU $1,500,000, with bot
 
 ",2010-09-04,NA,2010
 185,184,University of Arkansas for Medical Sciences,35.20105,-91.831833,AR,,1000,10/12/2010,Theft,Other Portable Electronic Device,2014-01-23,,2010-10-12,NA,2010
-186,185,"BlueCross BlueShield of Tennessee, Inc.",35.517491,-86.580447,TN,,1023209,10/2/2009,Theft,Other,2014-01-23,,2009-10-02,NA,2009
 187,186,Northridge Hospital Medical Center,36.778261,-119.417932,CA,,716,10/16/2010,Loss,Paper,2014-01-23,,2010-10-16,NA,2010
-188,187,Puerto Rico Department of Health,18.220833,-66.590149,PR,"Triple-S Management, Corp.; Triple-S Salud, Inc.; ",475000,10/3/2008,Unauth Acc/Dis,Network Server,2014-01-23,,2008-10-03,NA,2008
 189,188,"Aetna, Inc.",41.603221,-73.087749,CT,,2345,9/9/2010,Unauth Acc/Dis,Network Server,2014-01-23,"Aetna notified all possibly affected individuals of the breach, filed a breach report with OCR, commenced an investigation to identify and correct the root cause of the issue; the coding changes that were causing the breach were removed from IPS via Aetna's emergency Change Management procedures to prevent any further exposure while the problem was analyzed; once the specific code that conflicted with its proxy server settings was identified as the root cause of the breach, it was removed. Also, in an effort to mitigate any harm as a result of the breach, Aetna offered all affected individuals one year of free credit monitoring, and the notification letters included a toll-free number which was established specifically to answer questions related to this incident. 
 
 ",2010-09-09,NA,2010
@@ -348,19 +378,14 @@ NYP has paid OCR a monetary settlement of $3,300,000 and CU $1,500,000, with bot
 201,200,Oklahoma City VA Medical Center,35.007752,-97.092877,OK,,1950,10/8/2010,"Theft, Loss",Paper,2014-01-23,,2010-10-08,NA,2010
 202,201,Albert Einstein Healthcare Network,41.203322,-77.194525,PA,,613,10/21/2010,Theft,Desktop Computer,2014-01-23,,2010-10-21,NA,2010
 203,202,Kings County Hospital Center,43.299428,-74.217933,NY,,542,8/22/2010,Theft,Desktop Computer,2014-06-19,"An unencrypted desktop computer that contained the electronic protected health information (ePHI) of 542 individuals was stolen from the covered entity (CE), Kings County Hospital Center.  The ePHI included names, medical record numbers, admission and treatment dates, diagnostic treatment, pathology and/or medication information, telephone numbers and ages.  Upon discovery of the breach, the CE filed a police report and provided breach notification to affected individuals, HHS, and the media.  As a result of OCR's investigation, the CE installed an encryption system for all internal and external computers and laptops.  The CE implemented a new policy that prohibits staff from storing ePHI on their local computer hard drives or Windows desktop.",2010-08-22,NA,2010
-204,203,University of Tennessee Medical Center,35.517491,-86.580447,TN,,8200,9/23/2009,Improp. Disp,Paper,2014-01-23,,2009-09-23,NA,2009
 205,204,Ochsner Health System,31.244823,-92.145024,LA,H.E.L.P. Financial Corporation,9475,9/27/2010,Unauth Acc/Dis,Paper,2014-01-23,"A programming error in a business associate's IT system caused the PHI of patients to be printed on letters sent to other patients. The printing error affected approximately 9475 individuals.The protected health information involved in the breach included patient names, medical record numbers and account balances. Following the discovery of the breach, the BA corrected the programming error and implemented additional quality checks. Additionally, the BA notified the affected individuals and the CE notified the local media.  
 
 ",2010-09-27,NA,2010
 206,205,zarzamora family dental care,31.968599,-99.901813,TX,,800,10/15/2010,Theft,Desktop Computer,2014-01-23,,2010-10-15,NA,2010
 207,206,Hospital Auxilio Mutuo,18.220833,-66.590149,PR,,1000,11/9/2010,"Theft, Unauth Acc/Dis","Laptop, Desktop Computer",2014-01-23,,2010-11-09,NA,2010
-208,207,Pinnacle Health System,41.203322,-77.194525,PA,"Gair Medical Transcription Services, Inc.",1085,10/1/2008,Unauth Acc/Dis,Network Server,2014-01-23,"Pinnacle Health Systems was notified that a business associate, a medical transcription service, had a server compromised in which reports of Pinnacle patients could be viewed online.  The server compromise involved the protected health information of 1085 individuals.  The protected health information involved in the breach included names, Medicaid ID numbers, dates of birth, and primary physicians.  In response to this incident, the covered entity took steps to enforce the requirements of the Privacy & Security Rules.  The covered entity immediately discontinued its relationship with the business associate and engaged another medical transcription service.  The covered entity also contracted with forensic consultants to ensure that the cause of the compromise was found that that all traces of breached medical reports were removed from online and inaccessible in the future.  
-
-",2008-10-01,NA,2008
 209,208,"Gary C. Spinks, DMD, PC",39.045755,-76.641271,MD,,1000,9/29/2010,Hack/It Inc.,"Desktop Computer, Network Server",2014-01-23,,2010-09-29,NA,2010
 210,209,Cook County Health & Hospitals System,40.633125,-89.398528,IL,,556,11/1/2010,Theft,Desktop Computer,2014-01-23,,2010-11-01,NA,2010
 211,210,"Dean Health Systems, Inc.; St. Mary's Hospital; St. Marys Dean Ventures, Incorporated",43.78444,-88.787868,WI,,3288,11/8/2010,Theft,Laptop,2014-01-23,,2010-11-08,NA,2010
-212,211,Riverside Mercy Hospital and Ohio/Mercy Diagnostics,40.417287,-82.907123,OH,,1000,3/29/2003,Improp. Disp,Paper,2014-01-23,,2003-03-29,NA,2003
 213,212,California Therapy Solutions,36.778261,-119.417932,CA,,1250,11/11/2010,Theft,Other Portable Electronic Device,2014-01-23,,2010-11-11,NA,2010
 214,213,Osceola Medical Center,43.78444,-88.787868,WI,Hils Transcription,585,11/25/2010,Unauth Acc/Dis,Other,2014-01-23,,2010-11-25,NA,2010
 215,214,Indiana Family and Social Services Administration,40.551217,-85.602364,IN,The Southwestern Indiana Regional Council on Aging,757,11/4/2010,Theft,Laptop,2014-01-23,,2010-11-04,NA,2010
@@ -371,7 +396,6 @@ NYP has paid OCR a monetary settlement of $3,300,000 and CU $1,500,000, with bot
 220,219,"Southern Perioperative Services, P.C.",32.318231,-86.902298,AL,,2000,11/17/2010,Theft,Other Portable Electronic Device,2014-01-23,,2010-11-17,NA,2010
 221,220,Keystone/AmeriHealth Mercy Health Plans,41.203322,-77.194525,PA,,808,9/20/2010,Loss,Other Portable Electronic Device,2014-01-23,,2010-09-20,NA,2010
 222,221,"Ankle + Foot Center of Tampa Bay, Inc.",27.664827,-81.515754,FL,,156000,10/28/2010,Theft,Network Server,2014-06-30,"The covered entity's (CE) network server, containing the electronic protected health information (ePHI) of 136,000 patients, was hacked.  The types of ePHI involved in the breach were demographic and clinical information, including diagnoses and other treatment data.  Following the breach, the CE hired a third party vendor to resolve a data crash and to create a data back-up plan in order to restore office functioning.  To implement adequate safeguards, the CE also employed a cloud service with increased security as the new network server.  Additionally, the CE contacted the local FBI office to assist with the CE's internal investigation of the breach and provided breach notification to all affected individuals, the media, and HHS.  As a result of OCR's investigation, the CE developed and implemented new protocols to comply with the Security Rule.  In addition, the CE provided and initiated new trainings for its staff, completed hiring of a new network vendor, implemented a new electronic health records system, and accounted for the disclosures in the affected individuals' medical records.",2010-10-28,NA,2010
-223,222,OhioHealth Corporation dba Grant Medical Center,40.417287,-82.907123,OH,,501,1/1/2008,Theft,"Laptop, Desktop Computer",2014-01-23,,2008-01-01,NA,2008
 224,223,"Seacoast Radiology, PA",43.193852,-71.572395,NH,,231400,11/12/2010,Hack/It Inc.,Network Server,2014-01-23,,2010-11-12,NA,2010
 225,224,Friendship Center Dental Office,27.664827,-81.515754,FL,,2200,12/19/2010,Theft,Laptop,2014-01-23,,2010-12-19,NA,2010
 226,225,Centra,37.431573,-78.656894,VA,,11982,11/11/2010,Theft,Laptop,2014-01-23,,2010-11-11,NA,2010
@@ -389,30 +413,45 @@ NYP has paid OCR a monetary settlement of $3,300,000 and CU $1,500,000, with bot
 236,235,Baylor Heart and Vascular Center,31.968599,-99.901813,TX,,8241,12/2/2010,Theft,Other Portable Electronic Device,2014-04-23,"A portable ultrasound machine containing electronic protected health information (ePHI) of approximately 8,241 individuals was stolen from the covered entity's (CE) facility.  The ePHI involved in the breach included patient names, dates of birth, and limited health information.  Upon discovery of the breach, the CE conducted a privacy and security assessment of its portable machines to identify vulnerabilities.  Following OCR's investigation, the CE updated its privacy and security policies, retrained its employees, and increased physical security to ensure reasonable safeguards.",2010-12-02,NA,2010
 237,236,"CHC MEMPHIS CMHC, LLC",35.517491,-86.580447,TN,,500,12/4/2010,Theft,Desktop Computer,2014-01-23,,2010-12-04,NA,2010
 238,237,Jefferson Center for Mental Health,39.550051,-105.782067,CO,,546,12/13/2010,Theft,Paper,2014-01-23,,2010-12-13,NA,2010
-239,238,Green River District Health Department,37.839333,-84.270018,KY,Integranetics,18871,1/12/2011,Hack/It Inc.,Network Server,2014-01-23,,2011-01-12,NA,2011
-240,239,"Ortho Montana, PSC",46.879682,-110.362566,MT,,37000,1/8/2011,"Theft, Loss",Laptop,2014-02-14,,2011-01-08,NA,2011
-241,240,Cancer Care Northwest P.S.,47.751074,-120.740139,WA,,3100,1/7/2011,Theft,Paper,2014-06-30,"The covered entity (CE) accidentally mailed the protected health information (PHI) of approximately 3,100 individuals to other individuals when a mail-merge process mismatched names and addresses.  The PHI involved in the breach included names and indicated that the individuals were patients of the CE.  Following the breach, the CE implemented additional safeguards, as well as policies and procedures to ensure mailing list accuracy.  As a result of this incident, OCR required the CE to train its workforce members on its newly developed policies and procedures.  Additionally, OCR provided technical assistance regarding substitute breach notification methods, including a conspicuous posting on the CE's website.",2011-01-07,NA,2011
 242,241,Saint Louis University,37.964253,-91.831833,MO,,800,12/11/2010,Hack/It Inc.,Desktop Computer,2014-01-23,,2010-12-11,NA,2010
 243,242,New York City Health & Hospitals Corporation's North Bronx Healthcare Network,43.299428,-74.217933,NY,GRM Information Management Services,1700000,12/23/2010,Theft,"Other, Electronic Medical Record",2014-05-28,"Unencrypted clinical system backup tapes that contained the electronic protected health information (ePHI) of 1,700,000 individuals were stolen from the unlocked vehicle of an employee of the covered entity's (CE) business associate (BA).  The ePHI included names, medical record numbers, social security numbers, addresses, telephone numbers, health plan numbers, dates of birth, dates of admission, dates of treatment, dates of discharge, dates of death, mother's name, next of kin, clinical information related to diagnosis, treatment, prognosis, laboratory tests and results, and medications.  Upon discovery of the breach, the CE filed a police report to recover the stolen items and provided breach notification to HHS, the media, and affected individuals.  As a result of OCR's investigation, the CE terminated its BA agreement and installed encryption software on backup media.  The breach incident involved a BA and occurred prior to the September 23, 2013, compliance date.  OCR verified that the CE had a proper BA agreement in place that restricted the BA's use and disclosure of PHI and required the BA to safeguard all PHI.",2010-12-23,NA,2010
 244,243,Long Beach Memorial Medical Center,36.778261,-119.417932,CA,,2250,12/10/2010,Unauth Acc/Dis,Other,2014-01-23,,2010-12-10,NA,2010
-245,244,Walgreen Co.,40.633125,-89.398528,IL,Business Express,2700,1/26/2011,Theft,Other Portable Electronic Device,2014-06-10,,2011-01-26,NA,2011
-246,245,"Charleston Area Medical Center, Inc",38.597626,-80.454903,WV,Xforia Web Services,3655,2/8/2011,Unauth Acc/Dis,Network Server,2014-01-23,,2011-02-08,NA,2011
 247,246,Mountain Vista Medical Center,34.048928,-111.093731,AZ,,2291,10/13/2010,Loss,Other Portable Electronic Device,2014-01-23,,2010-10-13,NA,2010
 248,247,Departamento de Salud de Puerto Rico,18.220833,-66.590149,PR,,2621,3/14/2010,Unknown,Desktop Computer,2014-01-23,,2010-03-14,NA,2010
-249,248,Henry Ford Hospital,44.314844,-85.602364,MI,,2777,1/31/2011,Loss,Other Portable Electronic Device,2014-01-23,,2011-01-31,NA,2011
 250,249,"Central Brooklyn Medical Group, PC",43.299428,-74.217933,NY,,500,8/3/2010,Theft,Paper,2014-06-20,"OCR opened an investigation of the covered entity (CE), Preferred Health Partners f/k/a Central Brooklyn Medical Group, after it reported appointment schedules, pathology reports and portions of medical records containing the protected health information (PHI) of 500 individuals were stolen from an office.  The PHI included names, ages, telephone numbers, social security numbers, medical insurance information, pathology reports, and other clinical information.  Upon discovery of the breach, the CE filed a police report and worked with law enforcement authorities to recover as much of the PHI as possible that was stolen.  As a result of OCR's investigation, the CE removed PHI such as social security or medical insurance numbers from tracking logs.  In addition, the CE improved safeguards by storing log binders in a locked area and shredding documents regularly.  Further, the CE replaced the manual process of printing certain records with an electronic verification system.  The CE also archived, stored off site, and locked up all paper records and retrained all staff on its HIPAA policies and procedures. ",2010-08-03,NA,2010
 251,250,TRICARE Management Activity,39.550051,-105.782067,CO,,4500,6/25/2010,Unauth Acc/Dis,Paper,2014-01-23,,2010-06-25,NA,2010
 252,251,Blue Cross and Blue Shield of Florida ,27.664827,-81.515754,FL,,7366,10/16/2010,Unknown,Other,2014-01-23,,2010-10-16,NA,2010
 253,252,"University Health Services, University of Massachusetts, Amherst",42.407211,-71.382437,MA,,942,9/29/2010,Unauth Acc/Dis,Desktop Computer,2014-01-23,,2010-09-29,NA,2010
-254,253,"Omnicare, Inc",37.839333,-84.270018,KY,,8845,1/19/2011,Theft,Laptop,2014-01-23,,2011-01-19,NA,2011
 255,254,"JEFFREY J. SMITH, MD",35.007752,-97.092877,OK,,600,11/24/2010,Loss,Desktop Computer Portable Electronic Device,2014-01-23,,2010-11-24,NA,2010
-256,255,University of Missouri Health Plan,37.964253,-91.831833,MO,"Coventry Health Care, Inc.",765,1/10/2011,Unauth Acc/Dis,Paper,2014-01-23,,2011-01-10,NA,2011
 257,256,Texas Health Arlington Memorial Hospital,31.968599,-99.901813,TX,,654,12/23/2010,Unknown,Electronic Medical Record,2014-01-23,"The IT department turned on the switch to a BA HIE without notifying patients of the exchange or obtaining authorization.  The interface transmitted the PHI of 654 individuals. The PHI disclosed included patient names, addresses, dates of birth, social security numbers identifiers, diagnosis/conditions, medications, lab results treatment information and financial information. Following the breach, the CE revised the IT process, created a checklist that included notifying the affected departments and provided  additional training to IT and registration employees.  
 
 ",2010-12-23,NA,2010
+260,259,Clarksburg - Louis A. Johnson VA Medical Center,38.597626,-80.454903,WV,,1470,10/26/2010,Unauth Acc/Dis,Paper,2014-01-23,,2010-10-26,NA,2010
+282,281,Knox Community Hospital,40.417287,-82.907123,OH,,500,10/1/2010,Improp. Disp,Other,2014-01-23,,2010-10-01,NA,2010
+288,287,Indiana Regional Medical Center,41.203322,-77.194525,PA,,1388,9/28/2010,Theft,Paper,2014-01-23,,2010-09-28,NA,2010
+299,298,Blue Cross Blue Shield of Michigan,44.314844,-85.602364,MI,Agent Benefits Corporation,11387,11/17/2010,Unauth Acc/Dis,Network Server,2014-01-23,,2010-11-17,NA,2010
+327,326," DeKalb Medical Center, Inc. d/b/a DeKalb Medical Hillandale",32.157435,-82.907123,GA,,7500,7/11/2010,Theft,Paper,2014-01-23,,2010-07-11,NA,2010
+357,356,Stanford Hospital & Clinics,36.778261,-119.417932,CA,"Multi-Speciality Collection Services, LLC",19651,9/9/2010,Unauth Acc/Dis,Other,2014-01-23,,2010-09-09,NA,2010
+363,362,Centro de Ortodoncia Inc.,18.220833,-66.590149,PR,,2000,5/6/2010,Theft,Paper,2014-06-20,"OCR opened an investigation of the covered entity (CE), Dr. Pedro Valentin, after it reported boxes containing the protected health information (PHI) of 2,000 individuals were moved from the CE's office.  The PHI included names, account numbers, responsible party in charge of account, and method of payment.  OCR's investigation revealed that the individual who removed the PHI was the CE's wife and business partner.  The CE advised OCR that he knew his wife/partner was removing the boxes for the purpose of ascertaining the amount of monies the CE was receiving and that he is in the process of dissolving the partnership.  OCR concluded that the actions alleged in the breach report did not amount to a breach.",2010-05-06,NA,2010
+443,442,St.Vincent Physician Network,40.551217,-85.602364,IN,,1423,12/01/2010-11/21/2011,"Theft, Unauth Acc/Dis",Paper,2014-03-24,,2010-12-01,2011-11-21,2010
+525,524,Upper Valley Medical Center,40.417287,-82.907123,OH,"Data Image, Inc.",15000,10/01/2010-03/21/2012,Unauth Acc/Dis,Other,2014-01-23,,2010-10-01,2012-03-21,2010
+527,526,"Phoebe Putney Memorial Hospital, Inc. ",32.157435,-82.907123,GA,,12937,07/26/2010-03/29/2012,Theft,"Electronic Medical Record, Paper",2014-02-20,,2010-07-26,2012-03-29,2010
+649,648,"Granite Medical Group, Inc.",42.407211,-71.382437,MA,"Clearpoint Design, Inc.",4125,01/02/2010 - 11/15/2012,Hack/It Inc.,Network Server,2014-02-19,,2010-01-02,2012-11-15,2010
+698,697,University of Connecticut Health Center,41.603221,-73.087749,CT,,1382,06/07/2010 - 12/07/2012,Unauth Acc/Dis,Network Server,2014-01-23,,2010-06-07,2012-12-07,2010
+858,857,Rotech Healthcare Inc.,27.664827,-81.515754,FL,,10680,11/26/2010 - 10/01/2013,Unauth Acc/Dis,Laptop,2014-02-18,,2010-11-26,2013-10-01,2010
+913,912,Coulee Medical Center,47.751074,-120.740139,WA,,2500,01/01/2010-11/30/2013,Unauth Acc/Dis,"Laptop, Network Server, E-mail",2014-02-11,,2010-01-01,2013-11-30,2010
+922,921,"Triple-S Salud, Inc.",18.220833,-66.590149,PR,"Triple-C, Inc.",398000,9/9/2010,Theft,Network Server,2014-02-18,,2010-09-09,NA,2010
+1037,1036,Central City Concern,43.804133,-120.554201,OR,,17914,3/23/2010,Unauth Acc/Dis,Other,2014-06-18,,2010-03-23,NA,2010
+239,238,Green River District Health Department,37.839333,-84.270018,KY,Integranetics,18871,1/12/2011,Hack/It Inc.,Network Server,2014-01-23,,2011-01-12,NA,2011
+240,239,"Ortho Montana, PSC",46.879682,-110.362566,MT,,37000,1/8/2011,"Theft, Loss",Laptop,2014-02-14,,2011-01-08,NA,2011
+241,240,Cancer Care Northwest P.S.,47.751074,-120.740139,WA,,3100,1/7/2011,Theft,Paper,2014-06-30,"The covered entity (CE) accidentally mailed the protected health information (PHI) of approximately 3,100 individuals to other individuals when a mail-merge process mismatched names and addresses.  The PHI involved in the breach included names and indicated that the individuals were patients of the CE.  Following the breach, the CE implemented additional safeguards, as well as policies and procedures to ensure mailing list accuracy.  As a result of this incident, OCR required the CE to train its workforce members on its newly developed policies and procedures.  Additionally, OCR provided technical assistance regarding substitute breach notification methods, including a conspicuous posting on the CE's website.",2011-01-07,NA,2011
+245,244,Walgreen Co.,40.633125,-89.398528,IL,Business Express,2700,1/26/2011,Theft,Other Portable Electronic Device,2014-06-10,,2011-01-26,NA,2011
+246,245,"Charleston Area Medical Center, Inc",38.597626,-80.454903,WV,Xforia Web Services,3655,2/8/2011,Unauth Acc/Dis,Network Server,2014-01-23,,2011-02-08,NA,2011
+249,248,Henry Ford Hospital,44.314844,-85.602364,MI,,2777,1/31/2011,Loss,Other Portable Electronic Device,2014-01-23,,2011-01-31,NA,2011
+254,253,"Omnicare, Inc",37.839333,-84.270018,KY,,8845,1/19/2011,Theft,Laptop,2014-01-23,,2011-01-19,NA,2011
+256,255,University of Missouri Health Plan,37.964253,-91.831833,MO,"Coventry Health Care, Inc.",765,1/10/2011,Unauth Acc/Dis,Paper,2014-01-23,,2011-01-10,NA,2011
 258,257,NYU School of Medicine Faculty Group Practice,43.299428,-74.217933,NY,,670,1/27/2011,Theft,Desktop Computer,2014-06-19,"An unencrypted desktop computer that contained the electronic protected health information (ePHI) of 670 individuals was stolen from the covered entity (CE), NYU Langone Medical Center.  The ePHI included names, diagnoses, the results of diagnostic tests, and clinical information.  Upon discovery of the breach, the CE filed a police report and provided breach notification to HHS, the media, and affected individuals.  As a result of OCR's investigation, the CE directed staff to store ePHI on network servers and not on desktops.  In addition, the CE improved physical security by installing a locking device to secure the desktop computer and a latch guard on the office door.  The CE retrained all staff on its policies and procedures for HIPAA and HITECH compliance.",2011-01-27,NA,2011
 259,258,"Rape & Brooks Orthodontics, P.C.",32.318231,-86.902298,AL,,20744,2/3/2011,Theft,"Desktop Computer, Network Server Portable Electronic Device",2014-01-23,,2011-02-03,NA,2011
-260,259,Clarksburg - Louis A. Johnson VA Medical Center,38.597626,-80.454903,WV,,1470,10/26/2010,Unauth Acc/Dis,Paper,2014-01-23,,2010-10-26,NA,2010
 261,260,County of Los Angeles,36.778261,-119.417932,CA,,667,2/23/2011,Theft,Laptop,2014-01-23,,2011-02-23,NA,2011
 262,261,EISENHOWER MEDICAL CENTER,36.778261,-119.417932,CA,,514330,3/11/2011,Theft,Desktop Computer,2014-01-23,,2011-03-11,NA,2011
 263,262,Catholic Social Services,63.588753,-154.493062,AK,Trisha Elaine Cordova,1700,2/1/2011,Theft,Laptop,2014-06-30,"A personal laptop computer containing the electronic protected health information (ePHI) of 1,700 individuals and approximately 493 adoption home studies was stolen from a contractor's vehicle.  The ePHI involved included names, addresses, phone numbers, dates of birth, driver's license numbers, health information, and social security numbers.  At the time of the breach, the covered entity (CE) did not have a business associate (BA) contract with the contractor.  Following OCR's investigation, the CE developed policies and procedures for obtaining BA contracts as required by the Privacy Rule and verified that the contractor no longer had a business relationship with the CE.  OCR obtained assurances that breach notification was provided to the affected individuals, HHS, and the media.",2011-02-01,NA,2011
@@ -424,7 +463,6 @@ NYP has paid OCR a monetary settlement of $3,300,000 and CU $1,500,000, with bot
 269,268,Oklaholma State Dept. of Health,35.007752,-97.092877,OK,,132940,4/6/2011,Theft,"Laptop, Paper",2014-04-23,,2011-04-06,NA,2011
 270,269,Aiken Community Based Outpatient Clinic,33.836081,-81.163725,SC,,2717,2/16/2011,Improp. Disp,Paper,2014-01-23,,2011-02-16,NA,2011
 271,270,"Health Net, Inc.",36.778261,-119.417932,CA,IBM,1900000,1/21/2011,Unknown,Other,2014-01-23,,2011-01-21,NA,2011
-272,271,SW General Inc,34.048928,-111.093731,AZ,,566,5/1/2004,Theft,Paper,2014-01-23,,2004-05-01,NA,2004
 273,272,Fairview Health Services,46.729553,-94.6859,MN,,1215,2/19/2011,Loss,Paper,2014-01-23,,2011-02-19,NA,2011
 274,273,Time Insurance Company,43.78444,-88.787868,WI,"Healthcare Solutions Team, LLC",675,2/1/2011,Unauth Acc/Dis,Other,2014-04-23,,2011-02-01,NA,2011
 275,274,Community Action partnership of Natrona County,43.075968,-107.290284,WY,,15000,2/23/2011,Hack/It Inc.,Desktop Computer,2014-01-23,,2011-02-23,NA,2011
@@ -434,7 +472,6 @@ NYP has paid OCR a monetary settlement of $3,300,000 and CU $1,500,000, with bot
 279,278,Phoenix Health Plan,34.048928,-111.093731,AZ,,9393,3/10/2011,Hack/It Inc.,"Laptop, Desktop Computer, Network Server, E-mail",2014-04-23,,2011-03-10,NA,2011
 280,279,MacNeal Physician Group,40.633125,-89.398528,IL,,532,3/10/2011,Hack/It Inc.,"Laptop, Desktop Computer, Network Server, E-mail",2014-03-24,,2011-03-10,NA,2011
 281,280,Genesis Clinical Laboratory,40.633125,-89.398528,IL,,1070,3/10/2011,Hack/It Inc.,"Laptop, Desktop Computer, Network Server, E-mail",2014-03-24,,2011-03-10,NA,2011
-282,281,Knox Community Hospital,40.417287,-82.907123,OH,,500,10/1/2010,Improp. Disp,Other,2014-01-23,,2010-10-01,NA,2010
 283,282,Speare Memorial Hospital,43.193852,-71.572395,NH,,5960,4/2/2011,Theft,Laptop,2014-03-13,,2011-04-02,NA,2011
 284,283,Methodist Charlton Medical Center,31.968599,-99.901813,TX,,1500,4/16/2011,Theft,Laptop,2014-01-23,"An unencrypted laptop was stolen from a locked office in the hospital.  The laptop contained the PHI of 1523 patients. The protected health information involved in the breach contained demographic and clinical data. Following the breach, the CE filed a police report, notified affected patients and notified the media. Additionally, the CE expanded its encryption policy to include more laptops and implemented additional physical safeguards.
 
@@ -442,7 +479,6 @@ NYP has paid OCR a monetary settlement of $3,300,000 and CU $1,500,000, with bot
 285,284,Drs Edalji and Komer,42.407211,-71.382437,MA,,563,4/12/2011,Theft,Laptop,2014-01-23,,2011-04-12,NA,2011
 286,285,Reid Hospital & Health Care Services,40.551217,-85.602364,IN,,22001,4/2/2011,Theft,Laptop,2014-01-23,,2011-04-02,NA,2011
 287,286,Union Security Insurance Company,37.964253,-91.831833,MO,,850,3/24/2011,Unauth Acc/Dis,Other,2014-01-23,,2011-03-24,NA,2011
-288,287,Indiana Regional Medical Center,41.203322,-77.194525,PA,,1388,9/28/2010,Theft,Paper,2014-01-23,,2010-09-28,NA,2010
 289,288,"MMM Healthcare, Inc.",18.220833,-66.590149,PR,,32390,3/8/2011,Theft,Desktop Computer,2014-01-23,,2011-03-08,NA,2011
 290,289,PMC Medicare Choice,18.220833,-66.590149,PR,,24361,3/8/2011,Theft,Desktop Computer,2014-01-23,,2011-03-08,NA,2011
 291,290,CVS CAREMARK,34.048928,-111.093731,AZ,,654,1/17/2011,"Theft, Unauth Acc/Dis",Paper,2014-04-23,,2011-01-17,NA,2011
@@ -453,7 +489,6 @@ NYP has paid OCR a monetary settlement of $3,300,000 and CU $1,500,000, with bot
 296,295,St. Mary's Hospital for Children,43.299428,-74.217933,NY,,550,4/17/2011,Theft,Paper,2014-06-02,"A laptop computer containing the protected health information (PHI) of approximately 550 individuals was stolen from the vehicle of the business associate's (BA) workforce member.  The PHI included names, dates of birth, gender identities, names of nursing homes, and Medicaid numbers of the covered entity's (CE) patients.  Following the breach, the BA terminated the employee who was involved in the breach and provided credit monitoring services to the affected individuals.  The BA also re-trained its staff.  Following OCR's investigation, the CE and the BA reviewed the BA's contractual obligations relating to PHI during an in-person meeting.  The breach incident involved a BA and occurred prior to the September 23, 2013, compliance date.  OCR verified that the CE had a proper BA agreement in place that restricted the BA's use and disclosure of PHI and required the BA to safeguard all PHI.",2011-04-17,NA,2011
 297,296,Medicare Fee-for-Service Program,39.045755,-76.641271,MD,"Cahaba Government Benefit Administrators, LLC",13412,4/11/2011,Unauth Acc/Dis,Paper,2014-01-23,,2011-04-11,NA,2011
 298,297,VA Caribbean Healthcare System,18.220833,-66.590149,PR,,6006,3/30/2011,Theft,Paper,2014-06-19,"An employee of the covered entity (CE), VA Caribbean Healthcare System, left documents containing the protected health information (PHI) of 6,006 individuals in an unsecure bag at a nursing station.  The PHI included names, social security numbers, patient care assignments, patient counts and patient census lists.  Upon discovery of the breach, the CE secured the PHI and provided breach notification to HHS, the media, and affected individuals.  As a result of OCR's investigation, the CE disciplined and retrained the employee and implemented a procedure that nursing leadership is required to conduct rounds on wards once vacated.  The CE also retrained all staff on its privacy and security policies and procedures.",2011-03-30,NA,2011
-299,298,Blue Cross Blue Shield of Michigan,44.314844,-85.602364,MI,Agent Benefits Corporation,11387,11/17/2010,Unauth Acc/Dis,Network Server,2014-01-23,,2010-11-17,NA,2010
 300,299,Spartanburg Regional Healthcare System,33.836081,-81.163725,SC,,400000,3/28/2011,Theft,Desktop Computer,2014-01-23,,2011-03-28,NA,2011
 301,300,Saint Joseph - Berea,37.839333,-84.270018,KY,,1986,4/14/2011,"Theft, Loss",Other Portable Electronic Device,2014-04-23,,2011-04-14,NA,2011
 302,301,Navos,47.751074,-120.740139,WA,,2700,3/15/2011,Unknown,Paper,2014-01-23,,2011-03-15,NA,2011
@@ -476,12 +511,10 @@ NYP has paid OCR a monetary settlement of $3,300,000 and CU $1,500,000, with bot
 319,318,Health Plan of San Mateo,36.778261,-119.417932,CA,,694,4/25/2011,Unauth Acc/Dis,Paper,2014-01-23,,2011-04-25,NA,2011
 320,319,Department of Health Care Policy and Financing,39.550051,-105.782067,CO,Department of Personnel and Administration,3589,5/6/2011,Loss,Other,2014-02-14,,2011-05-06,NA,2011
 321,320,Yanez Dental Corporation,36.778261,-119.417932,CA,,10190,5/22/2011,Theft,"Desktop Computer, Network Server",2014-01-23,,2011-05-22,NA,2011
-322,321,Jackson Health System,27.664827,-81.515754,FL,,1562,10/1/2008,Unauth Acc/Dis,"Other, Electronic Medical Record",2014-01-23,,2008-10-01,NA,2008
 323,322,The Mount Sinai Hospital,43.299428,-74.217933,NY,,712,6/7/2011,Theft,Laptop,2014-06-02,"Two unencrypted laptop computers containing the electronic protected health information (ePHI) of 712 individuals were stolen from the covered entity's (CE) office.  The ePHI included names, dates of birth, social security numbers, diagnostic reports, and demographic information.  Upon discovery of the breach, the CE filed a police report to recover the stolen items.  As a result of OCR's investigation, the CE improved physical security by installing an exit alarm lock and surveillance camera, and implementing a policy and procedure requiring managers to monitor inappropriate use of the facility's rear exit.  The CE also inventoried its ePHI systems and adopted and implemented policies and procedures for workstation security, encryption, security awareness and training, electronic devices, and media controls.",2011-06-07,NA,2011
 324,323,Troy Regional Medical Center,32.318231,-86.902298,AL,,880,3/22/2011,Unauth Acc/Dis,Paper,2014-01-23,,2011-03-22,NA,2011
 325,324,Lansing Community College,44.314844,-85.602364,MI,AssureCare Risk Management,5000,5/9/2011,Hack/It Inc.,Network Server,2014-03-24,,2011-05-09,NA,2011
 326,325,Dr Axel Velez,18.220833,-66.590149,PR,,2800,6/19/2011,Theft,Desktop Computer,2014-03-13,,2011-06-19,NA,2011
-327,326," DeKalb Medical Center, Inc. d/b/a DeKalb Medical Hillandale",32.157435,-82.907123,GA,,7500,7/11/2010,Theft,Paper,2014-01-23,,2010-07-11,NA,2010
 328,327,Beth Israel Deaconess Medical Center,42.407211,-71.382437,MA,,2021,4/17/2011,Hack/It Inc.,Network Server,2014-01-23,,2011-04-17,NA,2011
 329,328,"Gypsum Management and Supply, Inc. Medical and Dental Plan",32.157435,-82.907123,GA,"Assurecare Risk Management, Inc.",25330,5/9/2011,Unauth Acc/Dis,Network Server,2014-01-23,,2011-05-09,NA,2011
 330,329,"Andersen Air Force Base, Guam",37.431573,-78.656894,VA,,700,5/13/2011,Improp. Disp,Paper,2014-01-23,,2011-05-13,NA,2011
@@ -491,7 +524,6 @@ NYP has paid OCR a monetary settlement of $3,300,000 and CU $1,500,000, with bot
 334,333,University of Kentucky - UK HealthCare,37.839333,-84.270018,KY,,3604,6/7/2011,Theft,Laptop,2014-04-23,,2011-06-07,NA,2011
 335,334,"Austin Center for Therapy and Assessment, LLC",31.968599,-99.901813,TX,,1870,7/8/2011,Theft,Laptop,2014-04-24,"An unencrypted laptop, containing the electronic protected health information (ePHI) of 1,870 individuals, was stolen from the covered entity's (CE) office.  The ePHI involved includes clinical evaluation reports, test results, patient names, addresses, phone numbers, and social security numbers.  Upon discovery of the breach, the CE notified affected individuals, OCR and the media.  Following OCR's investigation, the CE revised its HIPAA policies and procedures, implemented additional physical safeguards in its facility and installed encryption software.",2011-07-08,NA,2011
 336,335,Treatment Services Northwest,43.804133,-120.554201,OR,,1200,7/8/2011,Theft,Desktop Computer,2014-01-23,,2011-07-08,NA,2011
-337,336,Mills-Peninsula Health Services,36.778261,-119.417932,CA,,1500,11/1/2009,Unauth Acc/Dis,Paper,2014-01-23,,2009-11-01,NA,2009
 338,337,Brigham and Women's Hospital and Faulkner Hospital ,42.407211,-71.382437,MA,,638,6/21/2011,Theft,Other Portable Electronic Device,2014-06-30,"A covered entity's (CE) workforce member lost an external hard drive containing the electronic protected health information (ePHI) of 638 individuals while traveling.  The external hard drive included names, medical record numbers, dates of admission, medications, diagnoses, and treatment information.  The CE notified HHS, the media, and all individuals affected regarding the breach and provided individuals with identity protection services.  Following the breach, the CE sanctioned the workforce member involved and retrained the workforce member and division staff on  safeguards for ePHI.  In addition, the CE established a mitigation workgroup to review policies and procedures regarding the protection of ePHI and created a new external hard drive encryption policy.  OCR obtained assurances that the CE  implemented the corrective action listed above.",2011-06-21,NA,2011
 339,338,"Ashley Industrial Molding, Inc. Employee Welfare Benefit Plan ",40.551217,-85.602364,IN,"AssureCare Risk Management, Inc.",506,5/9/2011,Hack/It Inc.,Network Server,2014-01-23,,2011-05-09,NA,2011
 340,339,Monmouth Medical Center,40.058324,-74.405661,NJ,MedAssets,6443,6/24/2011,Theft,Other Portable Electronic Device,2014-06-19,"An unencrypted hard drive containing the electronic protected health information (ePHI) of 6,443 individuals was stolen from an employee of the covered entity's (CE) business associate (BA), MedAssets.  The ePHI included names, dates of birth, social security number, account numbers, medical record numbers, charges incurred, amounts paid, admission and discharge dates, and information regarding health insurance and eligibility for applicable governmental benefit programs.  Upon discovery of the breach, the CE, Monmouth Medical Center, filed a police report, provided breach notification to HHS, the media, and affected individuals, and posted substitute notification on its website.  As a result of OCR's investigation, the BA retrained the employee, instructed all employees to stop using any type of external storage device that contains ePHI, and recalled and destroyed all unencrypted external hard drives that contained ePHI.  In addition, the BA improved technical safeguards by encrypting external hard drives and installing a new software system that monitors, controls and encrypts data leaving the BA's computers.  The BA also hired an IT security analyst to supplement its security program.  The breach incident involved a BA and occurred prior to the September 23, 2013, compliance date.  OCR verified that the CE had a proper BA agreement in place that restricted the BA's use and disclosure of PHI and required the BA to safeguard all PHI.
@@ -541,7 +573,6 @@ OCR opened a compliance review of VA Medical Centers and is consolidating the in
 ",2011-05-23,NA,2011
 355,354,"Dr. Victoria Falcone, Falcone Cosmetic Services, PC, Falcone Cosmetic Services of NJ, PC",41.203322,-77.194525,PA,"SpaMed Solutions, LLC, Edward McMenamin President,",3000,8/14/2011,"Theft, Unauth Acc/Dis","Laptop, Desktop Computer, Network Server, E-mail Portable Electronic Device, Electronic Medical Record, Paper",2014-06-10,,2011-08-14,NA,2011
 356,355,"HEALTH RESEARCH INSTITUTE, INC., PFEIFFER TREATMENT CENTER",40.633125,-89.398528,IL,,2000,7/1/2011,Theft,"Desktop Computer, Network Server",2014-01-23,,2011-07-01,NA,2011
-357,356,Stanford Hospital & Clinics,36.778261,-119.417932,CA,"Multi-Speciality Collection Services, LLC",19651,9/9/2010,Unauth Acc/Dis,Other,2014-01-23,,2010-09-09,NA,2010
 358,357,"Muir Orthopaedic Specialists, A Medical Group Inc.",36.778261,-119.417932,CA,,1800,7/27/2011,Theft,Paper,2014-01-23,,2011-07-27,NA,2011
 359,358,NEA Baptist Clinic,35.20105,-91.831833,AR,,3116,7/12/2011,Hack/It Inc.,Network Server,2014-01-23,,2011-07-12,NA,2011
 360,359,Jonathan Noel MD,40.551217,-85.602364,IN,,2059,7/13/2011,Theft,Other Portable Electronic Device,2014-01-23,,2011-07-13,NA,2011
@@ -549,7 +580,6 @@ OCR opened a compliance review of VA Medical Centers and is consolidating the in
 
 ",2011-03-10,NA,2011
 362,361,University of Wisconsin Oshkosh,43.78444,-88.787868,WI,Living Healthy Community Clinic,3000,7/18/2011,Hack/It Inc.,Desktop Computer,2014-01-23,,2011-07-18,NA,2011
-363,362,Centro de Ortodoncia Inc.,18.220833,-66.590149,PR,,2000,5/6/2010,Theft,Paper,2014-06-20,"OCR opened an investigation of the covered entity (CE), Dr. Pedro Valentin, after it reported boxes containing the protected health information (PHI) of 2,000 individuals were moved from the CE's office.  The PHI included names, account numbers, responsible party in charge of account, and method of payment.  OCR's investigation revealed that the individual who removed the PHI was the CE's wife and business partner.  The CE advised OCR that he knew his wife/partner was removing the boxes for the purpose of ascertaining the amount of monies the CE was receiving and that he is in the process of dissolving the partnership.  OCR concluded that the actions alleged in the breach report did not amount to a breach.",2010-05-06,NA,2010
 364,363,"John T. Melvin, M.D.& Associates",31.968599,-99.901813,TX,,2541,8/9/2011,Theft,Paper,2014-03-13,,2011-08-09,NA,2011
 365,364,"Diversified Resources, Inc.",32.157435,-82.907123,GA,,863,8/11/2011,Theft,Laptop,2014-01-23,,2011-08-11,NA,2011
 366,365,VA Gulf Coast Veterans Health Care System,32.354668,-89.398528,MS,,1797,7/21/2011,Theft,Paper,2014-06-20,"The covered entity (CE), U.S. Department of Veterans Affairs (VA), Gulf Coast Veterans Health Care System, Biloxi Veterans Affairs Medical Center (Biloxi VAMC) reported that the office of an employee was vandalized.  Paper files were found on the office floor, and the protected health information (PHI) of approximately 1,814 individuals was compromised.  The PHI included full names, social security numbers, dates of birth, and medical diagnoses.  The CE provided breach notification to HHS, the media and affected individuals.  Following the breach, VA police at the facility reviewed procedures and continued foot patrols to ensure office doors are locked during non-business hours.  The CE provided additional training to workforce members of the affected department on its physical security policies and procedures to improve safeguards for PHI.  OCR obtained assurances that the CE implemented the corrective action listed above.
@@ -621,7 +651,6 @@ OCR opened a compliance review of VA Medical Centers and is consolidating the in
 424,423,University of Nebraska Medical Center,41.492537,-99.901813,NE,,611,11/15/2011,Theft,Paper,2014-04-23,,2011-11-15,NA,2011
 425,424,Roberts S. Smith M.D. Inc.,32.157435,-82.907123,GA,,17000,10/17/2011,Theft,Laptop,2014-01-23,,2011-10-17,NA,2011
 426,425,"Paul C. Brown, MD, PS",47.751074,-120.740139,WA,,4693,10/14/2011 - 10/17/2011,Theft,Other,2014-02-14,,2011-10-14,2011-10-17,2011
-427,426,Molina Healthcare of California,36.778261,-119.417932,CA,,11081,9/23/2009,Other,Paper,2014-01-23,,2009-09-23,NA,2009
 428,427,Aegis Sciences Corporation,35.517491,-86.580447,TN,,2185,11/22/2011,Theft,Laptop Portable Electronic Device,2014-04-23,"OCR opened an investigation of the covered entity (CE), Aegis Science Corp., after the CE reported that a laptop computer and unencrypted external hard drive containing the electronic protected health information (ePHI) of 2,185 individuals were stolen from a workforce member's vehicle.  The ePHI included social security numbers, driver's license numbers, and other demographic information, as well as bank account information of fourteen individuals and credit card information of three individuals.  Upon discovering the breach, the CE filed a police report and hired a private investigator to recover the stolen items.  The CE also initiated plans to encrypt laptops, revise security procedures, retrain employees, and offer credit monitoring to affected individuals.  As a result of OCR's investigation, the CE completed a security risk analysis and risk management report and implemented new security policies and procedures to ensure adequate safeguards to protect ePHI.  The CE also provided media notification in the two localities with greater than 500 individuals affected.  Additionally, the CE encrypted all employee computers and removable media containing ePHI and retrained employees on the CE's confidentiality and security policies.",2011-11-22,NA,2011
 429,428,"Soundpath Health, Inc",47.751074,-120.740139,WA,,7581,11/22/2011,Theft,Laptop,2014-02-14,,2011-11-22,NA,2011
 430,429,Concentra Health,31.968599,-99.901813,TX,,870,11/30/2011,Theft,Laptop,2014-01-23,,2011-11-30,NA,2011
@@ -630,14 +659,10 @@ OCR opened a compliance review of VA Medical Centers and is consolidating the in
 433,432,PBH,35.759573,-79.0193,NC,Alamance Caswell Local Management Entity,50000,11/15/2011,Unauth Acc/Dis,"Network Server, E-mail",2014-01-23,,2011-11-15,NA,2011
 434,433,"CardioNet, Inc",41.203322,-77.194525,PA,,1300,11/10/2011,Theft,Laptop,2014-01-23,,2011-11-10,NA,2011
 435,434,"MDwise, Inc.",40.551217,-85.602364,IN,RightNow Technologies,2700,2/10/2011,Unauth Acc/Dis,Other,2014-03-24,,2011-02-10,NA,2011
-436,435,Ford Motor Company,44.314844,-85.602364,MI,"WageWorks, Inc.",1700,1/3/2012,Other,Paper,2014-03-24,,2012-01-03,NA,2012
 437,436,Foundation Medical Partners,43.193852,-71.572395,NH,,771,11/19/2011 - 12/01/2011,Theft,Paper,2014-06-02,"Without permission from the covered entity (CE), an employee provided a list of patient's names to a local counseling center as the employee was leaving the CE to begin employment at the new counseling center in an attempt to coordinate care of the patients she was treating.  The list, containing the PHI of approximately 771 individuals, included names, dates of birth, addresses, phone numbers, names of the insurance carriers, and facility codes.  Following the disclosure, the CE provided breach notification to HHS, the media, and all individuals affected and sanctioned the former employee for violating its policies and procedures. The CE also changed its procedures for list management.  The CE sent a reminder to all of its health care providers regarding the handling of PHI and made plans to provide HIPAA compliance information in a quality assurance newsletter.",2011-11-19,2011-12-01,2011
-438,437,Kansas Department on Aging,39.011902,-98.484246,KS,,7757,1/11/2012,Theft,Laptop,2014-01-23,,2012-01-11,NA,2012
 439,438,Delta Dental of California,36.778261,-119.417932,CA,,11646,12/22/2011 - 12/23/2011,Other,Paper,2014-01-23,,2011-12-22,2011-12-23,2011
 440,439,Muskogee Regional Medical Center,35.007752,-97.092877,OK,,844,12/5/2011,Loss,Other,2014-01-23,,2011-12-05,NA,2011
 441,440,Department of Medical Assistance Services,37.431573,-78.656894,VA,"ACS, Affiliated Computer Services, Inc., A Xerox Company",1444,11/02/2011 - 11/16/2011,Unauth Acc/Dis,Paper,2014-01-23,,2011-11-02,2011-11-16,2011
-442,441,"Oldendorf Medical Services, PLLC",43.299428,-74.217933,NY,,549,1/17/2012,Theft,Laptop,2014-06-02,"OCR opened an investigation of the covered entity (CE) after it reported two unencrypted laptops were stolen that contained the electronic protected health information (ePHI) of 549 individuals.  The ePHI included names, dates of birth, diagnostic test results, and social security numbers.  Upon discovery of the breach, the CE filed a police report to recover the stolen items.  As a result of OCR's investigation, the CE installed security cameras and new door locks and changed the codes to the outside entrance keypad lock.  The CE also encrypted laptop computers. ",2012-01-17,NA,2012
-443,442,St.Vincent Physician Network,40.551217,-85.602364,IN,,1423,12/01/2010-11/21/2011,"Theft, Unauth Acc/Dis",Paper,2014-03-24,,2010-12-01,2011-11-21,2010
 444,443,Flex Physical Therapy,47.751074,-120.740139,WA,,3100,12/30/2011,Theft,Desktop Computer,2014-01-23,,2011-12-30,NA,2011
 445,444,Metro Community Provider Network,39.550051,-105.782067,CO,,3200,12/5/2011,Hack/It Inc.,E-mail,2014-01-23,,2011-12-05,NA,2011
 446,445,University of Miami ,27.664827,-81.515754,FL,,1219,11/24/2011,Theft,Other Portable Electronic Device,2014-01-23,,2011-11-24,NA,2011
@@ -651,19 +676,55 @@ OCR opened a compliance review of VA Medical Centers and is consolidating the in
 The covered entity (CE), Medco Health Solutions, mailed letters with incorrect addresses after a programming code in its mailing software caused corruption of its data.  The mailing contained the protected health information (PHI) of 4,341 individuals and included names, medication name and prescription number.  The CE provided breach notification to HHS, the media, and affected individuals.  Upon discovery of the breach, the CE immediately ceased using the update to its mailing software system.  As a result of OCR's investigation, the CE corrected the update to its mailing software system and established manual and automated quality control processes.  The breach incident involved a BA and occurred prior to the September 23, 2013, compliance date.  OCR verified that the CE had a proper BA agreement in place that restricted the BA's use and disclosure of PHI and required the BA to safeguard all PHI.
 
 ",2011-11-30,NA,2011
-453,452,Lakeview Medical Center,43.78444,-88.787868,WI,,698,1/4/2012,Theft,Laptop,2014-01-23,,2012-01-04,NA,2012
 454,453,"Goshen Health System, Inc.",40.551217,-85.602364,IN,,660,12/22/2011,Hack/It Inc.,Other,2014-01-23,,2011-12-22,NA,2011
 455,454,Georgetown University Hospital,38.905985,-77.033418,DC,,1549,11/1/2011,Unauth Acc/Dis,Paper,2014-01-23,,2011-11-01,NA,2011
-456,455,Motion Picture Industry Health Plans (MPI),36.778261,-119.417932,CA,,703,09/23/2009 - 12/02/2011,Other,Other,2014-02-14,,2009-09-23,2011-12-02,2009
-457,456,Ochsner Health System,31.244823,-92.145024,LA,,2088,1/19/2012,Loss,Other Portable Electronic Device,2014-01-23,,2012-01-19,NA,2012
 458,457,Applegate Valley Family Medicine,43.804133,-120.554201,OR,Dr. Trandinh,2300,12/01/2011-12/17/2011,"Theft, Unauth Acc/Dis",Laptop,2014-01-23,,2011-12-01,2011-12-17,2011
 459,458,"CardioNet, Inc.",41.203322,-77.194525,PA,,728,12/29/2011,Theft,Laptop,2014-01-23,,2011-12-29,NA,2011
 460,459,Presbyterian Healthcare Services,34.97273,-105.032363,NM,"Beth Barrett Consulting, LLC",7000,12/29/2011,Theft,Laptop,2014-03-13,,2011-12-29,NA,2011
+464,463,"Jeremaih J. Twomey, F.A.C.P., P.A.",31.968599,-99.901813,TX,"Jeremaih J. Twomey, F.A.C.P., P.A.",2559,12/31/2011,Theft,Other,2014-01-23,,2011-12-31,NA,2011
+465,464,Anchorage Community Mental Health Services Inc.,63.588753,-154.493062,AK,,2743,12/20/2011 - 01/04/2012,Unauth Acc/Dis,Desktop Computer,2014-01-23,,2011-12-20,2012-01-04,2011
+479,478,Chicago Musculoskeletal Institute/Metro Orthopedics,40.633125,-89.398528,IL,,750,12/31/2011,Other,Network Server,2014-03-24,,2011-12-31,NA,2011
+483,482,UnitedHealth Group health plan single affiliated covered entity,46.729553,-94.6859,MN,,3537,6/28/2011,Unauth Acc/Dis,Other,2014-03-24,,2011-06-28,NA,2011
+491,490,awklein a med corp,36.778261,-119.417932,CA,David Charles Rish,2000,2/1/2011,Theft,Other,2014-01-23,,2011-02-01,NA,2011
+494,493,Rhinebeck Health Center/Center for Progressive Medicine,43.299428,-74.217933,NY,,6745,11/15/2011-12/14/2011,Theft,"Desktop Computer, Network Server",2014-06-03,"The CE's network server and two local computers were hacked and compromised by a computer virus which resulted in the disclosure of electronic protected health information (ePHI) of 6,745 individuals.  The ePHI included names, insurance numbers, diagnoses, medical histories, dates of birth, telephone numbers, and social security numbers.  Upon discovery of the breach, the CE shut down all computer and email systems to prevent unauthorized access to its network and core files.  In addition, the CE decommissioned the previously used server, deactivated the network router, disabled network access to ePHI, and discontinued the previously utilized backup.  As a result of OCR's investigation, the CE deployed a new real-time firewall and intrusion detection system and implemented new measures for software management.  In addition, the CE installed a new network server, deployed a new router with security subscription to actively monitor internal network traffic and external threat patterns, and implemented a centralized antivirus software system.",2011-11-15,2011-12-14,2011
+495,494,Memorial Healthcare System,27.664827,-81.515754,FL,,9497,08/01/2011 - 02/12/2012,Other,Other,2014-01-23,,2011-08-01,2012-02-12,2011
+506,505,"Safe Ride Services, Inc",34.048928,-111.093731,AZ,,42000,8/31/2011,Unauth Acc/Dis,Network Server,2014-01-23,,2011-08-31,NA,2011
+507,506,IntraCare North Hospital,31.968599,-99.901813,TX,,750,03/15/2011 - 08/18/2011,Theft,Paper,2014-01-23,,2011-03-15,2011-08-18,2011
+517,516,Fairview Health Services,46.729553,-94.6859,MN,Accretive Health,623,7/25/2011,Theft,Laptop,2014-03-24,,2011-07-25,NA,2011
+519,518,UnitedHealth Group health plan single affiliated covered entity,46.729553,-94.6859,MN,,19100,06/28/2011 - 12/12/2011,Unauth Acc/Dis,Other,2014-01-23,,2011-06-28,2011-12-12,2011
+528,527,Independence Physical Therapy,41.603221,-73.087749,CT,,925,8/1/2011,Theft,Desktop Computer,2014-01-23,,2011-08-01,NA,2011
+568,567,Memorial Healthcare System,27.664827,-81.515754,FL,,105646,01/01/2011 - 07/05/2012,Theft,Electronic Medical Record,2014-01-23,,2011-01-01,2012-07-05,2011
+575,574,Sierra Plastic Surgery,38.80261,-116.419389,NV,,800,08/19/2011-09/20/2011,Unauth Acc/Dis,Network Server,2014-01-23,,2011-08-19,2011-09-20,2011
+593,592,"First Step Counseling, Inc.",40.058324,-74.405661,NJ,,638,05/01/2011 - 08/05/2011,Theft,Paper,2014-06-03,"Two of the covered entity's (CE) employees photocopied documents containing 638 patients' protected health information (PHI) and disclosed the documents to their attorney.  The PHI included names, insurance numbers, diagnoses, dates of birth, telephone numbers, and social security numbers.  Upon discovery of the breach, the CE hired attorneys to seek immediate return of all photocopies that contained the PHI.  The CE provided breach notification to the affected individuals, HHS and the media.  As a result of OCR's investigation, the CE transferred to an electronic billing system that is password protected and secured patient files with a lock.  Further, the front desk has been positioned by a protective window and policies have been implemented to prevent patients from standing beside the reception desk.  The CE also reviewed and revised its consent forms and retrained all staff. ",2011-05-01,2011-08-05,2011
+601,600,"WYATT DENTAL GROUP, LLC",31.244823,-92.145024,LA,,10271,11/04/2011 -04/15/2012,"Theft, Unauth Acc/Dis",Electronic Medical Record,2014-01-23,,2011-11-04,2012-04-15,2011
+628,627,"Coastal Behavioral Healthcare, Inc.",27.664827,-81.515754,FL,,4907,4/11/2011,Theft,Paper,2014-01-23,,2011-04-11,NA,2011
+640,639,Richard Switzer MD PC,44.314844,-85.602364,MI,,4100,11/29/2011,Other,Laptop,2014-03-24,,2011-11-29,NA,2011
+661,660,Baptist Health System,31.968599,-99.901813,TX,,678,8/14/2011,Unauth Acc/Dis,Electronic Medical Record,2014-03-13,,2011-08-14,NA,2011
+675,674,Jackson Health System,27.664827,-81.515754,FL,,566,05/26/2011 - 02/18/2012,Other,Paper,2014-01-23,,2011-05-26,2012-02-18,2011
+692,691,South Miami Hospital,27.664827,-81.515754,FL,,834,6/1/2011,Unauth Acc/Dis,Electronic Medical Record,2014-01-23,,2011-06-01,NA,2011
+702,701,Empire Blue Cross Blue Shield,40.551217,-85.602364,IN,Connextions c/o Empire BCBS,2608,11/01/2011-10/01/2012,"Theft, Unauth Acc/Dis",Network Server,2014-01-23,,2011-11-01,2012-10-01,2011
+703,702,Anthem Blue Cross Blue Shield (OH),40.551217,-85.602364,IN,Connextions c/o Anthem BCBS,1678,11/01/2011-10/01/2012,"Theft, Unauth Acc/Dis",Network Server,2014-01-23,,2011-11-01,2012-10-01,2011
+704,703,Anthem Blue Cross Blue Shield (IN),40.551217,-85.602364,IN,Connextions c/o Anthem BCBS,528,11/01/2011-10/01/2012,"Theft, Unauth Acc/Dis",Network Server,2014-01-23,,2011-11-01,2012-10-01,2011
+772,771,Sutter Health East Bay Region (Alta Bates Summit Medical Center; Sutter Delta Medical Center; Eden Medical Center),36.778261,-119.417932,CA,Nelson Family of Companies,4479,3/1/2011,Unauth Acc/Dis,E-mail,2014-01-23,,2011-03-01,NA,2011
+781,780,"San Jose Medical Supply Co., Inc.",36.778261,-119.417932,CA,Jesle Kuizon,800,10/01/2011-11/31/2011,Theft,"Desktop Computer, Network Server",2014-01-23,,2011-10-01,NA,2011
+784,783,Louisiana State University Health Care Services Division,31.244823,-92.145024,LA,,6994,12/1/2011,Unauth Acc/Dis,Desktop Computer,2014-01-23,,2011-12-01,NA,2011
+785,784,Oregon Health & Science University,43.804133,-120.554201,OR,,1361,01/01/2011-07/03/2013,Unauth Acc/Dis,Other,2014-01-31,,2011-01-01,2013-07-03,2011
+792,791,Hancock OB/GYN,40.551217,-85.602364,IN,,1396,11/09/2011 - 06/17/2013,Unauth Acc/Dis,Electronic Medical Record,2014-01-23,,2011-11-09,2013-06-17,2011
+794,793,Missouri Department of Social Services,37.964253,-91.831833,MO,"InfoCrossing, Inc.",1357,10/16/2011 - 06/07/2013,Unauth Acc/Dis,Paper,2014-01-23,,2011-10-16,2013-06-07,2011
+798,797,Minne-Tohe Health Center/Elbowoods Memorial Health Center,47.551493,-101.002012,ND,,10000,10/1/2011,"Improp. Disp, Unauth Acc/Dis",Desktop Computer,2014-01-23,,2011-10-01,NA,2011
+839,838,Ferris State University - MI College of Optometry,44.314844,-85.602364,MI,,3947,12/1/2011,Hack/It Inc.,Network Server,2014-01-23,,2011-12-01,NA,2011
+921,920,"Robert B. Neves, M.D., Inc",36.778261,-119.417932,CA,,611,5/8/2011,Theft,Laptop,2014-01-24,,2011-05-08,NA,2011
+994,993,Kaiser Permanente Northern CA Department of Research,36.778261,-119.417932,CA,,5178,10/18/2011,Hack/It Inc.,Network Server,2014-06-02,,2011-10-18,NA,2011
+1032,1031,Options Counseling Center,40.058324,-74.405661,NJ,,2828,5/1/2011,"Theft, Unauth Acc/Dis",Paper,2014-06-18,,2011-05-01,NA,2011
+1041,1040,Jamaica Hospital Medical Center,43.299428,-74.217933,NY,,26162,8/1/2011,Unauth Acc/Dis,Desktop Computer,2014-06-18,,2011-08-01,NA,2011
+436,435,Ford Motor Company,44.314844,-85.602364,MI,"WageWorks, Inc.",1700,1/3/2012,Other,Paper,2014-03-24,,2012-01-03,NA,2012
+438,437,Kansas Department on Aging,39.011902,-98.484246,KS,,7757,1/11/2012,Theft,Laptop,2014-01-23,,2012-01-11,NA,2012
+442,441,"Oldendorf Medical Services, PLLC",43.299428,-74.217933,NY,,549,1/17/2012,Theft,Laptop,2014-06-02,"OCR opened an investigation of the covered entity (CE) after it reported two unencrypted laptops were stolen that contained the electronic protected health information (ePHI) of 549 individuals.  The ePHI included names, dates of birth, diagnostic test results, and social security numbers.  Upon discovery of the breach, the CE filed a police report to recover the stolen items.  As a result of OCR's investigation, the CE installed security cameras and new door locks and changed the codes to the outside entrance keypad lock.  The CE also encrypted laptop computers. ",2012-01-17,NA,2012
+453,452,Lakeview Medical Center,43.78444,-88.787868,WI,,698,1/4/2012,Theft,Laptop,2014-01-23,,2012-01-04,NA,2012
+457,456,Ochsner Health System,31.244823,-92.145024,LA,,2088,1/19/2012,Loss,Other Portable Electronic Device,2014-01-23,,2012-01-19,NA,2012
 461,460,"Alliant Health Plans, Inc.",32.157435,-82.907123,GA,"Catalyst Health Solutions, Inc.",632,1/1/2012,Unauth Acc/Dis,Other,2014-01-23,,2012-01-01,NA,2012
 462,461,"FIRST MEDICAL CENTER, INC.",18.220833,-66.590149,PR,"T&P CONSULTING, INC. D/B/A QUANTUM",7706,1/11/2012,Theft,Laptop,2014-06-13,"An unencrypted laptop computer and external hard drive containing the electronic protected health information (ePHI) of 7,706 individuals were stolen from a staff member of the covered entity's (CE) business associate (BA).  The ePHI included names, ages, sex, social security numbers, medical services provided, diagnosis codes, and dates of service.  Upon discovery of the breach, the CE filed a police report to recover the stolen items and provided breach notification to HHS, the media, and all individuals affected by the breach.  As a result of OCR's investigation, the CE had its BA conduct a risk analysis, implement new security policies and procedures to ensure adequate safeguards to protect ePHI, and retrain its employees.  In addition, the CE also had its BA change its security practices to include encryption on all laptops and restrict the use of portable media devices.  OCR obtained assurances that the CE implemented the corrective action listed above and required two additional corrective actions.  OCR identified the need for the CE to complete a risk assessment and implement certain security policies and procedures.",2012-01-11,NA,2012
 463,462,Lee Miller Rehabilitation Associates,39.045755,-76.641271,MD,,10480,1/15/2012,Theft,Network Server,2014-01-23,,2012-01-15,NA,2012
-464,463,"Jeremaih J. Twomey, F.A.C.P., P.A.",31.968599,-99.901813,TX,"Jeremaih J. Twomey, F.A.C.P., P.A.",2559,12/31/2011,Theft,Other,2014-01-23,,2011-12-31,NA,2011
-465,464,Anchorage Community Mental Health Services Inc.,63.588753,-154.493062,AK,,2743,12/20/2011 - 01/04/2012,Unauth Acc/Dis,Desktop Computer,2014-01-23,,2011-12-20,2012-01-04,2011
 466,465,Robley Rex VA Medical Center ,37.839333,-84.270018,KY,,1182,1/9/2012,Other,Paper,2014-01-23,,2012-01-09,NA,2012
 467,466,Indiana Internal Medicine Consultants,40.551217,-85.602364,IN,,20000,2/11/2012,Theft,Laptop,2014-06-24,"A laptop computer that contained the electronic protected health information (ePHI) of approximately 20,000 individuals was stolen from the covered entity's (CE) laboratory manager's office.  The ePHI involved in the breach included patients' names, dates of birth, clinic identification numbers, and laboratory results.  Following the breach, the CE reported the theft to the building management company.  The management company investigated the theft and determined that cleaning personnel had stolen the laptop.  The company reported that the patient information was not compromised, as the database could not be accessed without propriety software and specialized assistance. As a result of OCR's investigation, physical security was improved by housing the replacement laptop in a locked drawer in a locked office with limited staff access.  The CE also implemented a new policy prohibiting the storage of PHI on the laptop computer and updated additional policies and procedures to enhance safeguards for systems containing PHI.      ",2012-02-11,NA,2012
 468,467,Policlinica La Familia IPA 343,18.220833,-66.590149,PR,"T & P Consulting, Inc. d/b/a Quantum Health Consulting",5994,1/11/2012,Theft,Laptop,2014-06-03,"An unencrypted laptop computer and external hard drive containing the electronic protected health information (ePHI) of 5,994 individuals were stolen from a staff member of the covered entity's (CE) business associate (BA).  The ePHI included names, ages, sex, social security numbers, medical services provided, diagnosis codes, and dates of service.  Upon discovery of the breach, the CE filed a police report and provided breach notification to HHS, the media and all affected individuals.  As a result of OCR's investigation, the CE had its BA conduct a risk analysis, implement new security policies and procedures to ensure adequate safeguards to protect ePHI, and retrain its employees.  In addition, the CE also had its BA change its security practices to include encryption on all laptops and restrict the use of portable media devices. OCR obtained assurance that the CE implemented the corrective action listed above and required one additional corrective action.  OCR identified the need for the CE to implement certain security policies, procedures and controls.
@@ -683,11 +744,8 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 476,475,Access Medical Group -IPA 344,18.220833,-66.590149,PR,"T&P Consulting, INC DBA Quantum HC",7606,1/11/2012,Theft,Laptop Portable Electronic Device,2014-06-13,"An unencrypted laptop computer and external hard drive containing the electronic protected health information (ePHI) of 39,609 individuals were stolen from a staff member of the covered entity's (CE) business associate (BA).  The ePHI included names, ages, sex, social security numbers, medical services provided, diagnosis codes, and dates of service.  Upon discovery of the breach, the CE filed a police report and provided breach notification to HHS, the media and all affected individuals.  As a result of OCR's investigation, the CE had its BA conduct a risk analysis, implement new security policies and procedures to ensure adequate safeguards to protect ePHI, and retrain its employees.  In addition, the CE also had its BA change its security practices to include encryption on all laptops and restrict the use of portable media devices. OCR obtained assurance that the CE implemented the corrective action listed above and required one additional corrective action.  OCR identified the need for the CE to implement certain security policies, procedures and controls.",2012-01-11,NA,2012
 477,476,Georgia Health Sciences University,32.157435,-82.907123,GA,,513,1/18/2012,Theft,Laptop,2014-01-23,,2012-01-18,NA,2012
 478,477,"Baylor Heart and Vascular Center, LLP",31.968599,-99.901813,TX,,1972,1/26/2012,Theft,Other Portable Electronic Device,2014-01-23,,2012-01-26,NA,2012
-479,478,Chicago Musculoskeletal Institute/Metro Orthopedics,40.633125,-89.398528,IL,,750,12/31/2011,Other,Network Server,2014-03-24,,2011-12-31,NA,2011
 480,479,"Tufts Associated Health Maintenance Organization, Inc. and Tufts Insurance Company",42.407211,-71.382437,MA,"Caremark PCS Health, L.L.C. (formerly known as Caremark PCS Health, L.P.)",3482,01/17/2012-02/02/2012,Other,Paper,2014-01-23,,2012-01-17,2012-02-02,2012
-481,480,Duke University Health System,35.759573,-79.0193,NC,,1370,07/01/2008 - 11/30/2011,Unauth Acc/Dis,Other,2014-04-23,,2008-07-01,2011-11-30,2008
 482,481,St. Joseph's Medical Center,36.778261,-119.417932,CA,,712,2/2/2012,Theft,Paper,2014-01-23,,2012-02-02,NA,2012
-483,482,UnitedHealth Group health plan single affiliated covered entity,46.729553,-94.6859,MN,,3537,6/28/2011,Unauth Acc/Dis,Other,2014-03-24,,2011-06-28,NA,2011
 484,483,CenterLight Healthcare,43.299428,-74.217933,NY,,642,1/27/2012,Unauth Acc/Dis,E-mail,2014-01-23,,2012-01-27,NA,2012
 485,484,Lake Granbury Medical Center,31.968599,-99.901813,TX,,502,2/13/2012,Theft,Paper,2014-01-23,,2012-02-13,NA,2012
 486,485,County of Wayne Department of Personnel/Human Resources Benefits Administration Division,44.314844,-85.602364,MI,,1229,3/16/2012,Unauth Acc/Dis,E-mail,2014-06-10,,2012-03-16,NA,2012
@@ -695,11 +753,8 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 488,487,The Neighborhood Christian Clinic,34.048928,-111.093731,AZ,,9565,2/7/2012,Loss,Other Portable Electronic Device,2014-01-23,,2012-02-07,NA,2012
 489,488,"AccentCare Home Health of California, Inc. Medicare # 057564    CA state License # 080000226",36.778261,-119.417932,CA,,1000,04/20/2012 - 04/21/2012,Unauth Acc/Dis,E-mail,2014-01-23,,2012-04-20,2012-04-21,2012
 490,489,Seton Health Plan,31.968599,-99.901813,TX,HealthLOGIX,555,3/9/2012,Unauth Acc/Dis,Paper,2014-01-23,,2012-03-09,NA,2012
-491,490,awklein a med corp,36.778261,-119.417932,CA,David Charles Rish,2000,2/1/2011,Theft,Other,2014-01-23,,2011-02-01,NA,2011
 492,491,Utah Department of Health,39.32098,-111.093731,UT,Utah Department of Technology Services,780000,03/10/2012-04/02/2012,Hack/It Inc.,Network Server,2014-01-23,,2012-03-10,2012-04-02,2012
 493,492,IU Medical Group,40.551217,-85.602364,IN,,1000,4/11/2012,Improp. Disp,Paper,2014-01-23,,2012-04-11,NA,2012
-494,493,Rhinebeck Health Center/Center for Progressive Medicine,43.299428,-74.217933,NY,,6745,11/15/2011-12/14/2011,Theft,"Desktop Computer, Network Server",2014-06-03,"The CE's network server and two local computers were hacked and compromised by a computer virus which resulted in the disclosure of electronic protected health information (ePHI) of 6,745 individuals.  The ePHI included names, insurance numbers, diagnoses, medical histories, dates of birth, telephone numbers, and social security numbers.  Upon discovery of the breach, the CE shut down all computer and email systems to prevent unauthorized access to its network and core files.  In addition, the CE decommissioned the previously used server, deactivated the network router, disabled network access to ePHI, and discontinued the previously utilized backup.  As a result of OCR's investigation, the CE deployed a new real-time firewall and intrusion detection system and implemented new measures for software management.  In addition, the CE installed a new network server, deployed a new router with security subscription to actively monitor internal network traffic and external threat patterns, and implemented a centralized antivirus software system.",2011-11-15,2011-12-14,2011
-495,494,Memorial Healthcare System,27.664827,-81.515754,FL,,9497,08/01/2011 - 02/12/2012,Other,Other,2014-01-23,,2011-08-01,2012-02-12,2011
 496,495,"Roy E. Gondo, M.D.",47.751074,-120.740139,WA,,2100,2/21/2012,Theft,"Desktop Computer, Electronic Medical Record",2014-01-23,,2012-02-21,NA,2012
 497,496,"DRD Management, Inc. D/B/A DRD Knoxville Medical Clinic - Central",31.968599,-99.901813,TX,,1000,2/16/2012,Improp. Disp,Paper,2014-01-23,,2012-02-16,NA,2012
 498,497,Emory Healthcare,32.157435,-82.907123,GA,,315000,02/07/2012 - 02/20/2012,Unknown,Other,2014-01-23,,2012-02-07,2012-02-20,2012
@@ -710,8 +765,6 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 503,502,South Carolina Department of Health and Human Services,33.836081,-81.163725,SC,,228435,01/31/2012 - 04/02/2012,Unauth Acc/Dis,E-mail,2014-01-23,,2012-01-31,2012-04-02,2012
 504,503,Oregon Health Authority,43.804133,-120.554201,OR,,550,4/13/2012,Theft,Paper,2014-04-23,,2012-04-13,NA,2012
 505,504,SHIELDS For Families ,36.778261,-119.417932,CA,,961,2/27/2012,Theft,Network Server,2014-01-23,,2012-02-27,NA,2012
-506,505,"Safe Ride Services, Inc",34.048928,-111.093731,AZ,,42000,8/31/2011,Unauth Acc/Dis,Network Server,2014-01-23,,2011-08-31,NA,2011
-507,506,IntraCare North Hospital,31.968599,-99.901813,TX,,750,03/15/2011 - 08/18/2011,Theft,Paper,2014-01-23,,2011-03-15,2011-08-18,2011
 508,507,"Oakland Vision Services, PC",44.314844,-85.602364,MI,,3000,4/9/2012,Hack/It Inc.,Network Server,2014-03-24,,2012-04-09,NA,2012
 509,508,"Stephen Haggard, DPM Podiatry ",47.751074,-120.740139,WA,,1597,3/4/2012,Theft,Network Server,2014-01-23,,2012-03-04,NA,2012
 510,509,Baptist Health System,32.318231,-86.902298,AL,,1655,3/8/2012,Improp. Disp,Paper,2014-01-23,,2012-03-08,NA,2012
@@ -721,18 +774,12 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 514,513,Hogan Services Inc. Health Care Premium Plan,37.964253,-91.831833,MO,,1134,3/30/2012,Unauth Acc/Dis,E-mail,2014-01-23,,2012-03-30,NA,2012
 515,514,"Family HealthServices Minnesota, P.A.",46.729553,-94.6859,MN,,4000,3/30/2012,Theft,Laptop,2014-06-10,,2012-03-30,NA,2012
 516,515,St. Mary Medical Center,36.778261,-119.417932,CA,,3900,5/7/2012,Loss,Other Portable Electronic Device,2014-01-23,,2012-05-07,NA,2012
-517,516,Fairview Health Services,46.729553,-94.6859,MN,Accretive Health,623,7/25/2011,Theft,Laptop,2014-03-24,,2011-07-25,NA,2011
 518,517,Our Lady of the Lake Regional Medical Center,31.244823,-92.145024,LA,,17000,3/16/2012,"Theft, Loss",Laptop,2014-01-23,,2012-03-16,NA,2012
-519,518,UnitedHealth Group health plan single affiliated covered entity,46.729553,-94.6859,MN,,19100,06/28/2011 - 12/12/2011,Unauth Acc/Dis,Other,2014-01-23,,2011-06-28,2011-12-12,2011
 520,519,West Dermatology,36.778261,-119.417932,CA,,1900,04/21/2012 - 04/22/2012,Theft,Other,2014-01-23,,2012-04-21,2012-04-22,2012
-521,520,Duke University Health System,35.759573,-79.0193,NC,,591,04/21/2004-02/16/2012,Unauth Acc/Dis,Other,2014-01-23,,2004-04-21,2012-02-16,2004
 522,521,"Luz Colon, DPM  Podiatry ",27.664827,-81.515754,FL,,1137,3/20/2012,"Theft, Loss",Laptop,2014-01-23,,2012-03-20,NA,2012
 523,522,Ameritas Life Insurance Corp. ,41.492537,-99.901813,NE,,3000,3/21/2012,Theft,Laptop,2014-01-23,,2012-03-21,NA,2012
 524,523,Children's Hospital Boston,42.407211,-71.382437,MA,,2159,3/25/2012,Theft,Laptop,2014-01-23,,2012-03-25,NA,2012
-525,524,Upper Valley Medical Center,40.417287,-82.907123,OH,"Data Image, Inc.",15000,10/01/2010-03/21/2012,Unauth Acc/Dis,Other,2014-01-23,,2010-10-01,2012-03-21,2010
 526,525,Physician's Automated Laboratory,36.778261,-119.417932,CA,,745,03/23/2012 - 03/26/2012,Theft,Paper,2014-01-23,,2012-03-23,2012-03-26,2012
-527,526,"Phoebe Putney Memorial Hospital, Inc. ",32.157435,-82.907123,GA,,12937,07/26/2010-03/29/2012,Theft,"Electronic Medical Record, Paper",2014-02-20,,2010-07-26,2012-03-29,2010
-528,527,Independence Physical Therapy,41.603221,-73.087749,CT,,925,8/1/2011,Theft,Desktop Computer,2014-01-23,,2011-08-01,NA,2011
 529,528,Titus Regional Medical Center,31.968599,-99.901813,TX,,5700,3/27/2012,"Loss, Unknown",Laptop,2014-01-23,,2012-03-27,NA,2012
 530,529,Titus Regional Medical Center,31.968599,-99.901813,TX,,500,3/29/2012,Theft,Other,2014-01-23,,2012-03-29,NA,2012
 531,530,Lutheran Community Services Northwest,47.751074,-120.740139,WA,,756,03/29/2012-03/30/2012,Theft,Desktop Computer Portable Electronic Device,2014-01-23,,2012-03-29,2012-03-30,2012
@@ -741,7 +788,6 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 534,533,"Mid America Health, Inc.",40.551217,-85.602364,IN,PrevMED,1444,4/6/2012,Theft,Laptop,2014-01-23,,2012-04-06,NA,2012
 535,534,"Metcare of Florida, Inc.",27.664827,-81.515754,FL,,2557,05/01/2012 - 05/02/2012,Theft,Other Portable Electronic Device,2014-01-23,,2012-05-01,2012-05-02,2012
 536,535,"Robert Witham, MD, FACP",43.804133,-120.554201,OR,,11136,4/16/2012,Theft,Desktop Computer,2014-01-23,,2012-04-16,NA,2012
-537,536,Memorial Sloan-Kettering Cancer Center,43.299428,-74.217933,NY,,568,08/13/2009-04/12/2012,Theft,E-mail,2014-06-03,"The covered entity's (CE) staff member disclosed an unencrypted Microsoft Excel graph to a non-covered entity physician who re-disclosed it to a medical education organization to be used  in a presentation.  In addition, the medical education organization posted the presentation slides on its website.  The graph contained the protected health information (PHI) of 569 individuals and included names, telephone numbers, social security numbers, ages, cities and states of residence, medical record numbers, and clinical information.  Upon discovery of the breach, the CE ensured that the information was removed from the website and deleted, sanctioned the workforce member responsible, and retrained its workforce on the use of a data loss prevention tool and the risks of embedded PHI.  As a result of OCR's investigation, the CE provided OCR with evidence of its technical safeguards and security awareness initiatives and provided assurance that it implemented the corrective action listed above.",2009-08-13,2012-04-12,2009
 538,537,"Gessler Clinic, P.A.",27.664827,-81.515754,FL,,1409,05/03/2012-05/04/2012,Theft,Paper,2014-01-23,,2012-05-03,2012-05-04,2012
 539,538,University of Kentucky HealthCare,37.839333,-84.270018,KY,,4490,5/1/2012,Theft,Laptop,2014-01-23,,2012-05-01,NA,2012
 540,539,Wolf & Yun,37.839333,-84.270018,KY,,824,4/24/2012,Theft,Laptop,2014-01-23,,2012-04-24,NA,2012
@@ -769,10 +815,8 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 562,561,Oregon Health & Science University,43.804133,-120.554201,OR,,702,7/4/2012,Theft,Other,2014-01-23,,2012-07-04,NA,2012
 563,562,Stanford Hospital & Clinics and School of Medicine,36.778261,-119.417932,CA,,2300,07/15/2012 - 07/16/2012,Theft,Desktop Computer,2014-01-23,,2012-07-15,2012-07-16,2012
 564,563,Midtown Mental Health Center,40.551217,-85.602364,IN,"CHOICES, Inc",890,5/10/2012,Hack/It Inc.,Other,2014-01-23,,2012-05-10,NA,2012
-565,564,Harris County Hospital District,31.968599,-99.901813,TX,,2875,04/14/2008 - 02/28/2011,Theft,"Electronic Medical Record, Paper",2014-04-23,,2008-04-14,2011-02-28,2008
 566,565,Howard University Hospital,38.905985,-77.033418,DC,"Siemens Medical Solutions, USA",66601,1/25/2012,Theft,Laptop,2014-01-23,,2012-01-25,NA,2012
 567,566,TEMPLE COMMUNITY HOSPITAL,36.778261,-119.417932,CA,,603,7/3/2012,Theft,Desktop Computer,2014-01-23,,2012-07-03,NA,2012
-568,567,Memorial Healthcare System,27.664827,-81.515754,FL,,105646,01/01/2011 - 07/05/2012,Theft,Electronic Medical Record,2014-01-23,,2011-01-01,2012-07-05,2011
 569,568,"Liberty Resources, Inc.",41.203322,-77.194525,PA,,3183,8/4/2012,Theft,Laptop,2014-06-24,"An employee's personal laptop computer that contained the unencrypted electronic protected health information (ePHI) of 3,183 individuals was stolen from his vehicle.  The ePHI involved in the breach included consumer names, identification numbers, diagnosis codes,  base service unit numbers, service start and end dates, service names, procedure codes, service location identifiers, units authorized, units utilized, units cost, total authorization amounts, total utilized amounts, authorization dates, funding sources, provider names, and master provider index numbers.  The CE timely notified all affected individuals, the media, and HHS, and offered assistance to consumers who wished to place fraud alerts on their consumer credit files.  Following the breach, the CE created and implemented a new policy and procedure to improve safeguards.  This policy prohibits downloading any PHI to a home computer or portable device, prohibits forwarding emails containing PHI to a personal account, cloud service, or unauthorized user, and requires full-disk encryption of agency laptops.  OCR obtained assurances that the CE implemented the corrective action listed above. 
 
 
@@ -785,7 +829,6 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 572,571,LANA MEDICAL CARE,27.664827,-81.515754,FL,,500,8/18/2012,Theft,Laptop,2014-01-23,,2012-08-18,NA,2012
 573,572,"Cancer Care Group, P.C.",40.551217,-85.602364,IN,,55000,7/19/2012,Theft,Other Portable Electronic Device,2014-03-24,,2012-07-19,NA,2012
 574,573,Tricounty Behavioral Health Clinic,32.157435,-82.907123,GA,,4000,8/26/2012,Theft,Laptop,2014-01-23,,2012-08-26,NA,2012
-575,574,Sierra Plastic Surgery,38.80261,-116.419389,NV,,800,08/19/2011-09/20/2011,Unauth Acc/Dis,Network Server,2014-01-23,,2011-08-19,2011-09-20,2011
 576,575,"Charlotte Clark-Neitzel, MD",47.751074,-120.740139,WA,,942,7/24/2012,Theft,Laptop,2014-01-23,,2012-07-24,NA,2012
 577,576,University of Miami,27.664827,-81.515754,FL,,64846,7/18/2012,Unauth Acc/Dis,Paper,2014-01-23,,2012-07-18,NA,2012
 578,577,University of New Mexico Health Sciences Center,34.97273,-105.032363,NM,,2365,5/21/2012,Hack/It Inc.,Network Server,2014-01-23,,2012-05-21,NA,2012
@@ -803,7 +846,6 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 590,589,"Alere Home Monitoring, Inc",36.778261,-119.417932,CA,,116506,9/23/2012,Theft,Laptop,2014-01-23,,2012-09-23,NA,2012
 591,590,"Coastal home Respiratory, LLP",32.157435,-82.907123,GA,,3440,10/4/2012,Theft,Other,2014-01-23,,2012-10-04,NA,2012
 592,591," Philip P Corneliuson, DDS, INC.",36.778261,-119.417932,CA,,980,9/15/2012,Theft,Desktop Computer,2014-01-23,,2012-09-15,NA,2012
-593,592,"First Step Counseling, Inc.",40.058324,-74.405661,NJ,,638,05/01/2011 - 08/05/2011,Theft,Paper,2014-06-03,"Two of the covered entity's (CE) employees photocopied documents containing 638 patients' protected health information (PHI) and disclosed the documents to their attorney.  The PHI included names, insurance numbers, diagnoses, dates of birth, telephone numbers, and social security numbers.  Upon discovery of the breach, the CE hired attorneys to seek immediate return of all photocopies that contained the PHI.  The CE provided breach notification to the affected individuals, HHS and the media.  As a result of OCR's investigation, the CE transferred to an electronic billing system that is password protected and secured patient files with a lock.  Further, the front desk has been positioned by a protective window and policies have been implemented to prevent patients from standing beside the reception desk.  The CE also reviewed and revised its consent forms and retrained all staff. ",2011-05-01,2011-08-05,2011
 594,593,"Logan Community Resources, Inc.",40.551217,-85.602364,IN,,2900,8/24/2012,Hack/It Inc.,Network Server,2014-01-23,,2012-08-24,NA,2012
 595,594,"David DiGiallorenzo, D.M.D.",41.203322,-77.194525,PA,,2600,9/17/2012,Unauth Acc/Dis,"Network Server, Electronic Medical Record",2014-01-23,,2012-09-17,NA,2012
 596,595,CVS Caremark,41.580095,-71.477429,RI,,955,8/13/2012,Theft,Paper,2014-01-23,,2012-08-13,NA,2012
@@ -815,7 +857,6 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 ",2012-09-18,NA,2012
 599,598,Illinois Department of Healthcare and Family Services,40.633125,-89.398528,IL,"University of Illinois, College of Nursing",508,8/31/2012,Theft,Paper,2014-03-24,,2012-08-31,NA,2012
 600,599,Miami Beach Healthcare Group Ltd. dba Aventura Hospital and Medical Center,27.664827,-81.515754,FL,,2560,01/01/2012 - 09/12/2012,Theft,Electronic Medical Record,2014-01-23,,2012-01-01,2012-09-12,2012
-601,600,"WYATT DENTAL GROUP, LLC",31.244823,-92.145024,LA,,10271,11/04/2011 -04/15/2012,"Theft, Unauth Acc/Dis",Electronic Medical Record,2014-01-23,,2011-11-04,2012-04-15,2011
 602,601,Women & Infants Hospital of Rhode Island,41.580095,-71.477429,RI,,14004,9/13/2012,Loss,Other,2014-01-23,,2012-09-13,NA,2012
 603,602,Memorial Health System,39.550051,-105.782067,CO,,6262,5/1/2012,Loss,Paper,2014-01-23,,2012-05-01,NA,2012
 604,603,CHRISTUS St. John Hospital,31.968599,-99.901813,TX,,5748,9/25/2012,Loss,Other Portable Electronic Device,2014-01-23,,2012-09-25,NA,2012
@@ -842,7 +883,6 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 625,624,University of Virginia Medical Center,37.431573,-78.656894,VA,,1846,10/5/2012,Loss,Other Portable Electronic Device,2014-02-14,,2012-10-05,NA,2012
 626,625,Osceola County EMS ,27.664827,-81.515754,FL,Advanced Data Processing Inc,949,06/15/2012-10/01/2012,Theft,Desktop Computer,2014-01-23,,2012-06-15,2012-10-01,2012
 627,626,Carolinas Medical Center - Randolph,35.759573,-79.0193,NC,,5600,03/11/2012 - 10/08/2012,Hack/It Inc.,E-mail,2014-01-23,,2012-03-11,2012-10-08,2012
-628,627,"Coastal Behavioral Healthcare, Inc.",27.664827,-81.515754,FL,,4907,4/11/2011,Theft,Paper,2014-01-23,,2011-04-11,NA,2011
 629,628,"CCS Medical, Inc.",31.968599,-99.901813,TX,,6601,05/01/2012 - 09/21/2012,Unauth Acc/Dis,Network Server,2014-01-23,,2012-05-01,2012-09-21,2012
 630,629,"City of Gloucester, Fire Department",42.407211,-71.382437,MA,"Advanced  Data Processing, Inc.",1286,06/15/2012-10/01/2012,Theft,Desktop Computer,2014-01-23,,2012-06-15,2012-10-01,2012
 631,630,Columbia University Medical Center and NewYork-Presbyterian Hospital,43.299428,-74.217933,NY,,4929,10/12/2012-10/15/2012,Theft,Desktop Computer,2014-01-23,,2012-10-12,2012-10-15,2012
@@ -854,7 +894,6 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 637,636,"OHP PHSP, Inc.",43.299428,-74.217933,NY,"HealthPlus, Amerigroup",28187,08/31/2012 - 09/21/2012,Unauth Acc/Dis,Other,2014-01-23,,2012-08-31,2012-09-21,2012
 638,637,"Center for Orthopedic Research and Education, Inc.",34.048928,-111.093731,AZ,,35488,10/20/2012 - 10/21/2012,Theft,Paper,2014-04-23,,2012-10-20,2012-10-21,2012
 639,638,Calif. Dept. of Health Care Services (DHCS),36.778261,-119.417932,CA,,2643,12/10/2012 - 12/18/2012,Unauth Acc/Dis,Other,2014-01-23,,2012-12-10,2012-12-18,2012
-640,639,Richard Switzer MD PC,44.314844,-85.602364,MI,,4100,11/29/2011,Other,Laptop,2014-03-24,,2011-11-29,NA,2011
 641,640,Gibson General Hospital,40.551217,-85.602364,IN,,28893,11/27/2012,Theft,Laptop,2014-03-24,,2012-11-27,NA,2012
 642,641,"Sovereign Medical Group, LLC",40.058324,-74.405661,NJ,,27800,10/10/2012,"Theft, Hack/It Inc.",Network Server,2014-01-23,,2012-10-10,NA,2012
 643,642,"Cabinet for Health & Family Services, Department of Medicaid Services",37.839333,-84.270018,KY,HP Enterprise Services,1090,11/15/2012,Hack/It Inc.,Laptop,2014-01-23,,2012-11-15,NA,2012
@@ -867,37 +906,27 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 
 ",2012-11-13,NA,2012
 648,647,"Calvin Schuster,MD",36.778261,-119.417932,CA,,532,11/4/2012,Theft,Desktop Computer,2014-01-23,,2012-11-04,NA,2012
-649,648,"Granite Medical Group, Inc.",42.407211,-71.382437,MA,"Clearpoint Design, Inc.",4125,01/02/2010 - 11/15/2012,Hack/It Inc.,Network Server,2014-02-19,,2010-01-02,2012-11-15,2010
 650,649,University of Nevada School of Medicine,38.80261,-116.419389,NV,,1483,10/11/2012,Improp. Disp,Paper,2014-01-23,,2012-10-11,NA,2012
 651,650,Dimensions Healthcare System,39.045755,-76.641271,MD,WorkflowOne,635,11/16/2012,Unauth Acc/Dis,Paper,2014-03-25,,2012-11-16,NA,2012
 652,651,SilverScript Insurance Company,34.048928,-111.093731,AZ,,852,10/31/2012,Unauth Acc/Dis,Paper,2014-01-23,,2012-10-31,NA,2012
 653,652,South Jersey Hospital Inc.,40.058324,-74.405661,NJ,Omnicell Inc.,8555,11/14/2012,Theft,Laptop,2014-01-23,,2012-11-14,NA,2012
 654,653,"Child & Family Psychological Services, Inc.",42.407211,-71.382437,MA,"Clearpoint Design, Inc.",7250,10/18/2012-10/29/2012,Hack/It Inc.,Network Server,2014-01-23,,2012-10-18,2012-10-29,2012
 655,654,Pousson Family Dentistry,31.244823,-92.145024,LA,,1400,12/3/2012,Theft,Laptop,2014-01-23,,2012-12-03,NA,2012
-656,655,South Shore Medical Center,42.407211,-71.382437,MA,"Clearpoint Design, Inc.",4100,01/01/2007-11/15/2012,Hack/It Inc.,Network Server,2014-01-23,,2007-01-01,2012-11-15,2007
 657,656,"Lee D. Pollan, DMD, PC",43.299428,-74.217933,NY,,19178,11/06/2012-11/15/2012,Theft,Laptop,2014-05-28,"OCR opened an investigation of the covered entity (CE) after it reported an unencrypted laptop was stolen that contained the electronic protected health information (ePHI) of 19,178 individuals.  The ePHI included names, addresses, zip codes, dates of birth, social security numbers, claims information, and diagnosis codes.  Upon discovery of the breach, the CE filed a police report to recover the stolen items.  As a result of OCR's investigation, the CE encrypted the backup drive of the contents of the laptop computer.  The CE also trained all staff on the use of encryption to safeguard data on personal computers and mobile devices.",2012-11-06,2012-11-15,2012
 658,657,Washington University School of Medicine,37.964253,-91.831833,MO,,1105,11/28/2012,Theft,Laptop,2014-01-23,,2012-11-28,NA,2012
 659,658,Riderwood Village,39.045755,-76.641271,MD,,3230,11/18/2012,Theft,Laptop,2014-01-23,,2012-11-18,NA,2012
 660,659,WAYNE MEMORIAL HOSPITAL,41.203322,-77.194525,PA,,1184,12/3/2012,Loss,Other,2014-03-24,,2012-12-03,NA,2012
-661,660,Baptist Health System,31.968599,-99.901813,TX,,678,8/14/2011,Unauth Acc/Dis,Electronic Medical Record,2014-03-13,,2011-08-14,NA,2011
 662,661,Baillie Lumber Co. Group Health Plan,43.299428,-74.217933,NY,BlueCross BlueShield of Western New York,725,11/27/2012,Theft,Paper,2014-06-20,"OCR opened an investigation of the covered entity (CE), Baillie Lumber Co. Group Health Plan, after it reported its business associate (BA), Blue Cross Blue Shield, mailed a monthly premium notice with invoices that contained the protected health information (PHI) of 725 individuals which was never received by the CE.  The PHI included names, member identification numbers, and social security numbers.  The CE provided breach notification to HHS and affected individuals.  Upon discovery of the breach, the BA contacted the U.S. Post Office to inquire about the package that contained the invoices that the CE never received.  As a result of OCR's investigation, the BA revised its invoice process and removed social security numbers and member identification numbers from its invoices.  The BA also improved safeguards by changing its mailing procedures to send invoices to the CE via secure email.  The breach involved a BA and occurred prior to the September 23, 2013, compliance date.  OCR verified that the CE had a proper BA agreement in place that restricted the BA's use and disclosure of PHI and required the BA to safeguard all PHI.",2012-11-27,NA,2012
 663,662,The University of Texas MD Anderson Cancer Center,31.968599,-99.901813,TX,,29021,4/30/2012,Theft,Laptop,2014-01-23,,2012-04-30,NA,2012
 664,663,"Western Wisconsin Medical Association, S.C. - River Falls Medical Clinics",43.78444,-88.787868,WI,,2400,05/30/2012-08/31/2012,Theft,Paper,2014-03-24,,2012-05-30,2012-08-31,2012
 665,664,Boy Scouts of America Employee Benefit Plan,31.968599,-99.901813,TX,RR Donnelley (a sub-BA for UnitedHealth Group),8911,09/15/2012-11/30/2012,Theft,Desktop Computer,2014-01-23,,2012-09-15,2012-11-30,2012
-666,665,Kmart Corporation,40.633125,-89.398528,IL,Kmart Pharmacy #7623,16988,1/2/2013,Improp. Disp,Paper,2014-02-12,,2013-01-02,NA,2013
 667,666,Community Services NW,32.318231,-86.902298,AL,,2400,12/6/2012,Theft,Desktop Computer,2014-04-23,,2012-12-06,NA,2012
 668,667,American HomePatient Inc. ,35.517491,-86.580447,TN,LifeGas,1103,10/11/2012,Theft,Laptop,2014-01-23,,2012-10-11,NA,2012
-669,668,Yadkinville Chiropractic DCPA,35.759573,-79.0193,NC,Yadkinville Chiropractic DCPA,1000,2/1/2013,Theft,Desktop Computer,2014-02-12,,2013-02-01,NA,2013
-670,669,"Intervention Services, Inc.",27.664827,-81.515754,FL,,1200,1/19/2013,Theft,Laptop,2014-01-23,,2013-01-19,NA,2013
 671,670,West Georgia Ambulance,32.157435,-82.907123,GA,,500,12/13/2012,Loss,Laptop,2014-01-23,,2012-12-13,NA,2012
-672,671,"Center for Pain Management, LLC",39.045755,-76.641271,MD,,5822,1/22/2013,Theft,Laptop,2014-01-23,,2013-01-22,NA,2013
-673,672,Multiple Health Plans,36.778261,-119.417932,CA,"Coast Healthcare Management, LLC",1368,12/7/2013,Theft,Paper,2014-01-23,,2013-12-07,NA,2013
 674,673,Froedtert Health,43.78444,-88.787868,WI,,43549,10/27/2012-12/13/2012,Unauth Acc/Dis,Other,2014-03-24,,2012-10-27,2012-12-13,2012
-675,674,Jackson Health System,27.664827,-81.515754,FL,,566,05/26/2011 - 02/18/2012,Other,Paper,2014-01-23,,2011-05-26,2012-02-18,2011
 676,675,Riderwood Village,39.045755,-76.641271,MD,,5270,11/18/2012,Theft,Laptop,2014-01-23,,2012-11-18,NA,2012
 677,676,"Kindred Healthcare, Inc. d/b/a Kindred Transitional Care and Rehabilitation - Marl",42.407211,-71.382437,MA,,716,12/15/2012-12/17/2012,Theft,Other Portable Electronic Device,2014-01-23,,2012-12-15,2012-12-17,2012
 678,677,"HomeCare of Mid-Missouri, Inc.",37.964253,-91.831833,MO,,4027,12/14/2012,Theft,Laptop,2014-01-23,,2012-12-14,NA,2012
-679,678,Heyman HospiceCare at Floyd,32.157435,-82.907123,GA,,1819,1/4/2013,Theft,Laptop,2014-01-23,,2013-01-04,NA,2013
 680,679,Agency for Health Care Administration,27.664827,-81.515754,FL,"DentaQuest of Florida, Inc.",1892,11/01/2012 - 12/20/2012,Unauth Acc/Dis,Paper,2014-01-23,,2012-11-01,2012-12-20,2012
 681,680,ABQ HealthPartners,34.97273,-105.032363,NM,,778,12/20/2012,Theft,Laptop,2014-01-23,,2012-12-20,NA,2012
 682,681,Terrell County Health Department,32.157435,-82.907123,GA,,18000,01/09/2012 -  04/17/2012,Unauth Acc/Dis,Network Server,2014-01-23,,2012-01-09,2012-04-17,2012
@@ -905,40 +934,61 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 684,683,Stronghold Counseling Services Inc,43.969515,-99.901813,SD,,8500,12/24/2012,Theft,Desktop Computer,2014-01-23,,2012-12-24,NA,2012
 685,684,Arizona Oncology,34.048928,-111.093731,AZ,,501,11/21/2012,Theft,Laptop,2014-01-23,,2012-11-21,NA,2012
 686,685,Crescent Health Inc. - a Walgreens Company,36.778261,-119.417932,CA,,109000,12/28/2012,Theft,Desktop Computer,2014-01-23,,2012-12-28,NA,2012
-687,686,"County of San Bernardino, Department of Behavioral Health",36.778261,-119.417932,CA,,686,1/12/2013,Theft,Paper,2014-01-23,,2013-01-12,NA,2013
-688,687,"WOMENS HEALTH ENTERPRISE, INC.",32.157435,-82.907123,GA,,3000,1/2/2013,Theft,Laptop,2014-01-23,,2013-01-02,NA,2013
 689,688,The Brookdale University Hospital and Medical Center,43.299428,-74.217933,NY,Standard Register,2261,8/11/2012,Theft,Paper,2014-06-20,"OCR opened an investigation of the covered entity (CE), The Brookdale University Hospital and Medical Center, after it reported its business associate (BA), Standard Register, inadvertently mailed statements to 2,261 individuals using another affiliated CE's envelopes.  The protected health information (PHI) included names, addresses and financial information.  OCR provided technical assistance to the CE regarding safeguarding PHI.",2012-08-11,NA,2012
 690,689,The Brookdale University Hospital and Medical Center,43.299428,-74.217933,NY,Health Plus Amerigroup,28187,9/21/2012,Theft,Other Portable Electronic Device,2014-06-20,"The covered entity's (CE) business associate (BA), Health Plus Amerigroup, mailed an unencrypted compact disk that contained the electronic protected health information (ePHI) of 28,187 individuals to the CE, The Brookdale University Hospital and Medical Center.  OCR closed this breach report and consolidated into an existing breach report filed by OHP PHSP, Inc. regarding the same issues.",2012-09-21,NA,2012
 691,690,"Ultra Stores, Inc.",40.633125,-89.398528,IL,Plexus Group,500,9/13/2012,Unauth Acc/Dis,Other,2014-03-24,,2012-09-13,NA,2012
-692,691,South Miami Hospital,27.664827,-81.515754,FL,,834,6/1/2011,Unauth Acc/Dis,Electronic Medical Record,2014-01-23,,2011-06-01,NA,2011
+695,694,"State of California, Dept. of Developmental Services",36.778261,-119.417932,CA,North Los Angeles County Regional Center ,18162,11/10/2012,Theft,Laptop,2014-01-23,,2012-11-10,NA,2012
+705,704,Mount Sinai Medical Center,27.664827,-81.515754,FL,,628,10/01/2012 - 02/18/2013,Theft,"Desktop Computer, Paper",2014-01-23,,2012-10-01,2013-02-18,2012
+708,707,University of Mississippi Medical Center,32.354668,-89.398528,MS,,500,11/01/2012-01/19/2013,Loss,Laptop,2014-01-23,,2012-11-01,2013-01-19,2012
+714,713,"Shands Jacksonville Medical Center, Inc.",27.664827,-81.515754,FL,,1025,05/02/2012-06/22/2012,"Theft, Unauth Acc/Dis",Electronic Medical Record,2014-01-23,,2012-05-02,2012-06-22,2012
+717,716,GLENS FALLS HOSPITAL,43.299428,-74.217933,NY,PORTAL HEALTHCARE SOLUTIONS LLC,2360,11/02/2012 - 03/14/2013,Theft,Network Server,2014-06-03,"The covered entity's (CE) business associate (BA) operated a server containing the electronic protected health information (ePHI) of 2,360 individuals that was vulnerable to access by unauthorized persons for over four months.  The ePHI included transcribed doctors' notes, which may have included medical diagnoses, clinical laboratory results, diagnostic imaging reports, emergency department records, and medication administration.  Upon discovery of the breach, the CE engaged a computer forensic expert to investigate the incident and terminated the BA agreement.  As a result of OCR's investigation, the CE ensured that its BA secured the server, verified that the server was no longer accessible from the Internet, and required the BA to return or destroy all of the CE's ePHI.",2012-11-02,2013-03-14,2012
+720,719,Network Health Insurance Corporation,43.78444,-88.787868,WI,TMG Health ,3794,2/27/2012,Unauth Acc/Dis,Paper,2014-03-24,,2012-02-27,NA,2012
+726,725,Hope Hospice,31.968599,-99.901813,TX,,818,12/27/2012 - 02/22/2013,Other,E-mail,2014-01-23,,2012-12-27,2013-02-22,2012
+736,735,El Centro Regional Medical Center,36.778261,-119.417932,CA,Digital Archive Management,189489,11/7/2012,Improp. Disp,Paper,2014-01-23,,2012-11-07,NA,2012
+745,744,Lutheran Social Services of South Central Pennsylvania,41.203322,-77.194525,PA,,7803,06/01/2012 - 03/07/2013,Hack/It Inc.,Network Server,2014-01-23,,2012-06-01,2013-03-07,2012
+752,751,University of Florida,27.664827,-81.515754,FL,,5875,02/01/2012- 04/11/2013,"Theft, Unauth Acc/Dis",Electronic Medical Record,2014-01-23,,2012-02-01,2013-04-11,2012
+754,753,UMASSAmherst,42.407211,-71.382437,MA,,1670,10/22/2012,Hack/It Inc.,Desktop Computer,2014-01-23,,2012-10-22,NA,2012
+777,776,Long Beach Memorial Medical Center,36.778261,-119.417932,CA,,2864,09/01/2012-07/01/2013,Unauth Acc/Dis,Electronic Medical Record,2014-01-23,,2012-09-01,2013-07-01,2012
+779,778,Sheet Metal Local 36 Welfare Fund,37.964253,-91.831833,MO,People Resource Corporation,4560,08/01/2012-07/08/2013,Unauth Acc/Dis,Other,2014-01-23,,2012-08-01,2013-07-08,2012
+845,844,Broward Health Medical Center,27.664827,-81.515754,FL,,960,10/01/2012 - 12/31/2012,Unauth Acc/Dis,Desktop Computer,2014-01-23,,2012-10-01,2012-12-31,2012
+846,845,Sentara Healthcare,37.431573,-78.656894,VA,,3645,10/01/2012 - 07/11/2013,Theft,"Electronic Medical Record, Paper",2014-01-23,,2012-10-01,2013-07-11,2012
+870,869,Associated Urologists of North Carolina,35.759573,-79.0193,NC,,7300,09/17/2012 - 09/17/2013,Other,Other,2014-01-23,,2012-09-17,2013-09-17,2012
+883,882,UPMC,41.203322,-77.194525,PA,,1279,11/05/2012 - 11/06/2013,Unauth Acc/Dis,Electronic Medical Record,2014-02-18,,2012-11-05,2013-11-06,2012
+948,947,Missouri Consolidated Health Care Plan,37.964253,-91.831833,MO,"StayWell Health Management, LLC",10024,3/23/2012,Unauth Acc/Dis,Network Server,2014-03-12,,2012-03-23,NA,2012
+949,948,The Clorox Company Group Insurance Plan,36.778261,-119.417932,CA,"StayWell Health Management, LLC",520,4/16/2012,Unauth Acc/Dis,Network Server,2014-03-12,,2012-04-16,NA,2012
+950,949,Regents of the University of Minnesota,46.729553,-94.6859,MN,"StayWell Health Management, LLC",4786,3/29/2012,Unauth Acc/Dis,Network Server,2014-03-24,,2012-03-29,NA,2012
+952,951,"Nissan North America, Inc.",35.517491,-86.580447,TN,"StayWell Health Management, LLC",1511,5/8/2012,Unauth Acc/Dis,Network Server,2014-03-12,,2012-05-08,NA,2012
+969,968,Detroit Medical Center - Harper University Hospital,44.314844,-85.602364,MI,,1087,9/7/2012,"Theft, Unauth Acc/Dis",Paper,2014-05-06,,2012-09-07,NA,2012
+974,973,"QBE Holdings, Inc.",43.299428,-74.217933,NY,"StayWell Health Management, LLC",1746,5/9/2012,Unauth Acc/Dis,Network Server,2014-04-21,,2012-05-09,NA,2012
+975,974,Berea College,37.839333,-84.270018,KY,,1000,1/24/2012,Other,Electronic Medical Record,2014-04-21,,2012-01-24,NA,2012
+1002,1001,"Amerigroup Texas, Inc. ",37.431573,-78.656894,VA,"Amerigroup Texas, Inc. ",75026,4/1/2012,Theft,Paper,2014-05-13,,2012-04-01,NA,2012
+1028,1027,Reading Health System,41.203322,-77.194525,PA,,1845,3/2/2012,Loss,Paper,2014-05-27,,2012-03-02,NA,2012
+1031,1030,The City of Henderson,37.839333,-84.270018,KY,KEYSTONE INSURERS GROUP,1008,6/27/2012,Other,E-mail,2014-05-27,,2012-06-27,NA,2012
+666,665,Kmart Corporation,40.633125,-89.398528,IL,Kmart Pharmacy #7623,16988,1/2/2013,Improp. Disp,Paper,2014-02-12,,2013-01-02,NA,2013
+669,668,Yadkinville Chiropractic DCPA,35.759573,-79.0193,NC,Yadkinville Chiropractic DCPA,1000,2/1/2013,Theft,Desktop Computer,2014-02-12,,2013-02-01,NA,2013
+670,669,"Intervention Services, Inc.",27.664827,-81.515754,FL,,1200,1/19/2013,Theft,Laptop,2014-01-23,,2013-01-19,NA,2013
+672,671,"Center for Pain Management, LLC",39.045755,-76.641271,MD,,5822,1/22/2013,Theft,Laptop,2014-01-23,,2013-01-22,NA,2013
+673,672,Multiple Health Plans,36.778261,-119.417932,CA,"Coast Healthcare Management, LLC",1368,12/7/2013,Theft,Paper,2014-01-23,,2013-12-07,NA,2013
+679,678,Heyman HospiceCare at Floyd,32.157435,-82.907123,GA,,1819,1/4/2013,Theft,Laptop,2014-01-23,,2013-01-04,NA,2013
+687,686,"County of San Bernardino, Department of Behavioral Health",36.778261,-119.417932,CA,,686,1/12/2013,Theft,Paper,2014-01-23,,2013-01-12,NA,2013
+688,687,"WOMENS HEALTH ENTERPRISE, INC.",32.157435,-82.907123,GA,,3000,1/2/2013,Theft,Laptop,2014-01-23,,2013-01-02,NA,2013
 693,692,Lancaster General Medical Group,41.203322,-77.194525,PA,,527,2/5/2013,Theft,Paper,2014-01-23,,2013-02-05,NA,2013
 694,693,Maine Medical Center,45.253783,-69.445469,ME,,1920,2/27/2013,Other,E-mail,2014-02-12,,2013-02-27,NA,2013
-695,694,"State of California, Dept. of Developmental Services",36.778261,-119.417932,CA,North Los Angeles County Regional Center ,18162,11/10/2012,Theft,Laptop,2014-01-23,,2012-11-10,NA,2012
 696,695,Utah Department of Health ,39.32098,-111.093731,UT,Goold Health System (Goold),6332,01/10/2013-01/11/2013,Loss,Other Portable Electronic Device,2014-01-23,,2013-01-10,2013-01-11,2013
 697,696,Sports Rehabilitation Consultants,40.417287,-82.907123,OH,,1200,2/1/2013,Theft,Desktop Computer,2014-02-12,,2013-02-01,NA,2013
-698,697,University of Connecticut Health Center,41.603221,-73.087749,CT,,1382,06/07/2010 - 12/07/2012,Unauth Acc/Dis,Network Server,2014-01-23,,2010-06-07,2012-12-07,2010
 699,698,"United HomeCare Services, Inc.",27.664827,-81.515754,FL,,12299,1/8/2013,Theft,Laptop,2014-01-23,,2013-01-08,NA,2013
 700,699,United Home Care Services of Southwest Florida< LLC,27.664827,-81.515754,FL,"United HomeCare Services, Inc.",1318,1/8/2013,Theft,Laptop,2014-01-23,,2013-01-08,NA,2013
 701,700,"catoctin Dental/Richard B. Love, DDS, PA",39.045755,-76.641271,MD,Patterson Dental Supply/Patterson Companies,6400,1/3/2013,Hack/It Inc.,Network Server,2014-01-23,,2013-01-03,NA,2013
-702,701,Empire Blue Cross Blue Shield,40.551217,-85.602364,IN,Connextions c/o Empire BCBS,2608,11/01/2011-10/01/2012,"Theft, Unauth Acc/Dis",Network Server,2014-01-23,,2011-11-01,2012-10-01,2011
-703,702,Anthem Blue Cross Blue Shield (OH),40.551217,-85.602364,IN,Connextions c/o Anthem BCBS,1678,11/01/2011-10/01/2012,"Theft, Unauth Acc/Dis",Network Server,2014-01-23,,2011-11-01,2012-10-01,2011
-704,703,Anthem Blue Cross Blue Shield (IN),40.551217,-85.602364,IN,Connextions c/o Anthem BCBS,528,11/01/2011-10/01/2012,"Theft, Unauth Acc/Dis",Network Server,2014-01-23,,2011-11-01,2012-10-01,2011
-705,704,Mount Sinai Medical Center,27.664827,-81.515754,FL,,628,10/01/2012 - 02/18/2013,Theft,"Desktop Computer, Paper",2014-01-23,,2012-10-01,2013-02-18,2012
 706,705,"Thomas L. Davis, Jr. DDS",43.804133,-120.554201,OR,,3269,2/12/2013,Theft,"Desktop Computer, Electronic Medical Record",2014-01-23,,2013-02-12,NA,2013
 707,706,"HealthCare for Women, Inc.",42.407211,-71.382437,MA,,8727,01/18/2013-01/23/2013,Hack/It Inc.,Network Server,2014-01-23,,2013-01-18,2013-01-23,2013
-708,707,University of Mississippi Medical Center,32.354668,-89.398528,MS,,500,11/01/2012-01/19/2013,Loss,Laptop,2014-01-23,,2012-11-01,2013-01-19,2012
 709,708,Granger Medical Clinic,39.32098,-111.093731,UT,,2600,1/17/2013,"Theft, Loss",Paper,2014-02-12,,2013-01-17,NA,2013
 710,709,Texas Tech Unversity Health Sciences Center,31.968599,-99.901813,TX,,697,2/18/2013,Unauth Acc/Dis,Paper,2014-01-23,,2013-02-18,NA,2013
 711,710,Rite Aid #10217,41.580095,-71.477429,RI,,2082,2/1/2013,Unknown,Paper,2014-02-12,,2013-02-01,NA,2013
 712,711,WA Department of Social and Health Services,47.751074,-120.740139,WA,"Sunil Kakar, Psy.D.",629,2/4/2013,Theft,Laptop,2014-01-23,,2013-02-04,NA,2013
 713,712,Carpenters Health & Welfare Trust Fund for California,36.778261,-119.417932,CA,"QuickRunner, Inc. (dba, RoadRunner Mailing Services)",2400,03/11/2013-03/12/2013,Unauth Acc/Dis,Paper,2014-01-23,,2013-03-11,2013-03-12,2013
-714,713,"Shands Jacksonville Medical Center, Inc.",27.664827,-81.515754,FL,,1025,05/02/2012-06/22/2012,"Theft, Unauth Acc/Dis",Electronic Medical Record,2014-01-23,,2012-05-02,2012-06-22,2012
-715,714,University of Florida,27.664827,-81.515754,FL,,14519,03/01/2009 - 10/25/2012,"Theft, Unauth Acc/Dis",Network Server,2014-01-23,,2009-03-01,2012-10-25,2009
 716,715,Kmart Corporation,40.633125,-89.398528,IL,,12542,3/17/2013,Theft,Electronic Medical Record,2014-02-12,,2013-03-17,NA,2013
-717,716,GLENS FALLS HOSPITAL,43.299428,-74.217933,NY,PORTAL HEALTHCARE SOLUTIONS LLC,2360,11/02/2012 - 03/14/2013,Theft,Network Server,2014-06-03,"The covered entity's (CE) business associate (BA) operated a server containing the electronic protected health information (ePHI) of 2,360 individuals that was vulnerable to access by unauthorized persons for over four months.  The ePHI included transcribed doctors' notes, which may have included medical diagnoses, clinical laboratory results, diagnostic imaging reports, emergency department records, and medication administration.  Upon discovery of the breach, the CE engaged a computer forensic expert to investigate the incident and terminated the BA agreement.  As a result of OCR's investigation, the CE ensured that its BA secured the server, verified that the server was no longer accessible from the Internet, and required the BA to return or destroy all of the CE's ePHI.",2012-11-02,2013-03-14,2012
 718,717,Hospice and Palliative Care Center of Alamance Caswell,35.759573,-79.0193,NC,,5370,2/24/2013,"Theft, Unauth Acc/Dis","Laptop, Paper",2014-01-23,,2013-02-24,NA,2013
 719,718,"Texas Health Care, P.L.L.C.",31.968599,-99.901813,TX,,554,3/10/2013,Theft,Paper,2014-01-23,,2013-03-10,NA,2013
-720,719,Network Health Insurance Corporation,43.78444,-88.787868,WI,TMG Health ,3794,2/27/2012,Unauth Acc/Dis,Paper,2014-03-24,,2012-02-27,NA,2012
 721,720,Wm. Jennings Bryan Dorn VAMC,33.836081,-81.163725,SC,,7405,2/11/2013,Loss,Laptop,2014-01-23,,2013-02-11,NA,2013
 722,721,John J. Pershing VA Medical Center,37.964253,-91.831833,MO,,589,2/20/2013,Theft,Paper,2014-06-20,"OCR opened an investigation of the covered entity (CE), John J. Pershing VA Medical Center, after the CE reported that its business associate (BA), Stress Laboratory, placed a box of unsecured protected health information (PHI) in an equipment storage room.  The PHI included the names, social security numbers, diagnoses, and age of approximately 589 individuals.  This breach incident involved a BA, and occurred prior to the September 23, 2013 compliance date.  The BA employee involved in this matter separated from employment in 2012, and the BA was reorganized and has been incorporated into the CE.  The CE provided breach notification to affected individuals, HHS, and the media.  Substitute notification was provided through a posting on the CE's main website with a toll-free information number.  The CE also offered one year of identity protection and credit monitoring services to affected individuals.  As a result of this incident, the CE adopted a new policy that provides guidance to its staff regarding the handling of PHI.  Additionally, the CE trained its employees on this new policy, and re-trained its employees on the Privacy, Security, and Breach Notification Rules.  Finally, OCR obtained assurances that the CE implemented the corrective action listed above.
 
@@ -948,7 +998,6 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 723,722,Oregon Health & Science University,43.804133,-120.554201,OR,,1076,2/22/2013,Theft,Laptop,2014-01-23,,2013-02-22,NA,2013
 724,723,Schneck Medical Center,40.551217,-85.602364,IN,,3131,3/14/2013,Unauth Acc/Dis,Other,2014-02-12,,2013-03-14,NA,2013
 725,724,The Guidance Center of Westchester,43.299428,-74.217933,NY,,1416,2/21/2013,Theft,Desktop Computer,2014-01-23,,2013-02-21,NA,2013
-726,725,Hope Hospice,31.968599,-99.901813,TX,,818,12/27/2012 - 02/22/2013,Other,E-mail,2014-01-23,,2012-12-27,2013-02-22,2012
 727,726,"IHC Health Services, Inc. dba Intermountain Life Flight",39.32098,-111.093731,UT,,857,3/28/2013,Unauth Acc/Dis,Other,2014-02-12,,2013-03-28,NA,2013
 728,727,Valley Mental Health,39.32098,-111.093731,UT,,700,2/27/2013,Theft,Desktop Computer,2014-01-23,,2013-02-27,NA,2013
 729,728,Delta Dental of Pennsylvania,41.203322,-77.194525,PA,ZDI,14829,3/20/2013,Loss,Paper,2014-01-23,,2013-03-20,NA,2013
@@ -958,7 +1007,6 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 733,732,Wood County Hospital,40.417287,-82.907123,OH,,2500,3/19/2013,Theft,Other,2014-01-23,,2013-03-19,NA,2013
 734,733,University of Rochester Medical Center & Affiliates,43.299428,-74.217933,NY,,537,2/15/2013,Loss,Other Portable Electronic Device,2014-01-23,,2013-02-15,NA,2013
 735,734,Orthopedics & Adult Reconstructive Surgery,31.968599,-99.901813,TX,AssuranceMD f/k/a Harbor Group,22000,03/01/2013 - 03/13/2013,Loss,Other Portable Electronic Device,2014-01-23,,2013-03-01,2013-03-13,2013
-736,735,El Centro Regional Medical Center,36.778261,-119.417932,CA,Digital Archive Management,189489,11/7/2012,Improp. Disp,Paper,2014-01-23,,2012-11-07,NA,2012
 737,736,Seattle - King County Department of Public Health,47.751074,-120.740139,WA,,750,3/7/2013,Improp. Disp,Paper,2014-01-23,,2013-03-07,NA,2013
 738,737,Regional Medical Center,35.517491,-86.580447,TN,,1180,2/4/2013,Unauth Acc/Dis,E-mail,2014-01-23,,2013-02-04,NA,2013
 739,738,Presbyterian Anesthesia Associates PA,35.759573,-79.0193,NC,"E-dreamz, Inc.",9988,4/1/2013,Hack/It Inc.,Network Server,2014-01-23,,2013-04-01,NA,2013
@@ -967,16 +1015,13 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 742,741,Indiana University Health Arnett,40.551217,-85.602364,IN,,10350,4/9/2013,Theft,Laptop,2014-01-23,,2013-04-09,NA,2013
 743,742,"Dent Neurologic Group, LLP",43.299428,-74.217933,NY,,10000,5/13/2013,Other,E-mail,2014-01-23,,2013-05-13,NA,2013
 744,743,City of Norwood,40.417287,-82.907123,OH,,9577,04/14/2013 - 04/19/2013,Loss,Laptop,2014-01-23,,2013-04-14,2013-04-19,2013
-745,744,Lutheran Social Services of South Central Pennsylvania,41.203322,-77.194525,PA,,7803,06/01/2012 - 03/07/2013,Hack/It Inc.,Network Server,2014-01-23,,2012-06-01,2013-03-07,2012
 746,745,Comfort Dental Marion and Kokomo,40.551217,-85.602364,IN,Just the Connection Inc,5388,03/14/2013-03/18/2013,Improp. Disp,Other,2014-01-23,,2013-03-14,2013-03-18,2013
 747,746,Erskine Family Dentistry,40.551217,-85.602364,IN,,2723,3/19/2013,Hack/It Inc.,Desktop Computer,2014-02-12,,2013-03-19,NA,2013
 748,747,Health Resources of Arkansas,35.20105,-91.831833,AR,,1900,4/14/2013,"Theft, Unauth Acc/Dis",Other,2014-01-23,,2013-04-14,NA,2013
 749,748,Various Health Plans,32.318231,-86.902298,AL,SynerMed / Inland Valleys IPA,3164,04/14/2013-04/15/2013,Theft,Laptop,2014-01-23,,2013-04-14,2013-04-15,2013
 750,749,Independence Care System,43.299428,-74.217933,NY,,2434,5/7/2013,Theft,Laptop,2014-01-23,,2013-05-07,NA,2013
 751,750,Sonoma Valley Hospital,36.778261,-119.417932,CA,,1386,2/14/2013,Other,Other,2014-01-23,,2013-02-14,NA,2013
-752,751,University of Florida,27.664827,-81.515754,FL,,5875,02/01/2012- 04/11/2013,"Theft, Unauth Acc/Dis",Electronic Medical Record,2014-01-23,,2012-02-01,2013-04-11,2012
 753,752,"Community Support Services, Inc.",40.417287,-82.907123,OH,,1167,03/20/2013-03/26/2013,Theft,E-mail,2014-02-12,,2013-03-20,2013-03-26,2013
-754,753,UMASSAmherst,42.407211,-71.382437,MA,,1670,10/22/2012,Hack/It Inc.,Desktop Computer,2014-01-23,,2012-10-22,NA,2012
 755,754,Palm Beach County Health Department,27.664827,-81.515754,FL,,877,1/7/2013,Unauth Acc/Dis,Desktop Computer,2014-01-23,,2013-01-07,NA,2013
 756,755,Lucile Packard Children's Hospital,36.778261,-119.417932,CA,,12900,5/8/2013,Theft,Laptop,2014-01-23,,2013-05-08,NA,2013
 757,756,Fayetteville VAMC,35.759573,-79.0193,NC,,1093,4/17/2013,Improp. Disp,Paper,2014-01-23,,2013-04-17,NA,2013
@@ -994,33 +1039,23 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 769,768,"South Florida Neurology Associates, P.A.",27.664827,-81.515754,FL,,900,05/25/2013-05/30/2013,Theft,Laptop,2014-01-23,,2013-05-25,2013-05-30,2013
 770,769,Samaritan Regional Health System,40.417287,-82.907123,OH,,2203,5/29/2013,Other,Paper,2014-01-23,,2013-05-29,NA,2013
 771,770,MED-EL Coproration,35.759573,-79.0193,NC,,609,6/25/2013,Other,E-mail,2014-01-23,,2013-06-25,NA,2013
-772,771,Sutter Health East Bay Region (Alta Bates Summit Medical Center; Sutter Delta Medical Center; Eden Medical Center),36.778261,-119.417932,CA,Nelson Family of Companies,4479,3/1/2011,Unauth Acc/Dis,E-mail,2014-01-23,,2011-03-01,NA,2011
 773,772,Illinois Department of Healthcare and Familiy Services,40.633125,-89.398528,IL,Family Health Network,3133,5/8/2013,Other,Paper,2014-01-23,,2013-05-08,NA,2013
 774,773,Delta Dental of Pennsylvania,41.203322,-77.194525,PA,ZDI,4718,5/13/2013,Loss,Paper,2014-01-23,,2013-05-13,NA,2013
 775,774,"Medtronic, Inc.",46.729553,-94.6859,MN,,2764,03/28/2013-03/29/2013,Loss,Paper,2014-01-23,,2013-03-28,2013-03-29,2013
 776,775,Texas Health Harris Methodist Hospital Fort Worth,31.968599,-99.901813,TX,Shred-it International Inc.,277014,5/11/2013,Improp. Disp,Other,2014-01-23,,2013-05-11,NA,2013
-777,776,Long Beach Memorial Medical Center,36.778261,-119.417932,CA,,2864,09/01/2012-07/01/2013,Unauth Acc/Dis,Electronic Medical Record,2014-01-23,,2012-09-01,2013-07-01,2012
 778,777,Hansen & Associates,43.075968,-107.290284,WY,,2700,05/21/2013-05/29/2013,Theft,Desktop Computer,2014-06-10,,2013-05-21,2013-05-29,2013
-779,778,Sheet Metal Local 36 Welfare Fund,37.964253,-91.831833,MO,People Resource Corporation,4560,08/01/2012-07/08/2013,Unauth Acc/Dis,Other,2014-01-23,,2012-08-01,2013-07-08,2012
-780,779,Harris County,31.968599,-99.901813,TX,,21000,08/15/2005 - 06/14/2007,Unauth Acc/Dis,Desktop Computer,2014-01-23,,2005-08-15,2007-06-14,2005
-781,780,"San Jose Medical Supply Co., Inc.",36.778261,-119.417932,CA,Jesle Kuizon,800,10/01/2011-11/31/2011,Theft,"Desktop Computer, Network Server",2014-01-23,,2011-10-01,NA,2011
 782,781,"GEO Care, LLC",27.664827,-81.515754,FL,,710,4/16/2013,Unauth Acc/Dis,Desktop Computer,2014-01-23,,2013-04-16,NA,2013
 783,782,The Brookdale Hospital and Medical Center,43.299428,-74.217933,NY,,2700,5/24/2013,Loss,Other Portable Electronic Device,2014-01-23,,2013-05-24,NA,2013
-784,783,Louisiana State University Health Care Services Division,31.244823,-92.145024,LA,,6994,12/1/2011,Unauth Acc/Dis,Desktop Computer,2014-01-23,,2011-12-01,NA,2011
-785,784,Oregon Health & Science University,43.804133,-120.554201,OR,,1361,01/01/2011-07/03/2013,Unauth Acc/Dis,Other,2014-01-31,,2011-01-01,2013-07-03,2011
 786,785,"Rocky Mountain Spine Clinic, P.C.",39.550051,-105.782067,CO,,532,6/11/2013,"Theft, Unauth Acc/Dis",Network Server,2014-01-23,,2013-06-11,NA,2013
 787,786,"Vitreo-Retinal Medical Group, Inc. ",36.778261,-119.417932,CA,,1837,6/5/2013,Theft,Laptop,2014-01-23,,2013-06-05,NA,2013
 788,787,Arkansas Department of Human Services,35.20105,-91.831833,AR,Health Resources of Arkansas,1911,4/14/2013,Theft,Laptop,2014-02-12,,2013-04-14,NA,2013
 789,788,Baylor All Saints Medical Center at Fort Worth,31.968599,-99.901813,TX,,940,05/07/2013-06/06/2013,Unauth Acc/Dis,Other Portable Electronic Device,2014-02-12,,2013-05-07,2013-06-06,2013
 790,789,"Cogent Healthcare, Inc.",35.517491,-86.580447,TN,M2ComSys Inc.,32151,05/05/2013-06/24/2013,Unauth Acc/Dis,Network Server,2014-01-23,,2013-05-05,2013-06-24,2013
 791,790,Young Family Medicine Inc.,40.417287,-82.907123,OH,,2045,6/12/2013,Theft,Laptop,2014-01-23,,2013-06-12,NA,2013
-792,791,Hancock OB/GYN,40.551217,-85.602364,IN,,1396,11/09/2011 - 06/17/2013,Unauth Acc/Dis,Electronic Medical Record,2014-01-23,,2011-11-09,2013-06-17,2011
 793,792,Colfax,40.551217,-85.602364,IN,Anthem BCBS of GA,5497,4/11/2013,Other,Other,2014-02-12,,2013-04-11,NA,2013
-794,793,Missouri Department of Social Services,37.964253,-91.831833,MO,"InfoCrossing, Inc.",1357,10/16/2011 - 06/07/2013,Unauth Acc/Dis,Paper,2014-01-23,,2011-10-16,2013-06-07,2011
 795,794,Foundations Recovery Network,35.517491,-86.580447,TN,,5690,6/15/2013,Theft,Laptop,2014-01-23,,2013-06-15,NA,2013
 796,795,California Correctional Health Care Services,36.778261,-119.417932,CA,,1033,6/19/2013,Other,Paper,2014-01-23,,2013-06-19,NA,2013
 797,796,North Texas Comprehensive Spine & Pain Center,31.968599,-99.901813,TX,,3200,6/16/2013,"Theft, Loss",Other Portable Electronic Device,2014-02-12,,2013-06-16,NA,2013
-798,797,Minne-Tohe Health Center/Elbowoods Memorial Health Center,47.551493,-101.002012,ND,,10000,10/1/2011,"Improp. Disp, Unauth Acc/Dis",Desktop Computer,2014-01-23,,2011-10-01,NA,2011
 799,798,Jackson Health System,27.664827,-81.515754,FL,,1471,01/08/2013 - 01/10/2013,Other,Paper,2014-01-23,,2013-01-08,2013-01-10,2013
 800,799,"Advocate Health and Hospitals Corporation, d/b/a Advocate Medical Group",40.633125,-89.398528,IL,,4029530,7/15/2013,Theft,Desktop Computer,2014-01-23,,2013-07-15,NA,2013
 801,800,"Summit Community Care Clinic, Inc.",39.550051,-105.782067,CO,,921,7/22/2013,Hack/It Inc.,Desktop Computer,2014-01-23,,2013-07-22,NA,2013
@@ -1038,10 +1073,8 @@ The covered entity (CE), Medco Health Solutions, mailed letters with incorrect a
 813,812,"NHC HealthCare, Mauldin",33.836081,-81.163725,SC,,4204,5/15/2013,Improp. Disp,Other,2014-03-13,,2013-05-15,NA,2013
 814,813,Advocate Health and Hospitals Corporation d/b/a Advocate Medical Group ,40.633125,-89.398528,IL,Blackhawk Consulting Group,2029,06/30/2013 - 08/15/2013,Hack/It Inc.,Network Server,2014-02-12,,2013-06-30,2013-08-15,2013
 815,814,Dreyer Medical Clinic,40.633125,-89.398528,IL,Blackhawk Consulting Group,998,06/30/2013 - 08/15/2013,Hack/It Inc.,Network Server,2014-01-23,,2013-06-30,2013-08-15,2013
-816,815,"South Shore Physicians, PC",43.299428,-74.217933,NY,,8000,01/01/2006 - 01/12/2012,Theft,Network Server,2014-01-23,,2006-01-01,2012-01-12,2006
 817,816,Dermatology Associates of Tallahassee,27.664827,-81.515754,FL,,916,9/4/2013,Unknown,Other,2014-01-23,,2013-09-04,NA,2013
 818,817,Sierra View District Hospital,36.778261,-119.417932,CA,,1009,07/01/2013 - 08/02/2013,Unauth Acc/Dis,Electronic Medical Record,2014-01-23,,2013-07-01,2013-08-02,2013
-819,818,Missouri Department of Social Services,37.964253,-91.831833,MO,"InfoCrossing, Inc.",25461,12/21/2009 - 06/07/2013,Unauth Acc/Dis,Paper,2014-02-12,,2009-12-21,2013-06-07,2009
 820,819,"Holy Cross Hospital, Inc.",27.664827,-81.515754,FL,,9900,8/14/2013,"Theft, Unauth Acc/Dis","Desktop Computer, Network Server",2014-01-23,,2013-08-14,NA,2013
 821,820,Region Ten Community Services Board,37.431573,-78.656894,VA,,10228,7/29/2013,Hack/It Inc.,E-mail,2014-01-23,,2013-07-29,NA,2013
 822,821,Comprehensive Podiatry LLC,40.417287,-82.907123,OH,,1360,8/3/2013,Theft,Laptop,2014-01-23,,2013-08-03,NA,2013
@@ -1067,26 +1100,20 @@ OCR opened an investigation of the covered entity (CE), Paul G. Klein DPM, after
 836,835,Memorial Hospital of Lafayette County,43.78444,-88.787868,WI,Healthcare Management System ,4330,8/3/2013,Unauth Acc/Dis,Paper,2014-01-23,,2013-08-03,NA,2013
 837,836,Saint Louis University,37.964253,-91.831833,MO,,3100,7/25/2013,Unauth Acc/Dis,E-mail,2014-01-23,,2013-07-25,NA,2013
 838,837,MUSC Physicians & MUHA,33.836081,-81.163725,SC,BlackHawk,7120,6/30/2013,Hack/It Inc.,Network Server,2014-02-12,,2013-06-30,NA,2013
-839,838,Ferris State University - MI College of Optometry,44.314844,-85.602364,MI,,3947,12/1/2011,Hack/It Inc.,Network Server,2014-01-23,,2011-12-01,NA,2011
 840,839,"Access Counseling, LLC",40.551217,-85.602364,IN,,566,8/23/2013,Theft,Laptop,2014-01-23,,2013-08-23,NA,2013
 841,840,Rose Medical Center,39.550051,-105.782067,CO,,606,06/28/2013 - 07/16/2013,Improp. Disp,Paper,2014-01-23,,2013-06-28,2013-07-16,2013
 842,841,BriovaRx,40.633125,-89.398528,IL,,1067,07/03/2013 - 07/11/2013,Unauth Acc/Dis,E-mail,2014-01-23,,2013-07-03,2013-07-11,2013
 843,842,"North Country Hospital and Health Center, Inc",44.558803,-72.577841,VT,,550,9/18/2013,Theft,Laptop,2014-01-23,,2013-09-18,NA,2013
 844,843,"Hope Community Resources, Inc.",63.588753,-154.493062,AK,,1556,8/19/2013,Unauth Acc/Dis,E-mail,2014-01-23,,2013-08-19,NA,2013
-845,844,Broward Health Medical Center,27.664827,-81.515754,FL,,960,10/01/2012 - 12/31/2012,Unauth Acc/Dis,Desktop Computer,2014-01-23,,2012-10-01,2012-12-31,2012
-846,845,Sentara Healthcare,37.431573,-78.656894,VA,,3645,10/01/2012 - 07/11/2013,Theft,"Electronic Medical Record, Paper",2014-01-23,,2012-10-01,2013-07-11,2012
 847,846,Mount Sinai Medical Center,43.299428,-74.217933,NY,,610,8/1/2013,Loss,Other Portable Electronic Device,2014-02-12,,2013-08-01,NA,2013
 848,847,Texas Health Presbyterian Dallas Hospital,31.968599,-99.901813,TX,,949,8/22/2013,Theft,Desktop Computer,2014-02-12,,2013-08-22,NA,2013
 849,848,Seton Healthcare Family,31.968599,-99.901813,TX,,5500,10/4/2013,Theft,Laptop,2014-01-23,,2013-10-04,NA,2013
-850,849,BRONX-LEBANON HOSPITAL CENTER,43.299428,-74.217933,NY,PROFESSIONAL TRANSCRIPTION SERVICES,10930,9/23/2009,Unauth Acc/Dis,Network Server,2014-01-23,,2009-09-23,NA,2009
-851,850,"Martin Luther King Jr. Health Center, Inc.",43.299428,-74.217933,NY,PROFESSIONAL TRANSCRIPTION SERVICES,37000,9/23/2009,Unauth Acc/Dis,Network Server,2014-01-23,,2009-09-23,NA,2009
 852,851,SSM St. Mary's Health Center,37.964253,-91.831833,MO,Saint Louis University,1300,7/25/2013,Unauth Acc/Dis,E-mail,2014-01-23,,2013-07-25,NA,2013
 853,852,Good Samaritan Hospital,36.778261,-119.417932,CA,,3833,7/8/2013,Theft,Laptop,2014-01-23,,2013-07-08,NA,2013
 854,853,SSM Health Care of Wisconsin DBA: St. Mary's Janesville Hospital,43.78444,-88.787868,WI,,631,8/27/2013,Theft,Laptop,2014-01-23,,2013-08-27,NA,2013
 855,854,AHMC Healthcare Inc. and affiliated Hospitals,36.778261,-119.417932,CA,,729000,10/12/2013,Theft,Laptop,2014-01-23,,2013-10-12,NA,2013
 856,855,"Greater Dallas Orthopaedics, PLLC",31.968599,-99.901813,TX,,5840,8/30/2013,Theft,Desktop Computer,2014-01-23,,2013-08-30,NA,2013
 857,856,"Spirit Home Health Care, Corp",27.664827,-81.515754,FL,"Spirit Home Health Care, Corp",603,9/19/2013,Improp. Disp,Paper,2014-01-23,,2013-09-19,NA,2013
-858,857,Rotech Healthcare Inc.,27.664827,-81.515754,FL,,10680,11/26/2010 - 10/01/2013,Unauth Acc/Dis,Laptop,2014-02-18,,2010-11-26,2013-10-01,2010
 859,858,"Reimbursement Technologies, Inc.",41.203322,-77.194525,PA,,2300,05/01/2013 - 07/26/2013,Unauth Acc/Dis,Network Server,2014-01-23,,2013-05-01,2013-07-26,2013
 860,859,Comprehensive Psychological Services LLC,33.836081,-81.163725,SC,,3500,10/28/2013,Theft,Laptop,2014-01-23,,2013-10-28,NA,2013
 861,860,"Superior HealthPlan, Inc.",31.968599,-99.901813,TX,,6284,10/4/2013,Other,Paper,2014-01-23,,2013-10-04,NA,2013
@@ -1098,7 +1125,6 @@ OCR opened an investigation of the covered entity (CE), Paul G. Klein DPM, after
 867,866,North Carolina Department of Health and Human Services - Division of State Operated Health Care Facilities  ,35.759573,-79.0193,NC,,1315,8/13/2013,Unauth Acc/Dis,Other,2014-01-23,,2013-08-13,NA,2013
 868,867,Puerto Rico Health Insurance Administration (PRHIA),18.220833,-66.590149,PR,Triple S Salud Inc.,13336,9/20/2013,Unauth Acc/Dis,Paper,2014-01-23,,2013-09-20,NA,2013
 869,868,Triple-S Salud ,18.220833,-66.590149,PR,,70189,9/20/2013,Unauth Acc/Dis,Paper,2014-01-23,,2013-09-20,NA,2013
-870,869,Associated Urologists of North Carolina,35.759573,-79.0193,NC,,7300,09/17/2012 - 09/17/2013,Other,Other,2014-01-23,,2012-09-17,2013-09-17,2012
 871,870,Kemmet Dental Design ,47.551493,-101.002012,ND,,2000,11/10/2013,Theft,Paper,2014-01-23,,2013-11-10,NA,2013
 872,871,Hospice of the Chesapeake,39.045755,-76.641271,MD,,7606,8/9/2013,Unauth Acc/Dis,E-mail,2014-01-23,,2013-08-09,NA,2013
 873,872,"Scottsdale Dermatology, LTD",34.048928,-111.093731,AZ,All Source Medical Management,1456,01/01/2013 -10/04/2013,Theft,Other,2014-01-23,,2013-01-01,2013-10-04,2013
@@ -1111,7 +1137,6 @@ OCR opened an investigation of the covered entity (CE), Paul G. Klein DPM, after
 880,879,Kaiser Foundation Hospital- Orange County,36.778261,-119.417932,CA,,49000,9/25/2013,Loss,Other Portable Electronic Device,2014-01-23,,2013-09-25,NA,2013
 881,880,Jones Chiropractic and Maximum Health,40.551217,-85.602364,IN,,1500,10/13/2013,Theft,Desktop Computer,2014-01-23,,2013-10-13,NA,2013
 882,881,Ronald Schubert MD PLLC,47.751074,-120.740139,WA,,950,11/22/2013,Theft,Laptop,2014-01-23,,2013-11-22,NA,2013
-883,882,UPMC,41.203322,-77.194525,PA,,1279,11/05/2012 - 11/06/2013,Unauth Acc/Dis,Electronic Medical Record,2014-02-18,,2012-11-05,2013-11-06,2012
 884,883,UW Medicine,47.751074,-120.740139,WA,,76183,10/2/2013,Hack/It Inc.,Desktop Computer,2014-02-18,,2013-10-02,NA,2013
 885,884,City of Chicago,40.633125,-89.398528,IL,,2080,06/18/2013 - 10/07/2013,Unauth Acc/Dis,Network Server,2014-01-23,,2013-06-18,2013-10-07,2013
 886,885,CIty of Joliet,40.633125,-89.398528,IL,"Quality Health Claims Consultants, LLC",1573,10/8/2013,Unauth Acc/Dis,E-mail,2014-01-23,,2013-10-08,NA,2013
@@ -1119,7 +1144,6 @@ OCR opened an investigation of the covered entity (CE), Paul G. Klein DPM, after
 888,887,The Good Samaritan Health Center,32.157435,-82.907123,GA,,5000,11/6/2013,Other,Desktop Computer,2014-01-23,,2013-11-06,NA,2013
 889,888,UniHealth Source,32.157435,-82.907123,GA,,4500,10/8/2013,Theft,Laptop,2014-01-23,,2013-10-08,NA,2013
 890,889,Walgreen Co.,40.633125,-89.398528,IL,,17350,09/18/2013 - 10/04/2013,Other,Paper,2014-01-23,,2013-09-18,2013-10-04,2013
-891,890,Methodist Dallas Medical Center,31.968599,-99.901813,TX,,44000,09/01/2005 - 08/01/2013,Unauth Acc/Dis,Other,2014-01-23,,2005-09-01,2013-08-01,2005
 892,891,Florida Digestive Health Specialists,27.664827,-81.515754,FL,,4400,03/06/2013 -09/09/2013,Unauth Acc/Dis,Desktop Computer,2014-01-23,,2013-03-06,2013-09-09,2013
 893,892,"Northside Hospital, Inc.",32.157435,-82.907123,GA,,4879,10/10/2013,Loss,Laptop,2014-01-23,,2013-10-10,NA,2013
 894,893,"Health Help, Inc.",37.839333,-84.270018,KY,,535,10/15/2013,Theft,Other Portable Electronic Device,2014-01-23,,2013-10-15,NA,2013
@@ -1141,7 +1165,6 @@ OCR opened an investigation of the covered entity (CE), Paul G. Klein DPM, after
 910,909,Department of Health Care Policy & Financing,39.550051,-105.782067,CO,Colorado Community Health Alliance (CCHA)/Physicians Health Partners,1918,11/21/2013,Unauth Acc/Dis,E-mail,2014-02-21,,2013-11-21,NA,2013
 911,910,"Horizon Healthcare Services, Inc., doing business as Horizon Blue Cross Blue Shield of New Jersey, and its affiliates",40.058324,-74.405661,NJ,,839711,11/1/2013,Theft,Laptop,2014-02-21,,2013-11-01,NA,2013
 912,911,Phoebe Putney Memorial Hospital,32.157435,-82.907123,GA,,6989,11/5/2013,Loss,Desktop Computer,2014-02-11,,2013-11-05,NA,2013
-913,912,Coulee Medical Center,47.751074,-120.740139,WA,,2500,01/01/2010-11/30/2013,Unauth Acc/Dis,"Laptop, Network Server, E-mail",2014-02-11,,2010-01-01,2013-11-30,2010
 914,913,University of Pennsylvania Health System,41.203322,-77.194525,PA,"RevSpring, Inc.",3000,11/26/2013,Other,Paper,2014-02-11,,2013-11-26,NA,2013
 915,914,North Carolina Department of Health and Human Services ,35.759573,-79.0193,NC,,48752,12/30/2013,Unauth Acc/Dis,Other,2014-02-11,,2013-12-30,NA,2013
 916,915,101 FAMILY MEDICAL GROUP,36.778261,-119.417932,CA,"Phreesia, Inc",2500,11/23/2013,Theft,Laptop,2014-02-11,,2013-11-23,NA,2013
@@ -1149,9 +1172,6 @@ OCR opened an investigation of the covered entity (CE), Paul G. Klein DPM, after
 918,917,VA Dept. of Medical Assistance Services,37.431573,-78.656894,VA,Virginia Premier Health Plan (VPHP),25513,11/15/2013,Unauth Acc/Dis,Paper,2014-02-11,,2013-11-15,NA,2013
 919,918,Cook County Health & Hospitals System,40.633125,-89.398528,IL,,22511,11/12/2013,Other,E-mail,2014-02-11,,2013-11-12,NA,2013
 920,919,Southwest General Health Center,40.417287,-82.907123,OH,,953,04/13/2013 - 10/31/2013,Unknown,Other,2014-05-30,,2013-04-13,2013-10-31,2013
-921,920,"Robert B. Neves, M.D., Inc",36.778261,-119.417932,CA,,611,5/8/2011,Theft,Laptop,2014-01-24,,2011-05-08,NA,2011
-922,921,"Triple-S Salud, Inc.",18.220833,-66.590149,PR,"Triple-C, Inc.",398000,9/9/2010,Theft,Network Server,2014-02-18,,2010-09-09,NA,2010
-923,922,"Triple-S Salud, Inc.",18.220833,-66.590149,PR,"Triple-C, Inc.",8000,10/3/2008,"Theft, Unauth Acc/Dis",Network Server,2014-01-24,,2008-10-03,NA,2008
 924,923,Urology Centers of Alabama PC and Urology Health Foundation,32.318231,-86.902298,AL,"Birmingham Printing and Publishing, Inc dba Paper Airplane",1085,8/22/2013,Other,Other,2014-06-03,,2013-08-22,NA,2013
 925,924,Medical Mutual of Ohio,40.417287,-82.907123,OH,,1420,10/16/2013,Unauth Acc/Dis,Paper,2014-06-13,,2013-10-16,NA,2013
 926,925,Unity Health Plans Insurance Corporation,43.78444,-88.787868,WI,University of Wisconsin-Madison School of Pharmacy,41437,12/12/2013,Loss,Other Portable Electronic Device,2014-02-21,,2013-12-12,NA,2013
@@ -1168,75 +1188,69 @@ OCR opened an investigation of the covered entity (CE), Paul G. Klein DPM, after
 937,936,COMPLETE MEDICAL HOMECARE,39.011902,-98.484246,KS,,1700,12/12/2013,Unauth Acc/Dis,Other Portable Electronic Device,2014-02-11,,2013-12-12,NA,2013
 938,937,Hospital for Special Surgery,43.299428,-74.217933,NY,,937,3/19/2013,Theft,"Desktop Computer, Paper",2014-02-26,,2013-03-19,NA,2013
 939,938,The Brooklyn Hospital Center,43.299428,-74.217933,NY,,2172,12/2/2013,Loss,Other Portable Electronic Device,2014-02-24,,2013-12-02,NA,2013
-940,939,Kmart Corporation,40.633125,-89.398528,IL,,16446,1/4/2014,Theft,"Other, Electronic Medical Record",2014-03-24,,2014-01-04,NA,2014
 941,940,WA State Department of Social & Health Services,47.751074,-120.740139,WA,,3104,8/19/2013,Unauth Acc/Dis,Paper,2014-04-21,,2013-08-19,NA,2013
-942,941,"Lewis J. Sims, DPM, PC dba Sims and Associates Podiatry ",43.299428,-74.217933,NY,,6475,1/10/2014,Theft,Laptop,2014-04-21,,2014-01-10,NA,2014
 943,942,University of Miami,27.664827,-81.515754,FL,,13074,6/27/2013,Loss,Paper,2014-04-21,,2013-06-27,NA,2013
 944,943,"Supportive Concepts for Families, Inc.",41.203322,-77.194525,PA,,593,2/6/2013,Unauth Acc/Dis,Network Server,2014-02-24,,2013-02-06,NA,2013
 945,944,Health Care Solutions at Home Inc.,40.417287,-82.907123,OH,,1139,12/17/2013,Other,Other,2014-03-12,,2013-12-17,NA,2013
 946,945,University of California Davis Medical Center,36.778261,-119.417932,CA,,2269,12/13/2013,Hack/It Inc.,E-mail,2014-04-21,,2013-12-13,NA,2013
 947,946,"St. Vincent Hospital and Healthcare, Inc",40.551217,-85.602364,IN,,1142,12/23/2013,Theft,Laptop,2014-03-12,,2013-12-23,NA,2013
-948,947,Missouri Consolidated Health Care Plan,37.964253,-91.831833,MO,"StayWell Health Management, LLC",10024,3/23/2012,Unauth Acc/Dis,Network Server,2014-03-12,,2012-03-23,NA,2012
-949,948,The Clorox Company Group Insurance Plan,36.778261,-119.417932,CA,"StayWell Health Management, LLC",520,4/16/2012,Unauth Acc/Dis,Network Server,2014-03-12,,2012-04-16,NA,2012
-950,949,Regents of the University of Minnesota,46.729553,-94.6859,MN,"StayWell Health Management, LLC",4786,3/29/2012,Unauth Acc/Dis,Network Server,2014-03-24,,2012-03-29,NA,2012
 951,950,Inspira Health Network Inc.,40.058324,-74.405661,NJ,,1411,12/23/2013,Theft,Desktop Computer,2014-03-12,,2013-12-23,NA,2013
-952,951,"Nissan North America, Inc.",35.517491,-86.580447,TN,"StayWell Health Management, LLC",1511,5/8/2012,Unauth Acc/Dis,Network Server,2014-03-12,,2012-05-08,NA,2012
 953,952,"Care Advantage, Inc.",37.431573,-78.656894,VA,,3458,1/1/2013,Theft,Laptop,2014-03-24,,2013-01-01,NA,2013
 954,953,HealthSource of Ohio Inc.,40.417287,-82.907123,OH,Pair Networks Inc.,8845,11/18/2013,Unauth Acc/Dis,Other,2014-03-12,,2013-11-18,NA,2013
 955,954,"The Kroger Co., for itself and its affiliates and subsidiaries",40.417287,-82.907123,OH,,504,10/30/2013,Other,Electronic Medical Record,2014-04-21,,2013-10-30,NA,2013
 956,955,"Cornerstone Health Care, PA",35.759573,-79.0193,NC,,548,12/31/2013,"Theft, Loss",Laptop,2014-03-12,,2013-12-31,NA,2013
-957,956,Joseph Michael Benson M.D,31.968599,-99.901813,TX,,7500,1/5/2014,Theft,Desktop Computer,2014-03-24,,2014-01-05,NA,2014
 958,957,All for Kids Pediatric Clinic,35.20105,-91.831833,AR,Data Media,600,12/27/2013,Other,Other,2014-03-24,,2013-12-27,NA,2013
 959,958,Eureka Internal Medicine,36.778261,-119.417932,CA,,3534,9/25/2013,Improp. Disp,Paper,2014-03-24,,2013-09-25,NA,2013
 960,959,Brazos Valley Pathology,31.968599,-99.901813,TX,St. Joseph Health System,3300,12/16/2013,Hack/It Inc.,Network Server,2014-06-24,,2013-12-16,NA,2013
-961,960,Banner Health,34.048928,-111.093731,AZ,,55207,2/21/2014,Other,Other,2014-03-24,,2014-02-21,NA,2014
 962,961,Monarch Women's Health,32.318231,-86.902298,AL,"PracMan, Inc.",1145,8/22/2013,Hack/It Inc.,Network Server,2014-06-02,,2013-08-22,NA,2013
 963,962,"Punuru J.M. Reddy, MD, Inc.",32.318231,-86.902298,AL,"PracMan, Inc.",1179,8/22/2013,Hack/It Inc.,Network Server,2014-03-25,,2013-08-22,NA,2013
-964,963,Iowa Dept. of Human Services,41.878003,-93.097702,IA,,2042,12/1/2008,Other,"Laptop, E-mail Portable Electronic Device",2014-04-21,,2008-12-01,NA,2008
-965,964,City of Hope,36.778261,-119.417932,CA,"Sutherland Healthcare Solutions, Inc.",5400,2/5/2014,Theft,"Desktop Computer, E-mail",2014-03-25,,2014-02-05,NA,2014
 966,965,Mission City Community Network,36.778261,-119.417932,CA,,7800,5/31/2013,Theft,E-mail,2014-04-21,,2013-05-31,NA,2013
 967,966,"Partners In Nephrology & Endocrinology, P.C.",41.203322,-77.194525,PA,,5000,11/13/2013,Other,Other,2014-03-24,,2013-11-13,NA,2013
-968,967,"University of California, San Francisco",36.778261,-119.417932,CA,,9861,1/11/2014,Theft,Desktop Computer,2014-03-31,,2014-01-11,NA,2014
-969,968,Detroit Medical Center - Harper University Hospital,44.314844,-85.602364,MI,,1087,9/7/2012,"Theft, Unauth Acc/Dis",Paper,2014-05-06,,2012-09-07,NA,2012
-970,969,"Todd M. Burton, M.D.",31.968599,-99.901813,TX,,5000,1/13/2014,Theft,Other,2014-03-24,,2014-01-13,NA,2014
 971,970,Valley View Hospital Association,39.550051,-105.782067,CO,,5415,9/11/2013,Other,"Laptop, Desktop Computer",2014-04-21,,2013-09-11,NA,2013
 972,971,Hospitalists of Arizona,34.048928,-111.093731,AZ,,1706,12/31/2013,Theft,Laptop,2014-03-24,,2013-12-31,NA,2013
-973,972,"McBroom Clinic, PA",31.968599,-99.901813,TX,TMA Practice Management Group,2260,1/9/2014,Loss,Other Portable Electronic Device,2014-04-21,,2014-01-09,NA,2014
-974,973,"QBE Holdings, Inc.",43.299428,-74.217933,NY,"StayWell Health Management, LLC",1746,5/9/2012,Unauth Acc/Dis,Network Server,2014-04-21,,2012-05-09,NA,2012
-975,974,Berea College,37.839333,-84.270018,KY,,1000,1/24/2012,Other,Electronic Medical Record,2014-04-21,,2012-01-24,NA,2012
-976,975,"HealthPartners, Inc.",46.729553,-94.6859,MN,,27839,1/7/2008,Loss,"Laptop, Desktop Computer Portable Electronic Device",2014-06-20,,2008-01-07,NA,2008
-977,976,"Group Health Plan, Inc. Medical Benefit Plan",46.729553,-94.6859,MN,"HealthPartners Administrators, Inc.",796,1/7/2008,Loss,"Laptop, Desktop Computer Portable Electronic Device",2014-04-21,,2008-01-07,NA,2008
-978,977,State Employee Group Insurance Plan,46.729553,-94.6859,MN,"HealthPartners Administrators, Inc.",1699,1/7/2008,Loss,"Laptop, Desktop Computer Portable Electronic Device",2014-04-21,,2008-01-07,NA,2008
-979,978,University of Minnesota Employee Benefits,46.729553,-94.6859,MN,"HealthPartners Administrators, Inc.",715,1/7/2008,Loss,"Laptop, Desktop Computer Portable Electronic Device",2014-04-21,,2008-01-07,NA,2008
-980,979,San Francisco General Hospital & Trauma Center,36.778261,-119.417932,CA,Sutherland Healthcare Solutions,55900,2/5/2014,Theft,Desktop Computer,2014-05-30,,2014-02-05,NA,2014
-981,980,University of Kentucky UK HealthCare,37.839333,-84.270018,KY,Talyst,1079,2/4/2014,Theft,Laptop,2014-04-21,,2014-02-04,NA,2014
 982,981,Yellowstone Boys and Girls Ranch,46.879682,-110.362566,MT,,543,7/11/2013,Theft,Paper,2014-06-24,,2013-07-11,NA,2013
-983,982,"Orlando Health, Inc.",27.664827,-81.515754,FL,,586,1/28/2014,Loss,Other Portable Electronic Device,2014-04-21,,2014-01-28,NA,2014
-984,983,NOVA Chiropractic & Rehab Center,37.431573,-78.656894,VA,,5534,1/30/2014,Loss,Other Portable Electronic Device,2014-04-21,,2014-01-30,NA,2014
 985,984,Susquehanna Health,41.203322,-77.194525,PA,,657,12/5/2013,Unauth Acc/Dis,E-mail,2014-04-21,,2013-12-05,NA,2013
-986,985,Jewish Hospital,37.839333,-84.270018,KY,,2992,1/15/2014,Other,E-mail,2014-04-21,,2014-01-15,NA,2014
-987,986,Franciscan Medical Group,47.751074,-120.740139,WA,,8300,1/15/2014,Other,E-mail,2014-04-21,,2014-01-15,NA,2014
-988,987,Palomar Health,36.778261,-119.417932,CA,,5499,2/21/2014,Theft,Other Portable Electronic Device,2014-04-21,,2014-02-21,NA,2014
 989,988,"Myriad Genetic Laboratories, Inc.",39.32098,-111.093731,UT,,643,3/6/2013,Unauth Acc/Dis,E-mail,2014-06-03,,2013-03-06,NA,2013
 990,989,Medical Center of Plano,31.968599,-99.901813,TX,"RelayHealth, a division of McKesson",1000,12/10/2013,Unauth Acc/Dis,Other,2014-06-03,,2013-12-10,NA,2013
 991,990,Florida Healthy Kids Corporation,27.664827,-81.515754,FL,"Policy Studies, Inc. / Postal Center International, Inc.",580,11/13/2013,Unauth Acc/Dis,Paper,2014-04-21,,2013-11-13,NA,2013
-992,991,"Midwest Orthopaedics at Rush, LLC",40.633125,-89.398528,IL,,1256,2/10/2014,Hack/It Inc.,E-mail,2014-04-21,,2014-02-10,NA,2014
-993,992,Texas Health and Human Services Commission,31.968599,-99.901813,TX,"EveryChild, Inc.",2934,2/2/2014,Theft,"Laptop, Desktop Computer Portable Electronic Device",2014-04-21,,2014-02-02,NA,2014
-994,993,Kaiser Permanente Northern CA Department of Research,36.778261,-119.417932,CA,,5178,10/18/2011,Hack/It Inc.,Network Server,2014-06-02,,2011-10-18,NA,2011
 995,994,Triple-S Salud ,18.220833,-66.590149,PR,,5795,1/1/2013,Theft,Other,2014-06-24,,2013-01-01,NA,2013
 996,995,American Health Inc. ,18.220833,-66.590149,PR,,17776,1/1/2013,Theft,Other,2014-06-27,,2013-01-01,NA,2013
-997,996,"State Long Term Care Ombudsman's Office, Michigan Department of Community Health",44.314844,-85.602364,MI,,2595,1/30/2014,Theft,Other Portable Electronic Device,2014-04-21,,2014-01-30,NA,2014
-998,997,County of Los Angeles,36.778261,-119.417932,CA,"Sutherland Healthcare Solutions, Inc.",338700,2/5/2014,Theft,"Desktop Computer, E-mail",2014-04-21,,2014-02-05,NA,2014
 999,998,Presence St. Joseph's Medical Center,40.633125,-89.398528,IL,,836,10/22/2013,Other,Paper,2014-06-03,,2013-10-22,NA,2013
-1000,999,"Clinical Reference Laboratory, Inc.",39.011902,-98.484246,KS,,979,2/6/2014,Loss,Paper,2014-04-21,,2014-02-06,NA,2014
-1001,1000,Various Health Plans,41.603221,-73.087749,CT,Cigna,527,3/5/2014,Loss,Paper,2014-06-27,,2014-03-05,NA,2014
-1002,1001,"Amerigroup Texas, Inc. ",37.431573,-78.656894,VA,"Amerigroup Texas, Inc. ",75026,4/1/2012,Theft,Paper,2014-05-13,,2012-04-01,NA,2012
 1003,1002,BLUE CROSS AND BLUE SHIELD OF KANSAS CITY,37.964253,-91.831833,MO,,2546,8/16/2013,Unauth Acc/Dis,Other,2014-04-21,,2013-08-16,NA,2013
 1004,1003,"University Urology, P.C.",35.517491,-86.580447,TN,,1144,3/7/2013,Unauth Acc/Dis,Paper,2014-05-13,,2013-03-07,NA,2013
-1005,1004,"Healthy Connections, Inc",36.778261,-119.417932,CA,,793,3/25/2014,Loss,Other Portable Electronic Device,2014-06-03,,2014-03-25,NA,2014
 1006,1005,Administracion de Seguros de Salud,18.220833,-66.590149,PR,American Health Medicare,46473,5/8/2013,Theft,Other Portable Electronic Device,2014-06-03,,2013-05-08,NA,2013
-1007,1006,Greenwood Leflore Hospital,32.354668,-89.398528,MS,,3750,2/23/2014,Theft,Other,2014-05-09,,2014-02-23,NA,2014
 1008,1007,Maryland Developmental Disabilities Administration,39.045755,-76.641271,MD,"Service Coordination, Inc.",10766,11/27/2013,Unauth Acc/Dis,Network Server,2014-06-11,,2013-11-27,NA,2013
+1016,1015,"Ladies First Choice, Inc.",27.664827,-81.515754,FL,,2365,1/1/2013,"Theft, Unauth Acc/Dis",Laptop,2014-05-29,,2013-01-01,NA,2013
+1027,1026,Flowers Hospital,32.318231,-86.902298,AL,,629,6/3/2013,Theft,Paper,2014-06-20,,2013-06-03,NA,2013
+1036,1035,American Health Inc. ,18.220833,-66.590149,PR,,11531,9/20/2013,Unauth Acc/Dis,Paper,2014-06-18,,2013-09-20,NA,2013
+1042,1041,Bay Park Hospital,40.417287,-82.907123,OH,,594,4/1/2013,Unauth Acc/Dis,"Network Server, Electronic Medical Record",2014-06-18,,2013-04-01,NA,2013
+1043,1042,Triple-S Salud ,18.220833,-66.590149,PR,,56853,9/20/2013,Unauth Acc/Dis,Paper,2014-06-18,,2013-09-20,NA,2013
+1047,1046,Mark A. Gillispie,36.778261,-119.417932,CA,,5845,11/20/2013,Theft,Desktop Computer,2014-06-27,,2013-11-20,NA,2013
+1048,1047,Penn State Milton S Hershey Medical Center,41.203322,-77.194525,PA,,1801,9/13/2013,Other,E-mail Portable Electronic Device,2014-06-27,,2013-09-13,NA,2013
+1051,1050,Puerto Rico Health Insurance ,18.220833,-66.590149,PR,American Health Inc,28413,9/20/2013,Theft,Other,2014-06-27,,2013-09-20,NA,2013
+940,939,Kmart Corporation,40.633125,-89.398528,IL,,16446,1/4/2014,Theft,"Other, Electronic Medical Record",2014-03-24,,2014-01-04,NA,2014
+942,941,"Lewis J. Sims, DPM, PC dba Sims and Associates Podiatry ",43.299428,-74.217933,NY,,6475,1/10/2014,Theft,Laptop,2014-04-21,,2014-01-10,NA,2014
+957,956,Joseph Michael Benson M.D,31.968599,-99.901813,TX,,7500,1/5/2014,Theft,Desktop Computer,2014-03-24,,2014-01-05,NA,2014
+961,960,Banner Health,34.048928,-111.093731,AZ,,55207,2/21/2014,Other,Other,2014-03-24,,2014-02-21,NA,2014
+965,964,City of Hope,36.778261,-119.417932,CA,"Sutherland Healthcare Solutions, Inc.",5400,2/5/2014,Theft,"Desktop Computer, E-mail",2014-03-25,,2014-02-05,NA,2014
+968,967,"University of California, San Francisco",36.778261,-119.417932,CA,,9861,1/11/2014,Theft,Desktop Computer,2014-03-31,,2014-01-11,NA,2014
+970,969,"Todd M. Burton, M.D.",31.968599,-99.901813,TX,,5000,1/13/2014,Theft,Other,2014-03-24,,2014-01-13,NA,2014
+973,972,"McBroom Clinic, PA",31.968599,-99.901813,TX,TMA Practice Management Group,2260,1/9/2014,Loss,Other Portable Electronic Device,2014-04-21,,2014-01-09,NA,2014
+980,979,San Francisco General Hospital & Trauma Center,36.778261,-119.417932,CA,Sutherland Healthcare Solutions,55900,2/5/2014,Theft,Desktop Computer,2014-05-30,,2014-02-05,NA,2014
+981,980,University of Kentucky UK HealthCare,37.839333,-84.270018,KY,Talyst,1079,2/4/2014,Theft,Laptop,2014-04-21,,2014-02-04,NA,2014
+983,982,"Orlando Health, Inc.",27.664827,-81.515754,FL,,586,1/28/2014,Loss,Other Portable Electronic Device,2014-04-21,,2014-01-28,NA,2014
+984,983,NOVA Chiropractic & Rehab Center,37.431573,-78.656894,VA,,5534,1/30/2014,Loss,Other Portable Electronic Device,2014-04-21,,2014-01-30,NA,2014
+986,985,Jewish Hospital,37.839333,-84.270018,KY,,2992,1/15/2014,Other,E-mail,2014-04-21,,2014-01-15,NA,2014
+987,986,Franciscan Medical Group,47.751074,-120.740139,WA,,8300,1/15/2014,Other,E-mail,2014-04-21,,2014-01-15,NA,2014
+988,987,Palomar Health,36.778261,-119.417932,CA,,5499,2/21/2014,Theft,Other Portable Electronic Device,2014-04-21,,2014-02-21,NA,2014
+992,991,"Midwest Orthopaedics at Rush, LLC",40.633125,-89.398528,IL,,1256,2/10/2014,Hack/It Inc.,E-mail,2014-04-21,,2014-02-10,NA,2014
+993,992,Texas Health and Human Services Commission,31.968599,-99.901813,TX,"EveryChild, Inc.",2934,2/2/2014,Theft,"Laptop, Desktop Computer Portable Electronic Device",2014-04-21,,2014-02-02,NA,2014
+997,996,"State Long Term Care Ombudsman's Office, Michigan Department of Community Health",44.314844,-85.602364,MI,,2595,1/30/2014,Theft,Other Portable Electronic Device,2014-04-21,,2014-01-30,NA,2014
+998,997,County of Los Angeles,36.778261,-119.417932,CA,"Sutherland Healthcare Solutions, Inc.",338700,2/5/2014,Theft,"Desktop Computer, E-mail",2014-04-21,,2014-02-05,NA,2014
+1000,999,"Clinical Reference Laboratory, Inc.",39.011902,-98.484246,KS,,979,2/6/2014,Loss,Paper,2014-04-21,,2014-02-06,NA,2014
+1001,1000,Various Health Plans,41.603221,-73.087749,CT,Cigna,527,3/5/2014,Loss,Paper,2014-06-27,,2014-03-05,NA,2014
+1005,1004,"Healthy Connections, Inc",36.778261,-119.417932,CA,,793,3/25/2014,Loss,Other Portable Electronic Device,2014-06-03,,2014-03-25,NA,2014
+1007,1006,Greenwood Leflore Hospital,32.354668,-89.398528,MS,,3750,2/23/2014,Theft,Other,2014-05-09,,2014-02-23,NA,2014
 1009,1008,Los Robles Hospital and Medical Center,36.778261,-119.417932,CA,"Courier Express/Atlanta, Courier Express/Charlotte & Courier Express US, Inc.",2523,2/14/2014,"Theft, Unauth Acc/Dis",Paper,2014-05-09,,2014-02-14,NA,2014
 1010,1009,Shaker Clinic,40.417287,-82.907123,OH,,617,2/18/2014,Loss,Paper,2014-05-27,,2014-02-18,NA,2014
 1011,1010,VGM Homelink,41.878003,-93.097702,IA,Tri State Adjustments,1400,2/28/2014,Other,Other,2014-05-27,,2014-02-28,NA,2014
@@ -1244,7 +1258,6 @@ OCR opened an investigation of the covered entity (CE), Paul G. Klein DPM, after
 1013,1012,The Union Labor Life Insurance Company,39.045755,-76.641271,MD,,46771,2/17/2014,Theft,Laptop,2014-05-27,,2014-02-17,NA,2014
 1014,1013,Coordinated Health,41.203322,-77.194525,PA,,733,2/21/2014,Theft,Laptop,2014-05-29,,2014-02-21,NA,2014
 1015,1014,CENTURA HEALTH,39.550051,-105.782067,CO,,12286,2/11/2014,Hack/It Inc.,E-mail,2014-05-29,,2014-02-11,NA,2014
-1016,1015,"Ladies First Choice, Inc.",27.664827,-81.515754,FL,,2365,1/1/2013,"Theft, Unauth Acc/Dis",Laptop,2014-05-29,,2013-01-01,NA,2013
 1017,1016,"Tufts Associated Health Maintenance Organization, Inc. and Tufts Insurance Company ",42.407211,-71.382437,MA,,8830,4/10/2014,Theft,Other,2014-05-09,,2014-04-10,NA,2014
 1018,1017,Developmental Disabilities Administration,39.045755,-76.641271,MD,Inclusion Research Institute,2200,3/3/2014,Unauth Acc/Dis,Paper,2014-05-29,,2014-03-03,NA,2014
 1019,1018,Willis North America Inc. Medical Expense Benefit Plan,43.299428,-74.217933,NY,,4830,3/19/2014,Unauth Acc/Dis,E-mail,2014-05-29,,2014-03-19,NA,2014
@@ -1255,31 +1268,18 @@ OCR opened an investigation of the covered entity (CE), Paul G. Klein DPM, after
 1024,1023,HealthTexas Provider Network,31.968599,-99.901813,TX,,2742,1/23/2014,Hack/It Inc.,E-mail,2014-05-07,,2014-01-23,NA,2014
 1025,1024,DeKalb Health,40.551217,-85.602364,IN,"Ferguson Advertising, Inc.",1361,2/9/2014,Hack/It Inc.,Network Server,2014-05-27,,2014-02-09,NA,2014
 1026,1025,Iowa Medicaid Enterprise,41.878003,-93.097702,IA,,862,2/26/2014,Unauth Acc/Dis,Paper,2014-05-29,,2014-02-26,NA,2014
-1027,1026,Flowers Hospital,32.318231,-86.902298,AL,,629,6/3/2013,Theft,Paper,2014-06-20,,2013-06-03,NA,2013
-1028,1027,Reading Health System,41.203322,-77.194525,PA,,1845,3/2/2012,Loss,Paper,2014-05-27,,2012-03-02,NA,2012
 1029,1028,City of Cincinnati,40.417287,-82.907123,OH,OptumRx,5696,4/4/2014,Other,Paper,2014-05-07,,2014-04-04,NA,2014
-1030,1029,UMass Memorial Medical Center,42.407211,-71.382437,MA,,2387,5/6/2002,Unauth Acc/Dis,"Electronic Medical Record, Paper",2014-05-27,,2002-05-06,NA,2002
-1031,1030,The City of Henderson,37.839333,-84.270018,KY,KEYSTONE INSURERS GROUP,1008,6/27/2012,Other,E-mail,2014-05-27,,2012-06-27,NA,2012
-1032,1031,Options Counseling Center,40.058324,-74.405661,NJ,,2828,5/1/2011,"Theft, Unauth Acc/Dis",Paper,2014-06-18,,2011-05-01,NA,2011
 1033,1032,"Molina Healthcare of California Partner Plan, Inc.",36.778261,-119.417932,CA,Creel Printing,4744,3/18/2014,Other,Paper,2014-05-27,,2014-03-18,NA,2014
 1034,1033,Howard L. Weinstein D.P.M.,31.968599,-99.901813,TX,,1000,3/13/2014,Theft,Laptop,2014-05-27,,2014-03-13,NA,2014
 1035,1034,"Bio-Reference Laboratories, Inc.",40.058324,-74.405661,NJ, Xand Corporation,1749,2/02/2014,Other,Network Server,2014-06-18,,2014-02-02,NA,2014
-1036,1035,American Health Inc. ,18.220833,-66.590149,PR,,11531,9/20/2013,Unauth Acc/Dis,Paper,2014-06-18,,2013-09-20,NA,2013
-1037,1036,Central City Concern,43.804133,-120.554201,OR,,17914,3/23/2010,Unauth Acc/Dis,Other,2014-06-18,,2010-03-23,NA,2010
 1038,1037,Blue Cross Blue Shield of Michigan/Blue Care Network,44.314844,-85.602364,MI,Bloom Health,502,2/15/2014,Unauth Acc/Dis,E-mail,2014-06-18,,2014-02-15,NA,2014
 1039,1038,Elliot Health System,43.193852,-71.572395,NH,,1208,3/26/2014,Theft,Desktop Computer,2014-06-18,,2014-03-26,NA,2014
 1040,1039,Humana Inc [case #15381],37.839333,-84.270018,KY,,2962,4/2/2014,Theft,Other Portable Electronic Device,2014-06-18,,2014-04-02,NA,2014
-1041,1040,Jamaica Hospital Medical Center,43.299428,-74.217933,NY,,26162,8/1/2011,Unauth Acc/Dis,Desktop Computer,2014-06-18,,2011-08-01,NA,2011
-1042,1041,Bay Park Hospital,40.417287,-82.907123,OH,,594,4/1/2013,Unauth Acc/Dis,"Network Server, Electronic Medical Record",2014-06-18,,2013-04-01,NA,2013
-1043,1042,Triple-S Salud ,18.220833,-66.590149,PR,,56853,9/20/2013,Unauth Acc/Dis,Paper,2014-06-18,,2013-09-20,NA,2013
 1044,1043,Aetna Life Insurance Company,41.603221,-73.087749,CT,"NFP Maschino, Hudelson & Associates",3814,4/2/2014,Theft,Laptop,2014-06-18,,2014-04-02,NA,2014
 1045,1044,Salina Health Education Foundation dba Salina Family Healthcare Center,39.011902,-98.484246,KS,,9640,4/8/2014,Unauth Acc/Dis,E-mail,2014-06-20,,2014-04-08,NA,2014
 1046,1045,Highmark Inc.,41.203322,-77.194525,PA,,2589,4/19/2014,Loss,Paper,2014-06-27,,2014-04-19,NA,2014
-1047,1046,Mark A. Gillispie,36.778261,-119.417932,CA,,5845,11/20/2013,Theft,Desktop Computer,2014-06-27,,2013-11-20,NA,2013
-1048,1047,Penn State Milton S Hershey Medical Center,41.203322,-77.194525,PA,,1801,9/13/2013,Other,E-mail Portable Electronic Device,2014-06-27,,2013-09-13,NA,2013
 1049,1048,Walgreen Co.,40.633125,-89.398528,IL,,540,3/3/2014,Theft,"Desktop Computer, Paper",2014-06-20,,2014-03-03,NA,2014
 1050,1049,St. Francis Hospital,32.157435,-82.907123,GA,,1175,5/30/2014,Other,E-mail,2014-06-18,,2014-05-30,NA,2014
-1051,1050,Puerto Rico Health Insurance ,18.220833,-66.590149,PR,American Health Inc,28413,9/20/2013,Theft,Other,2014-06-27,,2013-09-20,NA,2013
 1052,1051,"Hospitalists of Brandon, LLC",27.664827,-81.515754,FL,"Doctors First Choice Billings, Inc.",1831,2/11/2014,Hack/It Inc.,Other,2014-06-27,,2014-02-11,NA,2014
 1053,1052,Santa Rosa Memorial Hospital ,36.778261,-119.417932,CA,,33702,6/2/2014,"Theft, Loss",Other Portable Electronic Device,2014-06-27,,2014-06-02,NA,2014
 1054,1053,Group Health Plan of Hurley Medical Center,44.314844,-85.602364,MI,,2289,5/13/2014,Unauth Acc/Dis,E-mail,2014-06-27,,2014-05-13,NA,2014
