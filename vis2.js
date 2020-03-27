@@ -30,7 +30,7 @@ function hoverNum() {
 
 
 		//setup scales
-		let domain = data.map(d => (d.loc));
+		let domain = data.map(d => (d.state));
 		let xscale = d3.scaleBand(domain, [0, innerWidth])
 			.padding(.1);
 
