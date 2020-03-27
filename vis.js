@@ -1,4 +1,5 @@
 // Used the week 6 tutorial as a template to create these visualizations
+// Used the tutorial at https://www.freshconsulting.com/d3-js-gradients-the-easy-way/ for the gradients
 // Alexander Richard
 // ID: 30009796
 
