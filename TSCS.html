@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TS Based CS Simulator</title>
+    <script src='tscs.js'></script>
+    <link rel="stylesheet" href="simstyle.css">
+
+  </head>
+  <body onload="splash()">
+    <div id="background">
+      <h2 id="title">Timestamp Based Critical Section</h2>
+      <div id="simulation">
+        <canvas id="canvas" width="1000" height="1000"></canvas>
+      </div>
+      <div id="control">
+        <form id="pform">
+          <h3>Select the number of processes:</h3>
+          <select id="nump">
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+          </select> <br>
+        </form>
+        <form id="sform">
+          <h3>Select the speed of the simulation:</h3>
+          <input type="radio" id="fast" name="speed" value=1>
+          <label for="one">Fast</label><br>
+          <input type="radio" id="slow" name="speed" value=2>
+          <label for="two">Slow</label><br>
+          <input type="radio" id="step" name="speed" value=0>
+          <label for="three">Step</label><br>
+          
+        </form>
+        <br><button type="button" id="start_sim" onclick=start()>Start Simulation</button>
+        <button type="button" id="start_sim" onclick="stop()">Pause/Resume Simulation</button>
+        <br><button type="button" id="reset_sim" onClick="window.location.reload();">Reset Simulation</button>
+        <br><br>
+      </div>
+    </div>
+  </body>
+</html>
