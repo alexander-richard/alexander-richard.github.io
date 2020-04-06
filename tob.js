@@ -113,7 +113,9 @@ function removeElement(elementId) {
   element.parentNode.removeChild(element);
 }
 
-// gets the selected value from the radio form
+/**
+ * gets the selected value from the specified radio form
+ */
 function radio_form_val(form_id, id) {
   var val;
 
@@ -131,8 +133,8 @@ function radio_form_val(form_id, id) {
 /**
  * helper function to pause the simulation for an amount of time
  */
-const pause = (milliseconds) => {
-  return new Promise(resolve => setTimeout(resolve, milliseconds))
+const pause = (time) => {
+  return new Promise(resolve => setTimeout(resolve, time))
 }
 
 /**
@@ -144,7 +146,11 @@ function to_reset() {
   }
 }
 
-// will build the first screen here and launch run, starting the simulation
+/**
+ * The function called when the 'Start Simulation' button is pressed.
+ * It creates all the required global variables, and calls loop() to
+ * start the simulation.
+ */
 function start() {
   // disable the dropdown and start button
   if (sim_speed != -1 && sim_type != -1) {
@@ -186,7 +192,7 @@ function start() {
   createChannels();
 
 
-  // draw the objects on the screen here
+  // draw the objects on the screen here for the first time
   draw(1);
 
   if (sim_speed == 0) {
@@ -197,6 +203,13 @@ function start() {
   
 }
 
+/**
+ * An asynchronous function to pause the simulation for a
+ * certain amount of time based on the sim_speed variable.
+ * 
+ * sim_speed is specified by the fast, slow, and step radio
+ * buttons.
+ */
 async function loop() {
   while(true && play) {
     if (sim_speed == 0) {
@@ -212,7 +225,9 @@ async function loop() {
   }
 }
 
-// function to pause the simulation
+/**
+ * Toggles the play variable to step through the simulation.
+ */
 function stop() {
   if (play) {
     play = false;
@@ -222,7 +237,9 @@ function stop() {
   }
 }
 
-// creates the specified number of proccess objects
+/**
+ * Creates and pushes pnum process objects to the processes array.
+ */
 function createProcesses() {
   for (i = 0; i < pnum; i++) {
     processes.push( new Process() );
@@ -236,8 +253,11 @@ function createProcesses() {
   }
 }
 
-// creates channels based on the algorithm
-// 2D array - row - from, column - 2
+/**
+ * Creates a 2d array of channels with the 
+ * row being the process at the start of the channel and
+ * the column being the receiving process.
+ */
 function createChannels() {
   if (pnum > 1) {
     var temp;
@@ -251,6 +271,9 @@ function createChannels() {
   }
 }
 
+/**
+ * Function to broadcast a message object to every process.
+ */
 function broadcast(pID, type, amt, timestamp) {
   for (e = 0; e < pnum; e++) {
     if (e != pID) {
@@ -265,6 +288,9 @@ function broadcast(pID, type, amt, timestamp) {
   }
 }
 
+/**
+ * Function that sets a process to create an update
+ */
 function create_trans(pID, time) {
   if (processes[pID].request == true) {
     return;
@@ -293,6 +319,10 @@ function create_trans(pID, time) {
   }
 }
 
+/**
+ * Function that corrects issues with the fifo queues
+ * and makes them act correctly.
+ */
 function sort_channel_queue() {
   // sort queues by timestamp
   for ( i = 0; i < pnum; i++ ) {
@@ -324,6 +354,9 @@ function sort_channel_queue() {
   }
 }
 
+/**
+ * Function that sorts the process queues by timestamp.
+ */
 function sort_process_queue() {
   for ( i = 0; i < pnum; i++ ) {      
     processes[i].queue.sort(function compare(a, b) {
@@ -417,6 +450,10 @@ function is_equal(msg1, msg2) {
   return false;
 }
 
+/**
+ * Function that applies an update, modifying the
+ * balance of the account.
+ */
 function apply_trans() {
   if (sim_type == 0) {
     for (var i = 0; i < pnum; i++) {
@@ -467,7 +504,11 @@ function create_max_arr() {
   return temp;
 }
 
-
+/**
+ * Function that handles the color, direction, and transmission
+ * of messages from the FIFO queue to the channel, and then to
+ * the process on the other end.
+ */
 function handle_channels() {
   var dir;
   for ( var i = 0; i < pnum; i++ ) {
@@ -577,6 +618,10 @@ function handle_channels() {
   } 
 }
 
+/**
+ * Function that handles each process, chaning the
+ * color and setting the request flag to false.
+ */
 function handle_process() {
   for (var i = 0; i < pnum; i++) {
     if (processes[i].color === 'red') {
@@ -586,7 +631,11 @@ function handle_process() {
   }
 }
 
-// decides if a process will request a cs this round
+/**
+ * Selects a random number between 0 and 9 to
+ * determine the next process that will create
+ * an update.
+ */
 function random_req() {
   
   // get random number between 0 and 9
@@ -594,8 +643,10 @@ function random_req() {
   return rand;
 }
 
-// this is how the function runs, it calls all the other functions in one step
-// it is called by pressing the button after run
+/**
+ * The heartbeat of the simulation, it calls the other 
+ * functions to keep the simulation running.
+ */
 async function tick() {
   apply_trans();
 
@@ -620,6 +671,10 @@ async function tick() {
   draw(0);
 }
 
+/**
+ * Function that draws the title and my name to the canvas
+ * before the simulation begins.
+ */
 function splash() {
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext("2d");
@@ -633,6 +688,10 @@ function splash() {
   img.src = 'iconfinder_access-time_326483.png';
 }
 
+/**
+ * Function that draws all of the elements of the simulation
+ * to the canvas.
+ */
 function draw(type) {
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext("2d");

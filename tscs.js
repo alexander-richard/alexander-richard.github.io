@@ -217,7 +217,7 @@ function stop() {
 }
 
 /**
- * Pushes pnum process objects to the processes array.
+ * Creates and pushes pnum process objects to the processes array.
  */
 function createProcesses() {
   for (i = 0; i < pnum; i++) {
