@@ -147,7 +147,7 @@ function to_reset() {
 // will build the first screen here and launch run, starting the simulation
 function start() {
   // disable the dropdown and start button
-  if (sim_speed != -1 || sim_type != -1) {
+  if (sim_speed != -1 && sim_type != -1) {
     document.getElementById("numsites").disabled=true;
     document.getElementById("start_sim").disabled=true;
   }
