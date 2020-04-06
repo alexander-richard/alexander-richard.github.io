@@ -147,13 +147,10 @@ function to_reset() {
 // will build the first screen here and launch run, starting the simulation
 function start() {
   // disable the dropdown and start button
-  document.getElementById("numsites").disabled=true;
-  document.getElementById("start_sim").disabled=true;
-
-  if (started == true) {
-    return;
+  if (sim_speed != -1 || sim_type != -1) {
+    document.getElementById("numsites").disabled=true;
+    document.getElementById("start_sim").disabled=true;
   }
-  started = true;
 
   var speed = radio_form_val( document.getElementById('sform'), 'speed' );
   if (speed == null) {
@@ -166,6 +163,11 @@ function start() {
     alert('Please select the algorithm to see in the simulation');
     return;
   }
+
+  if (started == true) {
+    return;
+  }
+  started = true;
 
   // record the number of processes and animation speed
   pnum = document.getElementById('numsites').value;
@@ -627,10 +629,8 @@ function splash() {
   ctx.font = "20px Arial";
   ctx.fillText("Created by Alexander Richard", 350, 430);
 
-  // create image here so it has time to load
   var img = new Image();
   img.src = 'iconfinder_access-time_326483.png';
-  ctx.drawImage(img, 10, 10, 32, 32);
 }
 
 function draw(type) {
