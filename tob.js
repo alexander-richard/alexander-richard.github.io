@@ -832,10 +832,10 @@ function draw(type) {
     // labels
     ctx.font = "10px Arial";
     ctx.fillStyle = "white";
-    ctx.fillText("P0", wl - 6.5, h + 3);
+    ctx.fillText("Site 0", wl - 13, h + 3);
 
     ctx.fillStyle = "white";
-    ctx.fillText("P1", wr - 6.5, h + 3);
+    ctx.fillText("Site 1", wr - 13, h + 3);
 
   } else if (pnum == 3) {
     // dimensions
@@ -1098,13 +1098,13 @@ function draw(type) {
     //labels
     ctx.font = "10px Arial";
     ctx.fillStyle = "white";
-    ctx.fillText("P0", wl - 6, hb + 3.5);
+    ctx.fillText("Site 0", wl - 13, hb + 3);
 
     ctx.fillStyle = "white";
-    ctx.fillText("P1", mid - 6, ht + 3.5);
+    ctx.fillText("Site 1", mid - 13, ht + 3);
 
     ctx.fillStyle = "white";
-    ctx.fillText("P2", wr - 6, hb + 3.5);
+    ctx.fillText("Site 2", wr - 13, hb + 3);
 
   } else { // 4 processes
 
