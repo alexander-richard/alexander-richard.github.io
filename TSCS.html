@@ -38,7 +38,7 @@
         <br><br>
       </div>
 
-        <h3>How to use the simulation</h3>
+        <h3>How to use the simulator</h3>
         <ol>
           <li>Select the number of processes that you want to be present in the simulation.</li>
           <li>Select the speed of the simulation, this can be changed after starting the animation but you have to click 'Pause/Resume Simulation' after changing from step to fast or slow.</li>
@@ -46,8 +46,7 @@
           <li>To reset the simulation, click on 'Reset Simulation'.</li>
         </ol>
 
-        <br>
-        <h3>The Timestamp Based Critical Section Algorithm</h3>
+        <h3>About the Algorithm</h3>
         <p>The purpose of this algorithm is to ensure that distributed processes do not
           access a shared resource (critical section) at the same time. This is accomplished by making use
           of Lamport Timestamps to assign every request a clock value. Before a process
@@ -61,7 +60,7 @@
           &emsp;broadcast_request(i, timestamp)
           <br><br>
           <b>Pseudocode to enter the critical section for process i:</b> <br>
-          &emsp;queue.sort<br>
+          &emsp;queue.sort()<br>
           &emsp;if queue[0] == i and i.acks == number_of_processes - 1 do<br>
           &emsp; &emsp;critical_section.enter() <br>
           &emsp;end if

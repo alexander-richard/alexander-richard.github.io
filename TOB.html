@@ -43,9 +43,43 @@
         <br><button type="button" id="reset_sim" onClick="window.location.reload();">Reset Simulation</button>
         <br><br>
       </div>
-      <h3>Simulation Background Paragraph Goes here</h3>
-      <br>
-      <p>info info info info....</p>
+      <h3>How to use the simulator</h3>
+        <ol>
+          <li>Select the number of processes that you want to be present in the simulation.</li>
+          <li>Select whether to implement the Totally Ordered Broadcast Algorithm</li>
+          <li>Select the speed of the simulation, this can be changed after starting the animation but you have to click 'Pause/Resume Simulation' after changing from step to fast or slow.</li>
+          <li>To pause the simulation with fast or slow speeds click on 'Pause/Resume Simulation'.</li>
+          <li>To reset the simulation, click on 'Reset Simulation'.</li>
+        </ol>
+        <p>Note: Changing the synchronization during execution will reset the simulation</p>
+
+        <h3>About the Algorithm</h3>
+        <p>The purpose of this algorithm is to ensure that updates between processes are executed in the order that they were sent in. 
+          This is accomplished by making use of an array of Lamport Timestamps and priority queues within each process. The local time of each
+          process is updated acording to the highest timestamp attached to an incoming message. When a message is recieved by a process
+          it will broadcast that message to all other processes and as a result, the local times will be shared across the network.
+          Messages in the priority queue are executed one at a time for all that are less than the current local time.
+        </p>
+        <p>
+          <b>Pseudocode for sending an update U from process i:</b> <br>
+          &emsp;timestamp_array[i]++<br>
+          &emsp;broadcast(U, timestamp_array[i])
+          <br><br>
+          <b>Pseudocode for process i receiving an update from process j:</b> <br>
+          &emsp;timestamp_array[i] = msg_timestamp<br>
+          &emsp;queue.enqueue(msg, msg.timestamp)<br>
+          &emsp;if msg.timestamp > timestamp_array[i] do<br>
+          &emsp; &emsp;timestamp_array[i] = msg.timestamp <br>
+          &emsp; &emsp;broadcast(ack-msg, timestamp_array[i]) <br>
+          &emsp;end if
+          <br><br>
+          <b>Pseudocode for applying updates:</b> <br>
+          &emsp;(update, timestamp) = queue.head() <br>
+          &emsp;if (for all j, update.timestamp <= timestamp_array[j])) do<br>
+          &emsp; &emsp;queue.dequeue() <br>
+          &emsp; &emsp;apply(update) <br>
+          &emsp;end if
+        </p>
     </div>
     
   </body>
