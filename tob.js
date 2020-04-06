@@ -74,9 +74,27 @@ function Message( to, type, amt, timestamp ) {
   this.acks = 0;
 }
 
-// https://www.abeautifulsite.net/adding-and-removing-elements-on-the-fly-using-javascript
+/**
+ * Handler for changing the speed radio buttons. Sets the simulation
+ * speed to the speed parameter.
+ */
+function set_speed(speed) {
+  if (sim_speed == 0) {
+    removeElement('next_btn');
+  }
+  sim_speed = speed;
+  if (sim_speed == 0 && started) {
+    addElement('control', 'p', 'next_btn', '<button class="button_nxt" onclick="stop()" id="nxt_btn">Step</button>');
+  }
+}
+
+/**
+ * Function to add an HTML element to the DOM.
+ * 
+ * Code for this function was taken from:
+ * https://www.abeautifulsite.net/adding-and-removing-elements-on-the-fly-using-javascript
+ */
 function addElement(parentId, elementTag, elementId, html) {
-  // Adds an element to the document
   var p = document.getElementById(parentId);
   var newElement = document.createElement(elementTag);
   newElement.setAttribute('id', elementId);
@@ -84,8 +102,13 @@ function addElement(parentId, elementTag, elementId, html) {
   p.appendChild(newElement);
 }
 
+/**
+ * Function to remove an HTML element from the DOM.
+ * 
+ * Code for this function was taken from:
+ * https://www.abeautifulsite.net/adding-and-removing-elements-on-the-fly-using-javascript
+ */
 function removeElement(elementId) {
-  // Removes an element from the document
   var element = document.getElementById(elementId);
   element.parentNode.removeChild(element);
 }
@@ -105,16 +128,28 @@ function radio_form_val(form_id, id) {
   return val;
 }
 
-// sleep function
+/**
+ * helper function to pause the simulation for an amount of time
+ */
 const pause = (milliseconds) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds))
 }
 
-function reset() {
+/**
+ * reset handler for changing the simulation radio buttons
+ */
+function to_reset() {
+  if (started) {
+    window.location.reload();
+  }
 }
 
 // will build the first screen here and launch run, starting the simulation
 function start() {
+  // disable the dropdown and start button
+  document.getElementById("numsites").disabled=true;
+  document.getElementById("start_sim").disabled=true;
+
   if (started == true) {
     return;
   }
@@ -220,11 +255,15 @@ function broadcast(pID, type, amt, timestamp) {
       // push broadcast onto the channel's queue
       channels[pID][e].fifo_queue.push(new Message(e, type, amt, timestamp));
       channels[e][pID].fifo_queue.push(new Message(e, type, amt, timestamp));
+
+      if (counter > processes[e].timestamps[e]) {
+          processes[e].timestamps[e] = counter;
+      }
     }
   }
 }
 
-function request_cs(pID, time) {
+function create_trans(pID, time) {
   if (processes[pID].request == true) {
     return;
   }
@@ -308,6 +347,74 @@ function sort_process_queue() {
   }
 }
 
+/**
+ * Helper function to simulate counting of acks
+ * before transaction is applied.
+ */
+function count_acks() {
+  var master_queue = new Array();
+
+  // add unique mssgs to the queue
+  for (var i = 0; i < pnum; i++) {
+    for (var j = 0; j < processes[i].queue.length; j ++) {
+      var index = isIn(processes[i].queue[j], master_queue);
+
+      // if its in the queue, increment the count
+      if (index != -1) {
+        master_queue[index][1]++;
+      // else add it to the master queue
+      } else {
+        master_queue.push([processes[i].queue[j], 1]);
+      }
+    }
+  }
+
+  // increment the acks for the msgs in the process queues
+  // if they are equal to pnum
+  for (var m = 0; m < master_queue.length; m++) {
+    if (master_queue[m][1] == pnum) {
+      for (var i = 0; i < pnum; i++) {
+        for (var j = 0; j < processes[i].queue.length; j++) {
+          if (is_equal(processes[i].queue[j], master_queue[m][0])) {
+            processes[i].queue[j].acks = pnum;
+          }
+        }
+      }
+    }
+    
+  }
+}
+
+/**
+ * helper function to determine if a message object
+ * is in the master queue.
+ * 
+ * returns the index of the message in the queue.
+ */
+function isIn(msg, queue) {
+  for (var i = 0; i < queue.length; i++) {
+    if (is_equal(msg, queue[i][0])) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+/**
+ * Helper function to determine if two msgs are
+ * the same. Determined by message creator, timestamp, and type.
+ */
+function is_equal(msg1, msg2) {
+  if (msg1.timestamp.time == msg2.timestamp.time) {
+    if (msg1.type === msg2.type) {
+      if (msg1.timestamp.pID == msg2.timestamp.pID) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
 function apply_trans() {
   if (sim_type == 0) {
     for (var i = 0; i < pnum; i++) {
@@ -327,11 +434,11 @@ function apply_trans() {
 
     }
     // else TOB
-    // TODO: remove all before certain timestamp
   } else {
+    var max_ts_arr = create_max_arr();
     for (var i = 0; i < pnum; i++) {
       for (var j = 0; j < processes[i].queue.length; j++) {
-        if (processes[i].queue[j].acks >= pnum - 1 && processes[i].queue[j].timestamp.time <= processes[i].timestamps[i]) {
+        if (processes[i].queue[j].acks == pnum && processes[i].queue[j].timestamp.time <= max_ts_arr[i]) {
           if (processes[i].queue[j].type === 'Withdraw') {
             processes[i].balance -= processes[i].queue[0].amt;
             processes[i].queue.splice(j, 1);
@@ -344,6 +451,18 @@ function apply_trans() {
     }
   }
   return;
+}
+
+/**
+ * This function creates an array of size pnum of 
+ * the highest timestamp recorded for each process
+ */
+function create_max_arr() {
+  var temp = new Array(pnum);
+  for (var i = 0; i < pnum; i++) {
+    temp[i] = Math.max.apply(Math, processes[i].timestamps);
+  }
+  return temp;
 }
 
 
@@ -405,10 +524,7 @@ function handle_channels() {
 
             }
 
-            console.log('0: ' + processes[0].timestamps);
-            console.log('1: ' + processes[1].timestamps);
-            console.log('2: ' + processes[2].timestamps);
-            console.log('3: ' + processes[3].timestamps);
+
             // broadcast response msg to channel queues
             if (sim_type == 1) {
               //brd
@@ -468,16 +584,6 @@ function handle_process() {
   }
 }
 
-function cooldown() {
-  for (i = 0; i < pnum; i++) {
-    if (processes[i].color === 'green') {
-      if (processes[i].cs_usage != 0) {
-        processes[i].cs_usage--;
-      }
-    }
-  }
-}
-
 // decides if a process will request a cs this round
 function random_req() {
   
@@ -489,45 +595,26 @@ function random_req() {
 // this is how the function runs, it calls all the other functions in one step
 // it is called by pressing the button after run
 async function tick() {
-
   apply_trans();
 
   handle_process();
 
-  // Manage the Channel traffic
   handle_channels();
 
   var next_time = random_req();
   var next_req = random_req();
 
-  // select which processes are active
-  /*for (i = 0; i < pnum; i++) {
-    next_req = random_req();
-    if (next_req < pnum) {
-      request_cs(next_req, next_time);
-      next_req = random_req();
-    }
-  }*/  //TODO: uncomment for final
-
   if (next_req < pnum) {
-    request_cs(next_req, next_time);
+    create_trans(next_req, next_time);
     next_req = random_req();
   }
-
-
- // demonstrate int and with at the same time
- 
-  /*if (counter == 2) {
-    request_cs(0, 1);
-    //request_cs(1,1);
-  } */
   
   if (sim_type == 1) {
     sort_channel_queue();
     sort_process_queue();
+    count_acks();
   }
 
-  cooldown();
   draw(0);
 }
 
@@ -539,6 +626,11 @@ function splash() {
   ctx.fillText("Totally Ordered Broadcast Algorithm", 190, 400);
   ctx.font = "20px Arial";
   ctx.fillText("Created by Alexander Richard", 350, 430);
+
+  // create image here so it has time to load
+  var img = new Image();
+  img.src = 'iconfinder_access-time_326483.png';
+  ctx.drawImage(img, 10, 10, 32, 32);
 }
 
 function draw(type) {
@@ -549,13 +641,16 @@ function draw(type) {
     ctx.scale(3, 3);
   }
   
-  //ctx.translate(0.5, 0.5);
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.font = "10px Arial";
   ctx.lineWidth = 2;
 
   ctx.fillStyle = "black";
-  ctx.fillText("Clock: " + counter, 10, 20);
+  ctx.font = "20px Arial";
+  img = new Image();
+  img.src = 'iconfinder_access-time_326483.png';
+  ctx.drawImage(img, 10, 10, 32, 32);
+  ctx.fillText(counter, 50, 35);
 
   ctx.font = "10px Arial";
 
@@ -597,9 +692,9 @@ function draw(type) {
 
   if (pnum == 2) {
     // dimentions
-    var wl = 110;
+    var wl = 130;
     var wr = wl + 75;
-    var h = 150;
+    var h = 170;
 
     //queues
 
@@ -619,12 +714,30 @@ function draw(type) {
     }
 
     ctx.fillStyle = "black";
+    if (sim_type == 1) {
+      ctx.fillText("Local Time: " + processes[0].timestamps[0], off0 - 3, h - 30);
+    }
     ctx.fillText("Balance: $" + processes[0].balance.toPrecision(7), off0 - 3, h - 20);
     ctx.fillText("Queue:", off0, h - 10);
 
-    for (i = 0; i < processes[0].queue.length; i++) {
-      ctx.fillText('PID ' + processes[0].queue[i].pID + ': ' + processes[0].queue[i].time, off0, (h + 2) + (i * (10 + 3)));
+    ctx.font = "8px Arial";
+    for (i = 0; i < processes[0].queue.length && i < 4; i++) {
+      if (sim_type == 1) {
+        if (processes[0].queue[i].type === 'Interest') {
+          ctx.fillText(processes[0].queue[i].type + ': 1.5% at ' + processes[0].queue[i].timestamp.time, off0, (h + 2) + (i * (10 + 3)));
+        } else {
+          ctx.fillText(processes[0].queue[i].type + ': $1k at ' + processes[0].queue[i].timestamp.time, off0, (h + 2) + (i * (10 + 3)));
+        }
+      } else {
+        if (processes[0].queue[i].type === 'Interest') {
+          ctx.fillText( processes[0].queue[i].type + ' ' + (i_rate * 100) + '%', off0, (h + 2) + (i * (10 + 3)) );
+        } else {
+          ctx.fillText( processes[0].queue[i].type + ' $' + processes[0].queue[i].amt, off0, (h + 2) + (i * (10 + 3)) );
+        }
+      }
+      
     }
+    ctx.font = "10px Arial";
     
     // offset for site stats
     var off1 = wr + 20;
@@ -642,13 +755,30 @@ function draw(type) {
     }
 
     ctx.fillStyle = "black";
+    if (sim_type == 1) {
+      ctx.fillText("Local Time: " + processes[1].timestamps[1], off1 - 3, h - 30);
+    }
     ctx.fillText("Balance: $" + processes[1].balance.toPrecision(7), off1 - 3, h - 20);
     ctx.fillText("Queue:", off1, h - 10);
 
-    for (i = 0; i < processes[1].queue.length; i++) {
+    ctx.font = "8px Arial";
+    for (i = 0; i < processes[1].queue.length && i < 4; i++) {
+      if (sim_type == 1) {
+        if (processes[1].queue[i].type === 'Interest') {
+          ctx.fillText(processes[1].queue[i].type + ': 1.5% at ' + processes[1].queue[i].timestamp.time, off1, (h + 2) + (i * (10 + 3)));
+        } else {
+          ctx.fillText(processes[1].queue[i].type + ': $1k at ' + processes[1].queue[i].timestamp.time, off1, (h + 2) + (i * (10 + 3)));
+        }
+      } else {
+        if (processes[1].queue[i].type === 'Interest') {
+          ctx.fillText( processes[1].queue[i].type + ' ' + (i_rate * 100) + '%', off1, (h + 2) + (i * (10 + 3)) );
+        } else {
+          ctx.fillText( processes[1].queue[i].type + ' $' + processes[1].queue[i].amt, off1, (h + 2) + (i * (10 + 3)) );
+        }
+      }
       
-      ctx.fillText('PID ' + processes[1].queue[i].pID + ': ' + processes[1].queue[i].time, off1, (h + 2) + (i * (10 + 3)));
     }
+    ctx.font = "10px Arial";
 
     // channels
     ctx.lineWidth = 1.5;
@@ -722,23 +852,41 @@ function draw(type) {
 
     // queue aesthetics
     ctx.fillStyle = "lightblue";
-    ctx.fillRect(off0 - 3, hb + 30, 77, 65);
+    ctx.fillRect(off0 - 3, hb + 40, 77, 65);
     ctx.strokeStyle = "grey";
     ctx.lineWidth = 0.5;
     for (i = 0; i < 4; i++) {
       ctx.beginPath();
-      ctx.moveTo(off0, (hb + 45) + ((10 + 3) * i));
-      ctx.lineTo(off0 + 70, (hb + 45) + ((10 + 3) * i));
+      ctx.moveTo(off0, (hb + 55) + ((10 + 3) * i));
+      ctx.lineTo(off0 + 70, (hb + 55) + ((10 + 3) * i));
       ctx.stroke();
     }
 
     ctx.fillStyle = "black";
-    ctx.fillText("Balance: $" + processes[0].balance.toPrecision(7), off0 - 3, hb + 28);
-    ctx.fillText("Queue:", off0, hb + 40);
-
-    for (i = 0; i < processes[0].queue.length; i++) {
-      ctx.fillText(processes[0].queue[i].type + ' $' + processes[0].queue[i].amt, off0, (hb + 55) + (i * (10 + 3)));
+    if (sim_type == 1) {
+      ctx.fillText("Local Time: " + processes[0].timestamps[0], off0 - 3, hb + 28);
     }
+    ctx.fillText("Balance: $" + processes[0].balance.toPrecision(7), off0 - 3, hb + 38);
+    ctx.fillText("Queue:", off0, hb + 50);
+
+    ctx.font = "8px Arial";
+    for (i = 0; i < processes[0].queue.length && i < 4; i++) {
+      if (sim_type == 1) {
+        if (processes[0].queue[i].type === 'Interest') {
+          ctx.fillText(processes[0].queue[i].type + ': 1.5% at ' + processes[0].queue[i].timestamp.time, off0, (hb + 65) + (i * (10 + 3)));
+        } else {
+          ctx.fillText(processes[0].queue[i].type + ': $1k at ' + processes[0].queue[i].timestamp.time, off0, (hb + 65) + (i * (10 + 3)));
+        }
+      } else {
+        if (processes[0].queue[i].type === 'Interest') {
+          ctx.fillText( processes[0].queue[i].type + ' ' + (i_rate * 100) + '%', off0, (hb + 65) + (i * (10 + 3)) );
+        } else {
+          ctx.fillText( processes[0].queue[i].type + ' $' + processes[0].queue[i].amt, off0, (hb + 65) + (i * (10 + 3)) );
+        }
+      }
+      
+    }
+    ctx.font = "10px Arial";
 
     // offset for site stats
     var off1 = wl - 70;
@@ -756,37 +904,71 @@ function draw(type) {
     }
 
     ctx.fillStyle = "black";
+    if (sim_type == 1) {
+      ctx.fillText("Local Time: " + processes[1].timestamps[1], off1 - 3, ht - 47);
+    }
     ctx.fillText("Balance: $" + processes[1].balance.toPrecision(7), off1 - 3, ht - 37);
     ctx.fillText("Queue:", off1, ht - 25);
 
-    for (i = 0; i < processes[1].queue.length; i++) {
+    ctx.font = "8px Arial";
+    for (i = 0; i < processes[1].queue.length && i < 4; i++) {
+      if (sim_type == 1) {
+        if (processes[1].queue[i].type === 'Interest') {
+          ctx.fillText(processes[1].queue[i].type + ': 1.5% at ' + processes[1].queue[i].timestamp.time, off1, (ht - 11) + (i * (10 + 3)));
+        } else {
+          ctx.fillText(processes[1].queue[i].type + ': $1k at ' + processes[1].queue[i].timestamp.time, off1, (ht - 11) + (i * (10 + 3)));
+        }
+      } else {
+        if (processes[1].queue[i].type === 'Interest') {
+          ctx.fillText( processes[1].queue[i].type + ' ' + (i_rate * 100) + '%', off1, (ht - 11) + (i * (10 + 3)) );
+        } else {
+          ctx.fillText( processes[1].queue[i].type + ' $' + processes[1].queue[i].amt, off1, (ht - 11) + (i * (10 + 3)) );
+        }
+      }
       
-      ctx.fillText(processes[1].queue[i].type + ' $' + processes[1].queue[i].amt, off1, (ht - 11) + (i * (10 + 3)));
     }
+    ctx.font = "10px Arial";
 
     // offset for site stats
     var off2 = wr - 10;
 
     // queue aesthetics
     ctx.fillStyle = "lightblue";
-    ctx.fillRect(off2 - 3, hb + 30, 77, 65);
+    ctx.fillRect(off2 - 3, hb + 40, 77, 65);
     ctx.strokeStyle = "grey";
     ctx.lineWidth = 0.5;
     for (i = 0; i < 4; i++) {
       ctx.beginPath();
-      ctx.moveTo(off2, (hb + 45) + ((10 + 3) * i));
-      ctx.lineTo(off2 + 70, (hb + 45) + ((10 + 3) * i));
+      ctx.moveTo(off2, (hb + 55) + ((10 + 3) * i));
+      ctx.lineTo(off2 + 70, (hb + 55) + ((10 + 3) * i));
       ctx.stroke();
     }
 
     ctx.fillStyle = "black";
-    ctx.fillText("Balance: $" + processes[2].balance.toPrecision(7), off2 - 3, hb + 28);
-    ctx.fillText("Queue:", off2, hb + 40);
-
-    for (i = 0; i < processes[2].queue.length; i++) {
-      
-      ctx.fillText(processes[2].queue[i].type + ' $' + processes[2].queue[i].amt, off2, (hb + 55) + (i * (10 + 3)));
+    if (sim_type == 1) {
+      ctx.fillText("Local Time: " + processes[2].timestamps[2], off2 - 3, hb + 28);
     }
+    ctx.fillText("Balance: $" + processes[2].balance.toPrecision(7), off2 - 3, hb + 38);
+    ctx.fillText("Queue:", off2, hb + 50);
+
+    ctx.font = "8px Arial";
+    for (i = 0; i < processes[2].queue.length && i < 4; i++) {
+      if (sim_type == 1) {
+        if (processes[2].queue[i].type === 'Interest') {
+          ctx.fillText(processes[2].queue[i].type + ': 1.5% at ' + processes[2].queue[i].timestamp.time, off2, (hb + 65) + (i * (10 + 3)));
+        } else {
+          ctx.fillText(processes[2].queue[i].type + ': $1k at ' + processes[2].queue[i].timestamp.time, off2, (hb + 65) + (i * (10 + 3)));
+        }
+      } else {
+        if (processes[2].queue[i].type === 'Interest') {
+          ctx.fillText( processes[2].queue[i].type + ' ' + (i_rate * 100) + '%', off2, (hb + 65) + (i * (10 + 3)) );
+        } else {
+          ctx.fillText( processes[2].queue[i].type + ' $' + processes[2].queue[i].amt, off2, (hb + 65) + (i * (10 + 3)) );
+        }
+      }
+      
+    }
+    ctx.font = "10px Arial";
 
     // draw channels
     ctx.lineWidth = 1.5;
@@ -953,16 +1135,17 @@ function draw(type) {
     if (sim_type == 1) {
       ctx.fillText("Local Time: " + processes[0].timestamps[0], off0 - 3, th - 32);
     }
-      ctx.fillText("Balance: $" + processes[0].balance.toPrecision(7), off0 - 3, th - 22);
+    
+    ctx.fillText("Balance: $" + processes[0].balance.toPrecision(7), off0 - 3, th - 22);
     ctx.fillText("Queue:", off0, th - 10);
 
     ctx.font = "8px Arial";
-    for (i = 0; i < processes[0].queue.length; i++) {
+    for (i = 0; i < processes[0].queue.length && i < 4; i++) {
       if (sim_type == 1) {
         if (processes[0].queue[i].type === 'Interest') {
-          ctx.fillText(processes[0].queue[i].type + ': 1.5% at ' + processes[0].queue[i].timestamp.time, off0, (bh + 47) + (i * (10 + 3)));
+          ctx.fillText(processes[0].queue[i].type + ': 1.5% at ' + processes[0].queue[i].timestamp.time, off0, (th + 2) + (i * (10 + 3)));
         } else {
-          ctx.fillText(processes[0].queue[i].type + ': 1k at ' + processes[0].queue[i].timestamp.time, off0, (th + 2) + (i * (10 + 3)));
+          ctx.fillText(processes[0].queue[i].type + ': $1k at ' + processes[0].queue[i].timestamp.time, off0, (th + 2) + (i * (10 + 3)));
         }
       } else {
         if (processes[0].queue[i].type === 'Interest') {
@@ -997,12 +1180,12 @@ function draw(type) {
     ctx.fillText("Queue:", rw + 20, th - 10);
 
     ctx.font = "8px Arial";
-    for (i = 0; i < processes[1].queue.length; i++) {
+    for (i = 0; i < processes[1].queue.length && i < 4; i++) {
       if (sim_type == 1) {
         if (processes[1].queue[i].type === 'Interest') {
-          ctx.fillText(processes[1].queue[i].type + ': 1.5% at ' + processes[1].queue[i].timestamp.time, rw + 20, (bh + 47) + (i * (10 + 3)));
+          ctx.fillText(processes[1].queue[i].type + ': 1.5% at ' + processes[1].queue[i].timestamp.time, rw + 20, (th + 2) + (i * (10 + 3)));
         } else {
-          ctx.fillText(processes[1].queue[i].type + ': 1k at ' + processes[1].queue[i].timestamp.time, rw + 20, (th + 2) + (i * (10 + 3)));
+          ctx.fillText(processes[1].queue[i].type + ': $1k at ' + processes[1].queue[i].timestamp.time, rw + 20, (th + 2) + (i * (10 + 3)));
         }
       } else {
         if (processes[1].queue[i].type === 'Interest') {
@@ -1037,12 +1220,12 @@ function draw(type) {
     ctx.fillText("Queue:", off2, bh + 35);
 
     ctx.font = "8px Arial";
-    for (i = 0; i < processes[2].queue.length; i++) {
+    for (i = 0; i < processes[2].queue.length && i < 4; i++) {
       if (sim_type == 1) { 
         if (processes[2].queue[i].type === 'Interest') {
           ctx.fillText(processes[2].queue[i].type + ': 1.5% at ' + processes[2].queue[i].timestamp.time, off2, (bh + 47) + (i * (10 + 3)));
         } else {                                                                           
-          ctx.fillText(processes[2].queue[i].type + ': 1k at ' + processes[2].queue[i].timestamp.time, off2, (bh + 47) + (i * (10 + 3)));
+          ctx.fillText(processes[2].queue[i].type + ': $1k at ' + processes[2].queue[i].timestamp.time, off2, (bh + 47) + (i * (10 + 3)));
         }
       } else {
         if (processes[2].queue[i].type === 'Interest') {
@@ -1077,12 +1260,12 @@ function draw(type) {
     ctx.fillText("Queue:", rw + 20, bh + 35);
 
     ctx.font = "8px Arial";
-    for (i = 0; i < processes[3].queue.length; i++) {
+    for (i = 0; i < processes[3].queue.length && i < 4; i++) {
       if (sim_type == 1) {
         if (processes[3].queue[i].type === 'Interest') {
           ctx.fillText(processes[3].queue[i].type + ': 1.5% at ' + processes[3].queue[i].timestamp.time, rw + 20, (bh + 47) + (i * (10 + 3)));
         } else {
-          ctx.fillText(processes[3].queue[i].type + ': 1k at ' + processes[3].queue[i].timestamp.time, rw + 20, (bh + 47) + (i * (10 + 3)));
+          ctx.fillText(processes[3].queue[i].type + ': $1k at ' + processes[3].queue[i].timestamp.time, rw + 20, (bh + 47) + (i * (10 + 3)));
         }
       } else {
         if (processes[3].queue[i].type === 'Interest') {

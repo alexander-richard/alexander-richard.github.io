@@ -23,12 +23,12 @@
           </select> <br>
         </form>
         <form id="sform">
-          <h3>Select the speed of the simulation:</h3>
-          <input type="radio" id="fast" name="speed" value=1>
+          <h3>Select the speed of the simulation: (Click resume after changing)</h3>
+          <input type="radio" id="fast" name="speed" onclick="set_speed(7)" value=1>
           <label for="one">Fast</label><br>
-          <input type="radio" id="slow" name="speed" value=2>
+          <input type="radio" id="slow" name="speed" onclick="set_speed(20)" value=2>
           <label for="two">Slow</label><br>
-          <input type="radio" id="step" name="speed" value=0>
+          <input type="radio" id="step" name="speed" onclick="set_speed(0)" value=0>
           <label for="three">Step</label><br>
           
         </form>
@@ -37,6 +37,9 @@
         <br><button type="button" id="reset_sim" onClick="window.location.reload();">Reset Simulation</button>
         <br><br>
       </div>
+      <h3>Simulation Background Paragraph Goes here</h3>
+      <br>
+      <p>info info info info....</p>
     </div>
   </body>
 </html>

@@ -65,13 +65,26 @@ function Message( to, type, timestamp ) {
 }
 
 /**
+ * Handler for changing the speed radio buttons. Sets the simulation
+ * speed to the speed parameter.
+ */
+function set_speed(speed) {
+  if (sim_speed == 0) {
+    removeElement('next_btn');
+  }
+  sim_speed = speed;
+  if (sim_speed == 0 && started) {
+    addElement('control', 'p', 'next_btn', '<button class="button_nxt" onclick="stop()" id="nxt_btn">Step</button>');
+  }
+}
+
+/**
  * Function to add an HTML element to the DOM.
  * 
  * Code for this function was taken from:
  * https://www.abeautifulsite.net/adding-and-removing-elements-on-the-fly-using-javascript
  */
 function addElement(parentId, elementTag, elementId, html) {
-  // Adds an element to the document
   var p = document.getElementById(parentId);
   var newElement = document.createElement(elementTag);
   newElement.setAttribute('id', elementId);
@@ -122,6 +135,11 @@ const pause = (time) => {
  * start the simulation.
  */
 function start() {
+  // disable the dropdown and start button
+  document.getElementById("nump").disabled=true;
+  document.getElementById("start_sim").disabled=true;
+
+
   if (started == true) {
     return;
   }
@@ -478,20 +496,16 @@ async function tick() {
   sort_process_queue();
 
   handle_process();
-  draw(0);
 
   handle_channels();
 
-  draw(0);
 
   var next_req = random_req();
   var next_time = random_req();
   if (next_req < pnum) {
     request_cs(next_req, next_time);
   }
-  draw(0);
   
-  draw(0);
   cooldown();
   draw(0);
 }
@@ -508,6 +522,11 @@ function splash() {
   ctx.fillText("Timestamp Based Critical Section Algorithm", 110, 400);
   ctx.font = "20px Arial";
   ctx.fillText("Created by Alexander Richard", 350, 430);
+
+  // create image here so it has time to load
+  var img = new Image();
+  img.src = 'iconfinder_access-time_326483.png';
+  ctx.drawImage(img, 10, 10, 32, 32);
 }
 
 /**
@@ -527,7 +546,11 @@ function draw(type) {
   ctx.lineWidth = 2;
 
   ctx.fillStyle = "black";
-  ctx.fillText("Clock: " + counter, 10, 20);
+  ctx.font = "20px Arial";
+  img = new Image();
+  img.src = 'iconfinder_access-time_326483.png';
+  ctx.drawImage(img, 10, 10, 32, 32);
+  ctx.fillText(counter, 50, 35);
 
   ctx.font = "10px Arial";
 
@@ -577,9 +600,9 @@ function draw(type) {
 
   if (pnum == 2) {
     // dimentions
-    var wl = 75;
+    var wl = 130;
     var wr = wl + 75;
-    var h = 100;
+    var h = 190;
 
     //queues
 
@@ -604,7 +627,7 @@ function draw(type) {
     ctx.fillText("Queue:", wl - 65, h);
 
     ctx.font = "8px Arial";
-    for (i = 0; i < processes[0].queue.length; i++) {
+    for (i = 0; i < processes[0].queue.length && i < 4; i++) {
       ctx.fillText('PID ' + processes[0].queue[i].pID + ' at ' + processes[0].queue[i].time, wl - 65, (h + 12) + (i * (10 + 3)));
     }
     ctx.font = "10px Arial";
@@ -628,7 +651,7 @@ function draw(type) {
     ctx.fillText("Queue:", wr + 20, h);
 
     ctx.font = "8px Arial";
-    for (i = 0; i < processes[1].queue.length; i++) {
+    for (i = 0; i < processes[1].queue.length && i < 4; i++) {
       ctx.fillText('PID ' + processes[1].queue[i].pID + ' at ' + processes[1].queue[i].time, wr + 20, (h + 12) + (i * (10 + 3)));
     }
     ctx.font = "10px Arial";
@@ -697,34 +720,84 @@ function draw(type) {
     var ht = hb - 50;
 
     //queues
-    ctx.fillStyle = "black";
-    ctx.fillText("OK: " + processes[0].ok_ctr, wl - 65, hb - 15);
-    ctx.fillText("CD: " + processes[0].cs_usage, wl - 65, hb - 25);
-    ctx.fillText("Queue:", wl - 65, hb - 5);
 
-    for (i = 0; i < processes[0].queue.length; i++) {
-      ctx.fillText('PID ' + processes[0].queue[i].pID + ': ' + processes[0].queue[i].time, wl - 65, (hb + 5) + (i * 10));
+    // queue aesthetics
+    ctx.fillStyle = "lightblue";
+    ctx.fillRect(wl - 67, hb - 9, 50, 65);
+    ctx.strokeStyle = "grey";
+    ctx.lineWidth = 0.5;
+    for (i = 0; i < 4; i++) {
+      ctx.beginPath();
+      ctx.moveTo(wl - 65, (hb + 2) + ((10 + 3) * i));
+      ctx.lineTo(wl - 65 + 45, (hb + 2) + ((10 + 3) * i));
+      ctx.stroke();
+    }
+    
+    ctx.lineWidth = 1.5;
+    ctx.fillStyle = "black";
+    
+
+    ctx.fillText("Ack's: " + processes[0].ok_ctr, wl - 65, hb - 10);
+    ctx.fillText("CS Time: " + processes[0].cs_usage, wl - 65, hb - 20);
+    ctx.fillText("Queue:", wl - 65, hb);
+
+    ctx.font = "8px Arial";
+    for (i = 0; i < processes[0].queue.length && i < 4; i++) {
+      ctx.fillText('PID ' + processes[0].queue[i].pID + ' at ' + processes[0].queue[i].time, wl - 65, (hb + 12) + (i * (10 + 3)));
+    }
+    ctx.font = "10px Arial";
+
+    // queue aesthetics
+    ctx.fillStyle = "lightblue";
+    ctx.fillRect(mid - 67, ht - 44, 50, 65);
+    ctx.strokeStyle = "grey";
+    ctx.lineWidth = 0.5;
+    for (i = 0; i < 4; i++) {
+      ctx.beginPath();
+      ctx.moveTo(mid - 65, (ht - 33) + ((10 + 3) * i));
+      ctx.lineTo(mid - 65 + 45, (ht - 33) + ((10 + 3) * i));
+      ctx.stroke();
     }
 
+    ctx.lineWidth = 1.5;
     ctx.fillStyle = "black";
-    ctx.fillText("OK: " + processes[1].ok_ctr, mid - 65, ht - 15);
-    ctx.fillText("CD: " + processes[1].cs_usage, mid - 65, ht - 25);
-    ctx.fillText("Queue:", mid - 65, ht - 5);
+    
+    ctx.fillText("Ack's: " + processes[1].ok_ctr, mid - 65, ht - 45);
+    ctx.fillText("CS Time: " + processes[1].cs_usage, mid - 65, ht - 55);
+    ctx.fillText("Queue:", mid - 65, ht - 35);
 
-    for (i = 0; i < processes[1].queue.length; i++) {
-      
-      ctx.fillText('PID ' + processes[1].queue[i].pID + ': ' + processes[1].queue[i].time, mid - 65, (ht + 5) + (i * 10));
+    ctx.font = "8px Arial";
+    for (i = 0; i < processes[1].queue.length && i < 4; i++) {
+      ctx.fillText('PID ' + processes[1].queue[i].pID + ' at ' + processes[1].queue[i].time, mid - 65, (ht - 23) + (i * (10 + 3)));
+    }
+    ctx.font = "10px Arial";
+
+    
+
+    // queue aesthetics
+    ctx.fillStyle = "lightblue";
+    ctx.fillRect(wr + 18, hb - 9, 50, 65);
+    ctx.strokeStyle = "grey";
+    ctx.lineWidth = 0.5;
+    for (i = 0; i < 4; i++) {
+      ctx.beginPath();
+      ctx.moveTo(wr + 20, (hb + 2) + ((10 + 3) * i));
+      ctx.lineTo(wr + 20 + 45, (hb + 2) + ((10 + 3) * i));
+      ctx.stroke();
     }
 
+    ctx.lineWidth = 1.5;
     ctx.fillStyle = "black";
-    ctx.fillText("OK: " + processes[2].ok_ctr, wr + 25, hb - 15);
-    ctx.fillText("CD: " + processes[2].cs_usage, wr + 25, hb - 25);
-    ctx.fillText("Queue:", wr + 25, hb - 5);
 
-    for (i = 0; i < processes[2].queue.length; i++) {
-      
-      ctx.fillText('PID ' + processes[2].queue[i].pID + ': ' + processes[2].queue[i].time, wr + 25, (hb + 5) + (i * 10));
+    ctx.fillText("Ack's: " + processes[2].ok_ctr, wr + 20, hb - 10);
+    ctx.fillText("CS Time: " + processes[2].cs_usage, wr + 20, hb - 20);
+    ctx.fillText("Queue:", wr + 20, hb);
+
+    ctx.font = "8px Arial";
+    for (i = 0; i < processes[2].queue.length && i < 4; i++) {
+      ctx.fillText('PID ' + processes[2].queue[i].pID + ' at ' + processes[2].queue[i].time, wr + 20, (hb + 12) + (i * (10 + 3)));
     }
+    ctx.font = "10px Arial";
 
     // draw channels
 
@@ -886,7 +959,7 @@ function draw(type) {
     ctx.fillText("Queue:", lw - 65, th);
 
     ctx.font = "8px Arial";
-    for (i = 0; i < processes[0].queue.length; i++) {
+    for (i = 0; i < processes[0].queue.length && i < 4; i++) {
       ctx.fillText('PID ' + processes[0].queue[i].pID + ' at ' + processes[0].queue[i].time, lw - 65, (th + 12) + (i * (10 + 3)));
     }
     ctx.font = "10px Arial";
@@ -909,7 +982,7 @@ function draw(type) {
     ctx.fillText("Queue:", rw + 20, th);
 
     ctx.font = "8px Arial";
-    for (i = 0; i < processes[1].queue.length; i++) {
+    for (i = 0; i < processes[1].queue.length && i < 4; i++) {
       
       ctx.fillText('PID ' + processes[1].queue[i].pID + ' at ' + processes[1].queue[i].time, rw + 20, (th + 12) + (i * (10 + 3)));
     }
@@ -933,7 +1006,7 @@ function draw(type) {
     ctx.fillText("Queue:", lw - 65, bh);
 
     ctx.font = "8px Arial";
-    for (i = 0; i < processes[2].queue.length; i++) {
+    for (i = 0; i < processes[2].queue.length && i < 4; i++) {
       
       ctx.fillText('PID ' + processes[2].queue[i].pID + ' at ' + processes[2].queue[i].time, lw - 65, (bh + 12) + (i * (10 + 3)));
     }
@@ -957,7 +1030,7 @@ function draw(type) {
     ctx.fillText("Queue:", rw + 20, bh);
 
     ctx.font = "8px Arial";
-    for (i = 0; i < processes[3].queue.length; i++) {
+    for (i = 0; i < processes[3].queue.length && i < 4; i++) {
       
       ctx.fillText('PID ' + processes[3].queue[i].pID + ' at ' + processes[3].queue[i].time, rw + 20, (bh + 12) + (i * (10 + 3)));
     }
