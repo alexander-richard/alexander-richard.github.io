@@ -537,7 +537,9 @@ function handle_channels() {
             for (k = 0; k < processes[j].queue.length; k++) {
               if (processes[j].queue[k].amt == channels[i][j].msg.amt && channels[i][j].msg.timestamp.time == processes[j].queue[k].timestamp.time && processes[j].queue[k].to == channels[i][j].msg.to) {
                 processes[j].queue[k].acks++;
-                processes[j].timestamps[i] = channels[i][j].msg.timestamp.time;
+                if (channels[i][j].msg.timestamp.time > processes[j].timestamps[i]) {
+                  processes[j].timestamps[i] = channels[i][j].msg.timestamp.time;
+                }
               }
             }
           }
@@ -550,8 +552,13 @@ function handle_channels() {
               } else {
                 channels[i][j].msg.acks++;
                 processes[j].queue.push( channels[i][j].msg);
-                processes[j].timestamps[i] = channels[i][j].msg.timestamp.time;
-                processes[j].timestamps[j] = channels[i][j].msg.timestamp.time;
+                if (channels[i][j].msg.timestamp.time > processes[j].timestamps[i]) {
+                  processes[j].timestamps[i] = channels[i][j].msg.timestamp.time;
+                }
+                
+                if (channels[i][j].msg.timestamp.time > processes[j].timestamps[j]) {
+                  processes[j].timestamps[j] = channels[i][j].msg.timestamp.time;
+                }
 
               }
 
@@ -637,9 +644,15 @@ function handle_process() {
  * an update.
  */
 function random_req() {
-  
-  // get random number between 0 and 9
-  var rand = Math.floor( Math.random() * 15 );
+  var interval;
+  if (pnum == 2) {
+    interval = 5;
+  } else if (pnum == 3) {
+    interval = 7;
+  } else {
+    interval = 10;
+  }
+  var rand = Math.floor( Math.random() * interval );
   return rand;
 }
 
@@ -660,6 +673,25 @@ async function tick() {
   if (next_req < pnum) {
     create_trans(next_req, next_time);
     next_req = random_req();
+  }
+
+  // check that a process has started a transaction in this turn
+  var check_for_requests = false;
+  for (var i = 0; i < pnum; i++) {
+    if (processes[i].request) {
+      check_for_requests = true;
+    }
+  }
+
+  // if no processes have started a request try to start one again
+  if (!check_for_requests) {
+    next_time = random_req();
+    next_req = random_req();
+
+    if (next_req < pnum) {
+      create_trans(next_req, next_time);
+      next_req = random_req();
+    }
   }
   
   if (sim_type == 1) {

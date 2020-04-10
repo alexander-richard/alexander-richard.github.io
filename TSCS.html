@@ -49,21 +49,24 @@
         <h3>About the Algorithm</h3>
         <p>The purpose of this algorithm is to ensure that distributed processes do not
           access a shared resource (critical section) at the same time. This is accomplished by making use
-          of Lamport Timestamps to assign every request a clock value. Before a process
+          of Lamport Timestamps to assign every request a time value. Before a process
           enters the critical section it waits on acknowledgements from every other process.
           Once finished, it lets all the other processes know that it is done and they each
-          remove that request from their queues, then the next process enters.
+          remove that request from their queues, then the next waiting process enters the critical section.
         </p>
         <p>
-          <b>Pseudocode to request the critical section for process i:</b> <br>
-          &emsp;queue.push(i, timestamp)<br>
-          &emsp;broadcast_request(i, timestamp)
-          <br><br>
-          <b>Pseudocode to enter the critical section for process i:</b> <br>
-          &emsp;queue.sort()<br>
-          &emsp;if queue[0] == i and i.acks == number_of_processes - 1 do<br>
-          &emsp; &emsp;critical_section.enter() <br>
-          &emsp;end if
+          <b>Algorithm pseudocode:</b> <br>
+          Pi: (initially timestamp = 0)<br>
+          &emsp; on event e:<br>
+          &emsp;&emsp;case e is send(msg)<br>
+          &emsp;&emsp;&emsp;timestamp = timestamp + 1<br>
+          &emsp;&emsp;&emsp;msg.timestamp = timestamp<br>
+          &emsp;&emsp;case e is receive(msg)<br>
+          &emsp;&emsp;&emsp;timestamp = max(timstamp, msg.timestamp)<br>
+          &emsp;&emsp;&emsp;timstamp = timestamp + 1<br>
+          &emsp;&emsp;case e is any other event<br>
+          &emsp;&emsp;&emsp;timestamp = timestamp + 1<br>
+          &emsp;&emsp;e.timestamp = timestamp<br>
         </p>
       
     </div>

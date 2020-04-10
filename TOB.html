@@ -66,16 +66,16 @@
           &emsp;broadcast(U, timestamp_array[i])
           <br><br>
           <b>Pseudocode for process i receiving an update from process j:</b> <br>
-          &emsp;timestamp_array[i] = msg_timestamp<br>
-          &emsp;queue.enqueue(msg, msg.timestamp)<br>
-          &emsp;if msg.timestamp > timestamp_array[i] do<br>
-          &emsp; &emsp;timestamp_array[i] = msg.timestamp <br>
+          &emsp;timestamp_array[j] = msg_timestamp<br>
+          &emsp;queue.enqueue(msg, msg.msg_timestamp)<br>
+          &emsp;if msg_timestamp > timestamp_array[i]<br>
+          &emsp; &emsp;timestamp_array[i] = msg_timestamp <br>
           &emsp; &emsp;broadcast(ack-msg, timestamp_array[i]) <br>
           &emsp;end if
           <br><br>
           <b>Pseudocode for applying updates:</b> <br>
           &emsp;(update, timestamp) = queue.head() <br>
-          &emsp;if (for all j, update.timestamp <= timestamp_array[j])) do<br>
+          &emsp;if (for all j, timestamp <= timestamp_array[j]))<br>
           &emsp; &emsp;queue.dequeue() <br>
           &emsp; &emsp;apply(update) <br>
           &emsp;end if

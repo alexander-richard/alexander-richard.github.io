@@ -483,7 +483,15 @@ function cooldown() {
  * the critical section and for how long.
  */
 function random_req() {
-  var rand = Math.floor( Math.random() * 10 );
+  var interval;
+  if (pnum == 2) {
+    interval = 7;
+  } else if (pnum == 3) {
+    interval = 7;
+  } else {
+    interval = 10;
+  }
+  var rand = Math.floor( Math.random() * interval );
   return rand;
 }
 
@@ -505,6 +513,25 @@ async function tick() {
   var next_time = random_req();
   if (next_req < pnum) {
     request_cs(next_req, next_time);
+  }
+
+  // check that a process has started a transaction in this turn
+  var check_for_requests = false;
+  for (var i = 0; i < pnum; i++) {
+    if (processes[i].request) {
+      check_for_requests = true;
+    }
+  }
+
+  // if no processes have started a request try to start one again
+  if (!check_for_requests) {
+    next_time = random_req();
+    next_req = random_req();
+
+    if (next_req < pnum) {
+      create_trans(next_req, next_time);
+      next_req = random_req();
+    }
   }
   
   cooldown();
