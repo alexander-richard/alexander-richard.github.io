@@ -34,8 +34,8 @@ var started = false;
 // PRAM or TOB
 var sim_type = -1;
 
-//1.5% interest rate
-var i_rate = 0.015;
+//10% interest rate
+var i_rate = 0.1;
 
 // process object
 function Process() {
@@ -303,7 +303,7 @@ function create_trans(pID, time) {
 
   } else {
     timestamp = new Timestamp(pID, counter);
-    processes[pID].queue.push(new Message(pID, 'Withdraw', 1000, timestamp));
+    processes[pID].queue.push(new Message(pID, 'Withdraw', 100, timestamp));
 
   }
   
@@ -315,7 +315,7 @@ function create_trans(pID, time) {
   if (pID == 0) {
     broadcast(pID, 'Interest', -1, timestamp);
   } else {
-    broadcast(pID, 'Withdraw', 1000, timestamp);
+    broadcast(pID, 'Withdraw', 100, timestamp);
   }
 }
 
@@ -815,9 +815,9 @@ function draw(type) {
     for (i = 0; i < processes[0].queue.length && i < 4; i++) {
       if (sim_type == 1) {
         if (processes[0].queue[i].type === 'Interest') {
-          ctx.fillText(processes[0].queue[i].type + ': 1.5% at ' + processes[0].queue[i].timestamp.time, off0, (h + 2) + (i * (10 + 3)));
+          ctx.fillText(processes[0].queue[i].type + ': 10% at ' + processes[0].queue[i].timestamp.time, off0, (h + 2) + (i * (10 + 3)));
         } else {
-          ctx.fillText(processes[0].queue[i].type + ': $1k at ' + processes[0].queue[i].timestamp.time, off0, (h + 2) + (i * (10 + 3)));
+          ctx.fillText(processes[0].queue[i].type + ': $100 at ' + processes[0].queue[i].timestamp.time, off0, (h + 2) + (i * (10 + 3)));
         }
       } else {
         if (processes[0].queue[i].type === 'Interest') {
@@ -856,9 +856,9 @@ function draw(type) {
     for (i = 0; i < processes[1].queue.length && i < 4; i++) {
       if (sim_type == 1) {
         if (processes[1].queue[i].type === 'Interest') {
-          ctx.fillText(processes[1].queue[i].type + ': 1.5% at ' + processes[1].queue[i].timestamp.time, off1, (h + 2) + (i * (10 + 3)));
+          ctx.fillText(processes[1].queue[i].type + ': 10% at ' + processes[1].queue[i].timestamp.time, off1, (h + 2) + (i * (10 + 3)));
         } else {
-          ctx.fillText(processes[1].queue[i].type + ': $1k at ' + processes[1].queue[i].timestamp.time, off1, (h + 2) + (i * (10 + 3)));
+          ctx.fillText(processes[1].queue[i].type + ': $100 at ' + processes[1].queue[i].timestamp.time, off1, (h + 2) + (i * (10 + 3)));
         }
       } else {
         if (processes[1].queue[i].type === 'Interest') {
@@ -964,9 +964,9 @@ function draw(type) {
     for (i = 0; i < processes[0].queue.length && i < 4; i++) {
       if (sim_type == 1) {
         if (processes[0].queue[i].type === 'Interest') {
-          ctx.fillText(processes[0].queue[i].type + ': 1.5% at ' + processes[0].queue[i].timestamp.time, off0, (hb + 65) + (i * (10 + 3)));
+          ctx.fillText(processes[0].queue[i].type + ': 10% at ' + processes[0].queue[i].timestamp.time, off0, (hb + 65) + (i * (10 + 3)));
         } else {
-          ctx.fillText(processes[0].queue[i].type + ': $1k at ' + processes[0].queue[i].timestamp.time, off0, (hb + 65) + (i * (10 + 3)));
+          ctx.fillText(processes[0].queue[i].type + ': $100 at ' + processes[0].queue[i].timestamp.time, off0, (hb + 65) + (i * (10 + 3)));
         }
       } else {
         if (processes[0].queue[i].type === 'Interest') {
@@ -1005,9 +1005,9 @@ function draw(type) {
     for (i = 0; i < processes[1].queue.length && i < 4; i++) {
       if (sim_type == 1) {
         if (processes[1].queue[i].type === 'Interest') {
-          ctx.fillText(processes[1].queue[i].type + ': 1.5% at ' + processes[1].queue[i].timestamp.time, off1, (ht - 11) + (i * (10 + 3)));
+          ctx.fillText(processes[1].queue[i].type + ': 10% at ' + processes[1].queue[i].timestamp.time, off1, (ht - 11) + (i * (10 + 3)));
         } else {
-          ctx.fillText(processes[1].queue[i].type + ': $1k at ' + processes[1].queue[i].timestamp.time, off1, (ht - 11) + (i * (10 + 3)));
+          ctx.fillText(processes[1].queue[i].type + ': $100 at ' + processes[1].queue[i].timestamp.time, off1, (ht - 11) + (i * (10 + 3)));
         }
       } else {
         if (processes[1].queue[i].type === 'Interest') {
@@ -1046,9 +1046,9 @@ function draw(type) {
     for (i = 0; i < processes[2].queue.length && i < 4; i++) {
       if (sim_type == 1) {
         if (processes[2].queue[i].type === 'Interest') {
-          ctx.fillText(processes[2].queue[i].type + ': 1.5% at ' + processes[2].queue[i].timestamp.time, off2, (hb + 65) + (i * (10 + 3)));
+          ctx.fillText(processes[2].queue[i].type + ': 10% at ' + processes[2].queue[i].timestamp.time, off2, (hb + 65) + (i * (10 + 3)));
         } else {
-          ctx.fillText(processes[2].queue[i].type + ': $1k at ' + processes[2].queue[i].timestamp.time, off2, (hb + 65) + (i * (10 + 3)));
+          ctx.fillText(processes[2].queue[i].type + ': $100 at ' + processes[2].queue[i].timestamp.time, off2, (hb + 65) + (i * (10 + 3)));
         }
       } else {
         if (processes[2].queue[i].type === 'Interest') {
@@ -1234,9 +1234,9 @@ function draw(type) {
     for (i = 0; i < processes[0].queue.length && i < 4; i++) {
       if (sim_type == 1) {
         if (processes[0].queue[i].type === 'Interest') {
-          ctx.fillText(processes[0].queue[i].type + ': 1.5% at ' + processes[0].queue[i].timestamp.time, off0, (th + 2) + (i * (10 + 3)));
+          ctx.fillText(processes[0].queue[i].type + ': 10% at ' + processes[0].queue[i].timestamp.time, off0, (th + 2) + (i * (10 + 3)));
         } else {
-          ctx.fillText(processes[0].queue[i].type + ': $1k at ' + processes[0].queue[i].timestamp.time, off0, (th + 2) + (i * (10 + 3)));
+          ctx.fillText(processes[0].queue[i].type + ': $100 at ' + processes[0].queue[i].timestamp.time, off0, (th + 2) + (i * (10 + 3)));
         }
       } else {
         if (processes[0].queue[i].type === 'Interest') {
@@ -1274,9 +1274,9 @@ function draw(type) {
     for (i = 0; i < processes[1].queue.length && i < 4; i++) {
       if (sim_type == 1) {
         if (processes[1].queue[i].type === 'Interest') {
-          ctx.fillText(processes[1].queue[i].type + ': 1.5% at ' + processes[1].queue[i].timestamp.time, rw + 20, (th + 2) + (i * (10 + 3)));
+          ctx.fillText(processes[1].queue[i].type + ': 10% at ' + processes[1].queue[i].timestamp.time, rw + 20, (th + 2) + (i * (10 + 3)));
         } else {
-          ctx.fillText(processes[1].queue[i].type + ': $1k at ' + processes[1].queue[i].timestamp.time, rw + 20, (th + 2) + (i * (10 + 3)));
+          ctx.fillText(processes[1].queue[i].type + ': $100 at ' + processes[1].queue[i].timestamp.time, rw + 20, (th + 2) + (i * (10 + 3)));
         }
       } else {
         if (processes[1].queue[i].type === 'Interest') {
@@ -1314,9 +1314,9 @@ function draw(type) {
     for (i = 0; i < processes[2].queue.length && i < 4; i++) {
       if (sim_type == 1) { 
         if (processes[2].queue[i].type === 'Interest') {
-          ctx.fillText(processes[2].queue[i].type + ': 1.5% at ' + processes[2].queue[i].timestamp.time, off2, (bh + 47) + (i * (10 + 3)));
+          ctx.fillText(processes[2].queue[i].type + ': 10% at ' + processes[2].queue[i].timestamp.time, off2, (bh + 47) + (i * (10 + 3)));
         } else {                                                                           
-          ctx.fillText(processes[2].queue[i].type + ': $1k at ' + processes[2].queue[i].timestamp.time, off2, (bh + 47) + (i * (10 + 3)));
+          ctx.fillText(processes[2].queue[i].type + ': $100 at ' + processes[2].queue[i].timestamp.time, off2, (bh + 47) + (i * (10 + 3)));
         }
       } else {
         if (processes[2].queue[i].type === 'Interest') {
@@ -1354,9 +1354,9 @@ function draw(type) {
     for (i = 0; i < processes[3].queue.length && i < 4; i++) {
       if (sim_type == 1) {
         if (processes[3].queue[i].type === 'Interest') {
-          ctx.fillText(processes[3].queue[i].type + ': 1.5% at ' + processes[3].queue[i].timestamp.time, rw + 20, (bh + 47) + (i * (10 + 3)));
+          ctx.fillText(processes[3].queue[i].type + ': 10% at ' + processes[3].queue[i].timestamp.time, rw + 20, (bh + 47) + (i * (10 + 3)));
         } else {
-          ctx.fillText(processes[3].queue[i].type + ': $1k at ' + processes[3].queue[i].timestamp.time, rw + 20, (bh + 47) + (i * (10 + 3)));
+          ctx.fillText(processes[3].queue[i].type + ': $100 at ' + processes[3].queue[i].timestamp.time, rw + 20, (bh + 47) + (i * (10 + 3)));
         }
       } else {
         if (processes[3].queue[i].type === 'Interest') {
