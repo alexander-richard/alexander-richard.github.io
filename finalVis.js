@@ -111,7 +111,7 @@ async function loadMap() {
 		.attr("fill", "rgb(150,150,150)")
 		.attr("font-family", "arial")
 		.attr("font-size", "40px")
-		.text("Infected");
+		.text("Affected");
 
 	svg.append("text")
 		.attr("text-anchor", "end")
