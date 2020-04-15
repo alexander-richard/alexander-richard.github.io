@@ -1,0 +1,40 @@
+rect.bg {
+	width: 100%;
+	height: 100%;
+	fill: grey;
+}
+
+rect.lg {
+	width: 28%;
+	height: 50%;
+	fill: black;
+}
+
+.axisColourX line{
+	stroke: rgb(150,150,150);
+}
+
+.axisColourX path{
+	stroke: rgb(150,150,150);
+}
+
+.axisColourX text{
+	fill: rgb(150,150,150);
+}
+
+.axisColourY line{
+	stroke: rgb(150,150,150);
+}
+
+.axisColourY path{
+	stroke: rgb(150,150,150);
+}
+
+.axisColourY text{
+	fill: rgb(150,150,150);
+}
+
+.axisLabelY text{
+	stroke: rgb(150,150,150);
+	font-size: 12px;
+}
