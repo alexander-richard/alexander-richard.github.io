@@ -54,11 +54,7 @@
         <p>Note: Changing the synchronization during execution will reset the simulation</p>
 
         <h3>About the Algorithm</h3>
-        <p>The purpose of this algorithm is to ensure that updates between processes are executed in the order that they were sent in. 
-          This is accomplished by making use of an array of Lamport Timestamps and priority queues within each process. The local time of each
-          process is updated acording to the highest timestamp attached to an incoming message. When a message is recieved by a process
-          it will broadcast that message to all other processes and as a result, the local times will be shared across the network.
-          Messages in the priority queue are executed one at a time for all that are less than the current local time.
+        <p>The purpose of this algorithm is to ensure updates between processes execute in the order they were sent in. The algorithm accomplishes this by making use of an array of Lamport Timestamps and priority queues within each process. The local time of each process updates according to the highest timestamp attached to an incoming message. When a process receives a message, it broadcasts to all other processes. As a result, the local times propagate across the network. Messages in the priority queue are executed one at a time for all that is less than the current local time.
         </p>
         <p>
           <b>Pseudocode for sending an update U from process i:</b> <br>

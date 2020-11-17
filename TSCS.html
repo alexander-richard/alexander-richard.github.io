@@ -47,12 +47,7 @@
         </ol>
 
         <h3>About the Algorithm</h3>
-        <p>The purpose of this algorithm is to ensure that distributed processes do not
-          access a shared resource (critical section) at the same time. This is accomplished by making use
-          of Lamport Timestamps to assign every request a time value. Before a process
-          enters the critical section it waits on acknowledgements from every other process.
-          Once finished, it lets all the other processes know that it is done and they each
-          remove that request from their queues, then the next waiting process enters the critical section.
+        <p>The purpose of this algorithm is to ensure that distributed processes do not access a shared resource (critical section) at the same time. This is accomplished by making use of Lamport Timestamps to assign every request a time value. Before a process enters the critical section, it waits on acknowledgments from every other process. Once finished, it lets all the other processes know that it is done, and they each remove that request from their queues; then, the next waiting process enters the critical section.
         </p>
         <p>
           <b>Algorithm pseudocode:</b> <br>
