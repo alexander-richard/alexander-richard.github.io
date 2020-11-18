@@ -14,7 +14,7 @@
     </div>
     <div style="display: inline-block">
       <div class="control" style="display:table">
-        <div>
+        <div id="speedDiv">
           <label> Select Simulation Speed: <br></label>
           <input type="radio" id="fast" name="speed">
           <label for="fast">Fast</label><br>
@@ -24,7 +24,7 @@
           <label for="step">Step</label>
           <button id="step_button" disabled="true" onclick="step()">Step</button>
         </div>
-        <div>
+        <div id="structDiv">
           <label for="structInput">Ring Structure: (ex: 1, 2, 3)<br></label>
           <input type="text" id="structInput" name="structInput">
           <button onclick="parse_input()">Start</button>
@@ -33,6 +33,10 @@
       </div>
     </div>
   </div>
+  <h3>How to Use the Simulator:</h3>
+  <p>Select a speed for the simulation to run at. If 'Step' is selected, press the 'Step' button to continue the simulation.<br>
+      Next, enter the structure of the Ring. This is done by entering between 3 and 8 distinct and non-negative numbers.<br>
+      To reset the simulator, press the 'Reset' button next to the 'Start' button.</p>
 </body>
 
 <script src="script.js"></script>

@@ -2,11 +2,11 @@ const cvs = document.querySelector('canvas');
 const c = cvs.getContext('2d');
 
 cvs.width = window.innerWidth / 1.5;
-cvs.height = window.innerHeight / 1.01;
+cvs.height = window.innerHeight / 1.2;
 
 window.addEventListener('resize', function () {
   cvs.width = window.innerWidth / 1.5;
-  cvs.height = window.innerHeight / 1.01;
+  cvs.height = window.innerHeight / 1.2;
   ring_x = cvs.width / 2;
   ring_y = cvs.height / 2;
   ring_rad = cvs.height / cvs.width * 300;
@@ -42,10 +42,10 @@ function mouse_collision(node, mouse_x, mouse_y, offset) {
 
 function load_credits() {
   c.font = "40px Arial";
-  c.fillText("Ring Election Simulation", window.innerWidth / 5, window.innerHeight / 2);
+  c.fillText("Ring Election Simulation", window.innerWidth / 5, window.innerHeight / 3);
 
   c.font = "30px Arial";
-  c.fillText("Created by Alexander Richard", (window.innerWidth / 5) + 10, (window.innerHeight / 2) + 40);
+  c.fillText("Created by Alexander Richard", (window.innerWidth / 5) + 10, (window.innerHeight / 3) + 40);
 }
 
 function reset_button() {
@@ -348,7 +348,7 @@ function init_simulation(ring_structure) {
 function create_animation(k) {
   let font_size = 150 / node_array.length;
   c.font = toString(font_size) + "px Arial";
-  c.fillText("Iteration: " + k, 20, 20);
+  c.fillText("Iteration: " + k, 20, 30);
 
   // draw the connections
   c.strokeStyle = 'rgba(0, 0, 0, 1)';

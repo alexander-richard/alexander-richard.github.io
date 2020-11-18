@@ -1,6 +1,6 @@
 .control {
-  border: 3px solid black;
   margin: 20px;
+  height: 580px;
 }
 
 body {
@@ -12,9 +12,9 @@ canvas {
   background: linear-gradient(45deg, white 0% 20%, gray);
   margin: 0;
   padding: 0;
-  border: none;
+  border: 1px solid black;
 }
 
-div {
-  border: 1px solid black;
+#speedDiv {
+  height: 100px;
 }
