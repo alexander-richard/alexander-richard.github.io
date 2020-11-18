@@ -40,15 +40,26 @@ function mouse_collision(node, mouse_x, mouse_y, offset) {
   }
 }
 
+function get_crashed_node_index(id) {
+  for (let i = 0; i < crashed_array.length; i++) {
+    if (crashed_array[i] == id) {
+      return i;
+    }
+  }
+}
+
 function toggle_crashed_node(node) {
   if (node.color == CRASHED) {
     node.color = RUNNING_PROCESS;
     node.predecessor.successor = node;
     node.successor.predecessor = node;
+    crashed_array.splice(get_crashed_node_index(node.id));
+
   } else {
     node.color = CRASHED;
     node.predecessor.successor = node.successor
     node.successor.predecessor = node.predecessor
+    crashed_array.push(node.id);
   }
 }
 
@@ -60,6 +71,13 @@ const BECOME_LEADER = 'red';
 const CALL_ELECTION = 'blue';
 const RUNNING_PROCESS = 'black';
 const CRASHED = 'grey';
+
+const MSG_ELECTION = 0;
+const MSG_LEADER = 1;
+
+const node_array = [];
+
+var crashed_array = [];
 
 var start_flag = false;
 var pause_flag = false;
@@ -83,7 +101,25 @@ function step() {
   pause_flag = false;
 }
 
-const node_array = [];
+function check_negatives (input) {
+  for (let i = 0; i < input.length; i++) {
+    if (input[i] < 0) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function check_repeat_ids (input) {
+  let seen = [];
+  for (let i = 0; i < input.length; i++) {
+    if (seen.includes(input[i])) {
+      return true;
+    }
+    seen.push(input[i]);
+  }
+  return false;
+}
 
 function parse_input() {
   var unparsed_structure = document.getElementById("structInput").value;
@@ -91,6 +127,16 @@ function parse_input() {
 
   if (parsed_structure.length < 3) {
     alert("Error - Please Enter at Least Three Processes");
+    return;
+  }
+
+  if (check_negatives(parsed_structure)) {
+    alert("Error - Please Enter Non-Negative Process ID's");
+    return;
+  }
+
+  if (check_repeat_ids(parsed_structure)) {
+    alert("Error - Please Enter Different ID Numbers");
     return;
   }
 
@@ -130,7 +176,7 @@ class Node {
     this.id = id;
     this.x = null;
     this.y = null;
-    this.color = 'black';
+    this.color = RUNNING_PROCESS;
     this.predecessor = predecessor;
     this.successor = successor;
     this.running = false;
@@ -141,6 +187,7 @@ class Node {
 
   send_message = (message) => {
     this.successor.message_queue.push(message);
+    this.message_queue.splice(0, this.message_queue.length);
   }
 
   initiate_election = () => {
@@ -150,35 +197,66 @@ class Node {
     //this.send_message(new Message(0, this.id));
   }
 
-  run = () => {
-    if (this.election && this.successor.message_queue.length == 0) {
-      this.election = false;
-      this.send_message(new Message(0, this.id));
+  determine_msg_priority = () => {
+    if (this.message_queue.length <= 1) {
+      return;
     }
-    
+
+    let highest_pri = new Message(MSG_ELECTION, -1);
+
+    for (let i=0; i < this.message_queue.length; i++) {
+      if (this.message_queue[i].type == MSG_LEADER) {
+        if (highest_pri.type == MSG_ELECTION) {
+          highest_pri = this.message_queue[i];
+        } else if (this.message_queue[i].payload >= highest_pri.payload) {
+          highest_pri = this.message_queue[i];
+        }
+      } else {
+        if (highest_pri.type == MSG_ELECTION && highest_pri.payload <= this.message_queue[i].payload) {
+          highest_pri = this.message_queue[i];
+        }
+      }
+    }
+
+    this.message_queue = [highest_pri];
+  }
+
+  run = () => {
+    if (this.election && this.message_queue.length == 0) {
+      this.election = false;
+      this.send_message(new Message(MSG_ELECTION, this.id));
+    } /*else if (this.message_queue.length > 1) {
+      this.determine_msg_priority();
+    } */
+
     if (this.message_queue.length != 0) {
       var msg = this.message_queue.shift();
-      if (msg.type == 1) {
+      if (msg.type == MSG_LEADER) {
         if (msg.payload != this.id) {
           this.color = RUNNING_PROCESS;
         }
         this.leader = msg.payload;
         this.running = false;
         if (msg.payload != this.id) {
-          this.send_message(new Message(1, msg.payload));
+          this.send_message(new Message(MSG_LEADER, msg.payload));
         }
       } else {
         if (msg.payload > this.id) {
-          this.send_message(new Message(0, msg.payload));
+          this.send_message(new Message(MSG_ELECTION, msg.payload));
         } else if (msg.payload < this.id && this.running == false) {
-          this.send_message(new Message(0, this.id));
+          this.send_message(new Message(MSG_ELECTION, this.id));
           this.running = true;
         } else if (msg.payload == this.id) {
           this.color = BECOME_LEADER;
-          this.send_message(new Message(1, this.id));
+          this.leader = this.id;
+          this.send_message(new Message(MSG_LEADER, this.id));
         }
       }
     }
+  }
+
+  determine_side = (x, y) => {
+
   }
 
   draw = () => {
@@ -189,34 +267,42 @@ class Node {
     c.fill(); // stroke() for lines
 
     // add the labels
-    var font_size = 150 / node_array.length;
+    let font_size = 150 / node_array.length;
     c.font = font_size + "px Arial";
     c.strokeStyle = 'white';
     c.fillStyle = 'white';
     c.fillText(this.id, this.x - (c.measureText(this.id).width / 2), this.y+(font_size/3));
 
     // add the messages
-    var font_size = 150 / node_array.length;
+    font_size = 150 / node_array.length;
     c.font = toString(font_size) + "px Arial";
+
+    let msg_offset = -1;
+
+    if (this.x < ring_x) {
+      msg_offset = -150;
+    } else {
+      msg_offset = 70;
+    }
 
     c.strokeStyle = 'black';
     c.fillStyle = 'black';
     c.beginPath();
     if (this.message_queue.length == 0) {
-      c.rect(this.x + 60, this.y + 2, 80, 0 - font_size);
+      c.rect(this.x + msg_offset, this.y + 2, 80, 0 - font_size);
       c.stroke();
     }
 
     
     if (this.message_queue.length != 0) {
       if (this.message_queue[0].type == 0) {
-        c.rect(this.x + 60, this.y + 3, c.measureText("E: " + this.payload).width / 2, 0 - font_size);
+        c.rect(this.x + msg_offset, this.y + 3, c.measureText("E: " + this.payload).width / 2, 0 - font_size);
         c.stroke();
-        c.fillText('E: ' + this.message_queue[0].payload, this.x + 60, this.y);
+        c.fillText('E: ' + this.message_queue[0].payload, this.x + msg_offset, this.y);
       } else {
-        c.rect(this.x + 60, this.y + 3, c.measureText("L: " + this.payload).width / 2, 0 - (font_size));
+        c.rect(this.x + msg_offset, this.y + 3, c.measureText("L: " + this.payload).width / 2, 0 - (font_size));
         c.stroke();
-        c.fillText('L: ' + this.message_queue[0].payload, this.x + 60, this.y);
+        c.fillText('L: ' + this.message_queue[0].payload, this.x + msg_offset, this.y);
       }
     }
   }
@@ -247,6 +333,8 @@ function init_simulation(ring_structure) {
 }
 
 function create_animation(k) {
+  let font_size = 150 / node_array.length;
+  c.font = toString(font_size) + "px Arial";
   c.fillText("Iteration: " + k, 20, 20);
 
   // draw the connections
@@ -261,18 +349,55 @@ function create_animation(k) {
   }
 }
 
+function is_crashed(id) {
+  for (let i = 0; i < crashed_array.length; i++) {
+    if (crashed_array[i] == id) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+function next_election() {
+  let next = Math.floor(Math.random() * node_array.length);
+
+  if (crashed_array.length == node_array.length) {
+    return -1;
+  }
+
+  // randomly generate a new node for an election until a non-crashed node without an incoming message is chosen
+  for(let i = 0; is_crashed(node_array[next].id); i++) {
+    // after 10 attempts, exit
+    if (i == 9 || node_array[next].message_queue.length != 0) {
+      return -1;
+    }
+
+    next = Math.floor(Math.random() * node_array.length);
+  }
+
+  return next;
+}
+
 
 async function start_simulation() {
   c.clearRect(0, 0, cvs.width, cvs.height);
   create_animation(0);
   let election = null;
+  let next = -1;
 
   for(let k = 0;;k++) {      
     // decide if an election should occur this round:
     election = Math.floor(Math.random() * Math.floor(2));
 
-    if (election == 1 && k > 2) {
-      node_array[Math.floor(Math.random() * node_array.length)].initiate_election();
+    // start an election on the first turn and make it random after that
+    if (election == 1 && k > 0) {
+      next = next_election();
+
+      if (next != -1) {
+        node_array[next].initiate_election();
+      }
+      
     } else if (k == 0) {
       node_array[Math.floor(Math.random() * node_array.length)].initiate_election();
     }
