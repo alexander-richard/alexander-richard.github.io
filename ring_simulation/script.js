@@ -238,7 +238,7 @@ class Node {
     if (this.election && this.message_queue.length == 0) {
       this.election = false;
       this.send_message(new Message(MSG_ELECTION, this.id));
-    } /*else if (this.message_queue.length > 1) {
+    } /*else if (this.message_queue.length > 1) { // todo: check this code snippit for errors and uncomment
       this.determine_msg_priority();
     } */
 

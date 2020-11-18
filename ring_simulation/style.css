@@ -16,5 +16,9 @@ canvas {
 }
 
 #speedDiv {
-  height: 100px;
+  height: 70px;
+}
+
+#structDiv {
+  height: 70px;
 }
