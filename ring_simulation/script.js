@@ -2,11 +2,11 @@ const cvs = document.querySelector('canvas');
 const c = cvs.getContext('2d');
 
 cvs.width = window.innerWidth / 1.5;
-cvs.height = window.innerHeight / 1.2;
+cvs.height = window.innerHeight / 1.25;
 
 window.addEventListener('resize', function () {
   cvs.width = window.innerWidth / 1.5;
-  cvs.height = window.innerHeight / 1.2;
+  cvs.height = window.innerHeight / 1.25;
   ring_x = cvs.width / 2;
   ring_y = cvs.height / 2;
   ring_rad = cvs.height / cvs.width * 300;
@@ -42,7 +42,7 @@ function mouse_collision(node, mouse_x, mouse_y, offset) {
 
 function load_credits() {
   c.font = "40px Arial";
-  c.fillText("Ring Election Simulation", window.innerWidth / 5, window.innerHeight / 3);
+  c.fillText("Ring Leader Election Simulation", window.innerWidth / 6, window.innerHeight / 3);
 
   c.font = "30px Arial";
   c.fillText("Created by Alexander Richard", (window.innerWidth / 5) + 10, (window.innerHeight / 3) + 40);

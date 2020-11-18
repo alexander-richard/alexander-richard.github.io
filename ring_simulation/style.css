@@ -22,3 +22,8 @@ canvas {
 #structDiv {
   height: 70px;
 }
+
+#description {
+  margin-left: 10px;
+  height: 70px;
+}
