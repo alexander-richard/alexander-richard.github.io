@@ -42,10 +42,10 @@ function mouse_collision(node, mouse_x, mouse_y, offset) {
 
 function load_credits() {
   c.font = "40px Arial";
-  c.fillText("Ring Leader Election Simulation", window.innerWidth / 6, window.innerHeight / 3);
+  c.fillText("Ring Leader Election Simulation", window.innerWidth / 7, window.innerHeight / 3);
 
   c.font = "30px Arial";
-  c.fillText("Created by Alexander Richard", (window.innerWidth / 5) + 10, (window.innerHeight / 3) + 40);
+  c.fillText("Created by Alexander Richard", (window.innerWidth / 7) + 70, (window.innerHeight / 3) + 40);
 }
 
 function reset_button() {

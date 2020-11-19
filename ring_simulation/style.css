@@ -9,7 +9,6 @@ body {
 }
 
 canvas {
-  background: linear-gradient(45deg, white 0% 20%, gray);
   margin: 0;
   padding: 0;
   border: 1px solid black;
