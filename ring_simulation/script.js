@@ -66,10 +66,15 @@ function toggle_crashed_node(node) {
     node.color = RUNNING_PROCESS;
     node.predecessor.successor = node;
     node.successor.predecessor = node;
+    // todo: if two crashed nodes are in a row, set the crashed values (below) to reflect in this node
+    node.predecessor.crashed_successor_id = -1;
+    node.predecessor.successor_crash = false;
     crashed_array.splice(get_crashed_node_index(node.id));
 
   } else {
     node.color = CRASHED;
+    node.predecessor.crashed_successor_id = node.id;
+    node.predecessor.successor_crash = true;
     node.predecessor.successor = node.successor
     node.successor.predecessor = node.predecessor
     crashed_array.push(node.id);
@@ -196,6 +201,8 @@ class Node {
     this.election = false;
     this.leader = -1;
     this.message_queue = [];
+    this.successor_crash = false;
+    this.crashed_successor_id = -1;
   }
 
   send_message = (message) => {
@@ -204,10 +211,13 @@ class Node {
   }
 
   initiate_election = () => {
+    if (this.leader == this.id || this.color == CRASHED) {
+      return;
+    }
+
     this.color = CALL_ELECTION;
     this.running = true;
     this.election = true;
-    //this.send_message(new Message(0, this.id));
   }
 
   determine_msg_priority = () => {
@@ -238,12 +248,20 @@ class Node {
     if (this.election && this.message_queue.length == 0) {
       this.election = false;
       this.send_message(new Message(MSG_ELECTION, this.id));
-    } /*else if (this.message_queue.length > 1) { // todo: check this code snippit for errors and uncomment
-      this.determine_msg_priority();
-    } */
+    }
 
     if (this.message_queue.length != 0) {
       var msg = this.message_queue.shift();
+
+      if (this.successor_crash) {
+        if (msg.payload == this.crashed_successor_id) {
+          this.initiate_election();
+          this.successor_crash = false;
+          this.crashed_successor_id = -1;
+          return;
+        }
+      }
+
       if (msg.type == MSG_LEADER) {
         if (msg.payload != this.id) {
           this.color = RUNNING_PROCESS;
@@ -349,6 +367,28 @@ function create_animation(k) {
   let font_size = 150 / node_array.length;
   c.font = toString(font_size) + "px Arial";
   c.fillText("Iteration: " + k, 20, 30);
+
+  // draw the legend
+  let legend_offset_x = 830;
+  let legend_offset_y = 30;
+  c.font = "25px Arial";
+  c.fillText("Running Node", legend_offset_x, legend_offset_y + 20);
+  c.fillText("Leader Election", legend_offset_x, legend_offset_y + 50);
+  c.fillText("Elected Leader", legend_offset_x, legend_offset_y + 80);
+  c.fillText("Crashed Node", legend_offset_x, legend_offset_y + 110);
+
+  c.fillStyle = RUNNING_PROCESS;
+  c.fillRect(legend_offset_x - 50, legend_offset_y + 20, 40, -20);
+
+  c.fillStyle = BECOME_LEADER;
+  c.fillRect(legend_offset_x - 50, legend_offset_y + 50, 40, -20);
+
+  c.fillStyle = CALL_ELECTION;
+  c.fillRect(legend_offset_x - 50, legend_offset_y + 80, 40, -20);
+
+  c.fillStyle = CRASHED;
+  c.fillRect(legend_offset_x - 50, legend_offset_y + 110, 40, -20);
+
 
   // draw the connections
   c.strokeStyle = 'rgba(0, 0, 0, 1)';
