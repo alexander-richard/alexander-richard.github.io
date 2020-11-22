@@ -66,7 +66,8 @@ function toggle_crashed_node(node) {
     node.color = RUNNING_PROCESS;
     node.predecessor.successor = node;
     node.successor.predecessor = node;
-    // todo: if two crashed nodes are in a row, set the crashed values (below) to reflect in this node
+    node.crashed_successor_id = node.predecessor.crashed_successor_id;
+    node.successor_crash = node.predecessor.successor_crash;
     node.predecessor.crashed_successor_id = -1;
     node.predecessor.successor_crash = false;
     crashed_array.splice(get_crashed_node_index(node.id));
