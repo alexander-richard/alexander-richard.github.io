@@ -71,6 +71,7 @@ function toggle_crashed_node(node) {
     node.predecessor.crashed_successor_id = -1;
     node.predecessor.successor_crash = false;
     crashed_array.splice(get_crashed_node_index(node.id));
+    node.initiate_election();
 
   } else {
     node.color = CRASHED;
@@ -79,6 +80,7 @@ function toggle_crashed_node(node) {
     node.predecessor.successor = node.successor
     node.successor.predecessor = node.predecessor
     crashed_array.push(node.id);
+    node.leader = -1;
   }
 }
 
@@ -249,6 +251,8 @@ class Node {
     if (this.election && this.message_queue.length == 0) {
       this.election = false;
       this.send_message(new Message(MSG_ELECTION, this.id));
+    } else if (this.message_queue.length == 0) {
+      return 1;
     }
 
     if (this.message_queue.length != 0) {
@@ -266,12 +270,11 @@ class Node {
       if (msg.type == MSG_LEADER) {
         if (msg.payload != this.id) {
           this.color = RUNNING_PROCESS;
+          this.send_message(new Message(MSG_LEADER, msg.payload));
         }
         this.leader = msg.payload;
         this.running = false;
-        if (msg.payload != this.id) {
-          this.send_message(new Message(MSG_LEADER, msg.payload));
-        }
+        
       } else {
         if (msg.payload > this.id) {
           this.send_message(new Message(MSG_ELECTION, msg.payload));
@@ -285,10 +288,8 @@ class Node {
         }
       }
     }
-  }
-
-  determine_side = (x, y) => {
-
+    this.message_queue = [];
+    return 0;
   }
 
   draw = () => {
@@ -439,10 +440,11 @@ async function start_simulation() {
   create_animation(0);
   let election = null;
   let next = -1;
+  let skip = -1;
 
   for(let k = 0;;k++) {      
     // decide if an election should occur this round:
-    election = Math.floor(Math.random() * Math.floor(2));
+    election = Math.floor(Math.random() * Math.floor(3));
 
     // start an election on the first turn and make it random after that
     if (election == 1 && k > 0) {
@@ -458,13 +460,12 @@ async function start_simulation() {
 
     // run through all processes
     for (let i = 0; i < node_array.length; i++) {
-      node_array[i].run();
+      skip = node_array[i].run();
 
-      if (simulation_speed != -1) {
+      if (simulation_speed != -1 && skip == 0) {
         await sleep(simulation_speed);
       } else {
-        // TODO: debut step so that we dont wait for iterations where nothing happen
-        while (pause_flag) {
+        while (pause_flag && skip == 0) {
           await sleep(5);
         }
         pause_flag = true;
