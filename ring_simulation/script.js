@@ -72,6 +72,7 @@ function toggle_crashed_node(node) {
     node.predecessor.successor_crash = false;
     crashed_array.splice(get_crashed_node_index(node.id));
     node.initiate_election();
+    node.draw();
 
   } else {
     node.color = CRASHED;
@@ -81,6 +82,7 @@ function toggle_crashed_node(node) {
     node.successor.predecessor = node.predecessor
     crashed_array.push(node.id);
     node.leader = -1;
+    node.draw();
   }
 }
 
