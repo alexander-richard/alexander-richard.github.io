@@ -30,16 +30,21 @@
           <label for="step">Step</label>
           <button id="step_button" disabled="true" onclick="step()">Step</button>
         </div>
-        <div>
+        <div id="note">
           <p>*To crash a node, click on it. To reactivate, click on it again.</p>
+        </div>
+        <div id="description">
+          <h3>How to Use the Simulator:</h3>
+          <ol>
+            <li>Enter the structure of the Ring. This is done by entering <br>between 3 and 8 distinct and non-negative numbers.</li>
+            <li>Next, select a speed for the simulation to run at. If 'Step'<br> is selected, press the 'Step' button to continue the simulation.</li>
+            <li>To reset the simulator, press the 'Reset' button next to the<br> 'Start' button.</li>
+          </ol>
         </div>
       </div>
     </div>
-  </div id="description">
-  <h3>How to Use the Simulator:</h3>
-  <p> Enter the structure of the Ring. This is done by entering between 3 and 8 distinct and non-negative numbers.<br>
-      Next, select a speed for the simulation to run at. If 'Step' is selected, press the 'Step' button to continue the simulation.<br>
-      To reset the simulator, press the 'Reset' button next to the 'Start' button.</p>
+  </div>
+    
 </body>
 
 <script src="script.js"></script>

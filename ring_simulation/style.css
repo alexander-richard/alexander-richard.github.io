@@ -23,6 +23,9 @@ canvas {
 }
 
 #description {
-  margin-left: 10px;
   height: 70px;
+}
+
+#note {
+  height: 30px;
 }
