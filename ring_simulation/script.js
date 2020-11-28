@@ -7,7 +7,7 @@ cvs.height = window.innerHeight / 1.25;
 window.addEventListener('resize', function () {
   cvs.width = window.innerWidth / 1.7;
   cvs.height = window.innerHeight / 1.25;
-  ring_x = cvs.width / 2;
+  ring_x = cvs.width / 2.5;
   ring_y = cvs.height / 2;
   ring_rad = cvs.height / cvs.width * 300;
   arrange_nodes(ring_x, ring_y, ring_rad);
@@ -105,7 +105,7 @@ var crashed_array = [];
 var start_flag = false;
 var pause_flag = false;
 
-var ring_x = cvs.width / 2; // x value for the center of the ring
+var ring_x = cvs.width / 2.5; // x value for the center of the ring
 var ring_y = cvs.height / 2; // y value for the center of the ring
 var ring_rad = cvs.height / cvs.width * 300; // radius of the ring
 
@@ -370,10 +370,10 @@ function init_simulation(ring_structure) {
 function create_animation(k) {
   let font_size = 150 / node_array.length;
   c.font = toString(font_size) + "px Arial";
-  c.fillText("Iteration: " + k, 20, 30);
+  //c.fillText("Iteration: " + k, 20, 30); // uncomment to debug
 
   // draw the legend
-  let legend_offset_x = 830;
+  let legend_offset_x = cvs.width - 190;
   let legend_offset_y = 30;
   c.font = "25px Arial";
   c.fillText("Running Node", legend_offset_x, legend_offset_y + 20);
