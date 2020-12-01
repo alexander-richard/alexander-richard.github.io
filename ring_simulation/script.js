@@ -373,12 +373,12 @@ function create_animation(k) {
   //c.fillText("Iteration: " + k, 20, 30); // uncomment to debug
 
   // draw the legend
-  let legend_offset_x = cvs.width - 190;
+  let legend_offset_x = cvs.width - 220;
   let legend_offset_y = 30;
-  c.font = "25px Arial";
+  c.font = "23px Arial";
   c.fillText("Running Node", legend_offset_x, legend_offset_y + 20);
-  c.fillText("Leader Election", legend_offset_x, legend_offset_y + 50);
-  c.fillText("Elected Leader", legend_offset_x, legend_offset_y + 80);
+  c.fillText("Elected Leader", legend_offset_x, legend_offset_y + 50);
+  c.fillText("Running for Election", legend_offset_x, legend_offset_y + 80);
   c.fillText("Crashed Node", legend_offset_x, legend_offset_y + 110);
 
   c.fillStyle = RUNNING_PROCESS;
