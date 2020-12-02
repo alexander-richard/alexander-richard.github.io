@@ -29,6 +29,23 @@ cvs.addEventListener('click', function(event) {
   }
 });
 
+cvs.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+  // ensure simulation start flag is triggered
+  if (!start_flag) {
+    return;
+  }
+  
+  var x = event.pageX,
+      y = event.pageY;
+
+  for (let i = 0; i < node_array.length; i++) {
+    if (mouse_collision(node_array[i], x, y, (1 / node_array.length) * 200)) {
+      node_array[i].initiate_election();
+    }
+  }
+});
+
 function mouse_collision(node, mouse_x, mouse_y, offset) {
   if (mouse_x > node.x - offset
   &&  mouse_x < node.x + offset
@@ -223,6 +240,7 @@ class Node {
     this.color = CALL_ELECTION;
     this.running = true;
     this.election = true;
+    this.draw();
   }
 
   determine_msg_priority = () => {
@@ -440,20 +458,7 @@ async function start_simulation() {
   let skip = -1;
 
   for(let k = 0;;k++) {      
-    // decide if an election should occur this round:
-    election = Math.floor(Math.random() * Math.floor(3));
-
-    // start an election on the first turn and make it random after that
-    if (election == 1 && k > 0) {
-      next = next_election();
-
-      if (next != -1) {
-        node_array[next].initiate_election();
-      }
-      
-    } else if (k == 0) {
-      node_array[Math.floor(Math.random() * node_array.length)].initiate_election();
-    }
+    await sleep(10);
 
     // run through all processes
     for (let i = 0; i < node_array.length; i++) {
