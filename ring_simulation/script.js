@@ -24,13 +24,17 @@ cvs.addEventListener('click', function(event) {
 
   for (let i = 0; i < node_array.length; i++) {
     if (mouse_collision(node_array[i], x, y, (1 / node_array.length) * 200)) {
-      toggle_crashed_node(node_array[i]);
+      if (node_array[i].color != CALL_ELECTION) {
+        node_array[i].initiate_election();
+      }
+      
     }
   }
 });
 
 cvs.addEventListener('contextmenu', function(event) {
   event.preventDefault();
+
   // ensure simulation start flag is triggered
   if (!start_flag) {
     return;
@@ -41,10 +45,7 @@ cvs.addEventListener('contextmenu', function(event) {
 
   for (let i = 0; i < node_array.length; i++) {
     if (mouse_collision(node_array[i], x, y, (1 / node_array.length) * 200)) {
-      if (node_array[i].color != CALL_ELECTION) {
-        node_array[i].initiate_election();
-      }
-      
+      toggle_crashed_node(node_array[i]);
     }
   }
 });
