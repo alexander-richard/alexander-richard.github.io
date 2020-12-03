@@ -173,6 +173,11 @@ function parse_input() {
     return;
   }
 
+  if (parsed_structure.length > 8) {
+    alert("Error - Please Enter at Most Eight Processes");
+    return;
+  }
+
   if (check_negatives(parsed_structure)) {
     alert("Error - Please Enter Non-Negative Process ID's");
     return;
