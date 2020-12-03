@@ -19,8 +19,21 @@ cvs.addEventListener('click', function(event) {
     return;
   }
   
-  var x = event.pageX,
+  /**
+   * Firefox compatibility error
+   * Fix from https://miloq.blogspot.com/2011/05/coordinates-mouse-click-canvas.html
+   */
+  if (event.pageX != undefined && event.pageY != undefined) {
+    var x = event.pageX,
       y = event.pageY;
+  } else {
+    var x = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+    y = event.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+  }
+  
+
+      x = x - cvs.offsetLeft;
+      y = y - cvs.offsetTop;
 
   for (let i = 0; i < node_array.length; i++) {
     if (mouse_collision(node_array[i], x, y, (1 / node_array.length) * 200)) {
