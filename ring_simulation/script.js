@@ -41,7 +41,10 @@ cvs.addEventListener('contextmenu', function(event) {
 
   for (let i = 0; i < node_array.length; i++) {
     if (mouse_collision(node_array[i], x, y, (1 / node_array.length) * 200)) {
-      node_array[i].initiate_election();
+      if (node_array[i].color != CALL_ELECTION) {
+        node_array[i].initiate_election();
+      }
+      
     }
   }
 });
