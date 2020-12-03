@@ -97,6 +97,7 @@ function toggle_crashed_node(node) {
 
   } else {
     node.color = CRASHED;
+    node.predecessor.initiate_election();
     node.predecessor.crashed_successor_id = node.id;
     node.predecessor.successor_crash = true;
     node.predecessor.successor = node.successor
