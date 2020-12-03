@@ -205,6 +205,7 @@ function parse_input() {
   document.getElementById("fast").disabled = true;
   document.getElementById("slow").disabled = true;
   document.getElementById("step").disabled = true;
+  document.getElementById("start_button").disabled = true;
   
   start_flag = true;
   init_simulation(parsed_structure);
