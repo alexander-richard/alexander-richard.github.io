@@ -100,14 +100,6 @@ function reset_button() {
   return false;
 }
 
-function get_crashed_node_index(id) {
-  for (let i = 0; i < crashed_array.length; i++) {
-    if (crashed_array[i] == id) {
-      return i;
-    }
-  }
-}
-
 function toggle_crashed_node(node) {
   if (node.color == CRASHED) {
     node.color = RUNNING_PROCESS;
@@ -117,7 +109,6 @@ function toggle_crashed_node(node) {
     node.successor_crash = node.predecessor.successor_crash;
     node.predecessor.crashed_successor_id = -1;
     node.predecessor.successor_crash = false;
-    crashed_array.splice(get_crashed_node_index(node.id));
     node.initiate_election();
     node.draw();
 
@@ -128,7 +119,6 @@ function toggle_crashed_node(node) {
     node.predecessor.successor_crash = true;
     node.predecessor.successor = node.successor
     node.successor.predecessor = node.predecessor
-    crashed_array.push(node.id);
     node.leader = -1;
     node.draw();
   }
@@ -147,8 +137,6 @@ const MSG_ELECTION = 0;
 const MSG_LEADER = 1;
 
 const node_array = [];
-
-var crashed_array = [];
 
 var start_flag = false;
 var pause_flag = false;
@@ -402,7 +390,7 @@ function init_simulation(ring_structure) {
   var len = ring_structure.length;
   for (var i = 0; i < len; i++) {
     if (node_array.length == 0) {
-      node_array.push(new Node(parseInt(ring_structure[0])))
+      node_array.push(new Node(parseInt(ring_structure[0])));
     } else {
       node_array.push(new Node(parseInt(ring_structure[i]), node_array[i-1]));
     }
@@ -455,37 +443,6 @@ function create_animation(k) {
     node_array[e].draw();
   }
 }
-
-function is_crashed(id) {
-  for (let i = 0; i < crashed_array.length; i++) {
-    if (crashed_array[i] == id) {
-      return true;
-    }
-  }
-
-  return false;
-}
-
-function next_election() {
-  let next = Math.floor(Math.random() * node_array.length);
-
-  if (crashed_array.length == node_array.length) {
-    return -1;
-  }
-
-  // randomly generate a new node for an election until a non-crashed node without an incoming message is chosen
-  for(let i = 0; is_crashed(node_array[next].id); i++) {
-    // after 10 attempts, exit
-    if (i == 9 || node_array[next].message_queue.length != 0) {
-      return -1;
-    }
-
-    next = Math.floor(Math.random() * node_array.length);
-  }
-
-  return next;
-}
-
 
 async function start_simulation() {
   c.clearRect(0, 0, cvs.width, cvs.height);
