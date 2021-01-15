@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bully Leader Election</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="load_credits()">
+   
+  <div style="display: inline-block">
+    <div style="display: inline-block">
+      <canvas></canvas>
+    </div>
+    <div style="display: inline-block">
+      <div class="control" style="display:table">
+        <div id="structDiv">
+          <label for="structInput">Number of Nodes:<br></label>
+          <select id="structInput" name="structInput">
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+          </select>
+          <button id="start_button" onclick="parse_input()">Start</button>
+          <button onclick="reset_button()">Reset</button>
+        </div>
+        <div id="speedDiv">
+          <label> Select Simulation Speed: <br></label>
+          <input type="radio" id="fast" name="speed">
+          <label for="fast">Fast</label><br>
+          <input type="radio" id="slow" name="speed">
+          <label for="slow">Slow</label><br>
+          <input type="radio" id="step" name="speed">
+          <label for="step">Step</label>
+          <button id="step_button" disabled="true" onclick="step()">Step</button>
+        </div>
+        <div id="note">
+          <p>*To start an election, click on a node.<br>*To crash a node, right-click on it. To reactivate, right-click on it again.</p>
+        </div>
+        <div id="description">
+          <h3>How to Use the Simulator:</h3>
+          <ol>
+            <li>Enter the structure of the Ring. This is done by entering <br>between 3 and 8 distinct and non-negative numbers.</li>
+            <li>Next, select a speed for the simulation to run at. If 'Step' is<br> selected, press the 'Step' button to continue the simulation.</li>
+            <li>To reset the simulator, press the 'Reset' button next to the<br> 'Start' button.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</body>
+
+<script src="script.js"></script>
+
+</html>

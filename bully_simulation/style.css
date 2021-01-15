@@ -1,0 +1,31 @@
+.control {
+  margin: 20px;
+  height: 580px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+canvas {
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+}
+
+#speedDiv {
+  height: 70px;
+}
+
+#structDiv {
+  height: 70px;
+}
+
+#description {
+  height: 20px;
+}
+
+#note {
+  height: 30px;
+}
