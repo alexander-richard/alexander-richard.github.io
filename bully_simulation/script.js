@@ -334,6 +334,49 @@ class Message {
     c.lineTo(new_endX, new_endY);
     c.stroke();
 
+    // draw the arrows
+    let arrow_len = 20;
+    let arrow_angle = 60 * (Math.PI / 180);
+    let rise = new_startY - new_endY;
+    let run = new_endX - new_startX;
+
+    // calculate the angle between the axis and the line
+    let alpha = Math.atan(rise/run);  
+    let delta = (Math.PI / 2) - alpha;
+
+    // calculate the angle between the axis and the arrow end point
+    let beta = (arrow_angle / 2) - alpha;
+    delta = delta - (arrow_angle / 2);
+
+    // determine the x and y offset for the arrow lines
+    let y_offset_t = arrow_len * Math.sin(beta);
+    let x_offset_t = arrow_len * Math.cos(beta);
+    let y_offset_b = arrow_len * Math.cos(delta);
+    let x_offset_b = arrow_len * Math.sin(delta);
+
+    if (new_startX <= new_endX) {
+      c.beginPath();
+      c.moveTo(new_endX, new_endY);
+      c.lineTo(new_endX - x_offset_t, new_endY - y_offset_t);
+      c.stroke();
+
+      c.beginPath();
+      c.moveTo(new_endX, new_endY);
+      c.lineTo(new_endX - x_offset_b, new_endY + y_offset_b);
+      c.stroke();
+    } else if (new_endX < new_startX) {
+      c.beginPath();
+      c.moveTo(new_endX, new_endY);
+      c.lineTo(new_endX + x_offset_t, new_endY + y_offset_t);
+      c.stroke();
+
+      c.beginPath();
+      c.moveTo(new_endX, new_endY);
+      c.lineTo(new_endX + x_offset_b, new_endY - y_offset_b);
+      c.stroke();
+  }
+    
+
     // determine how much to rotate the context before drawing the label
     let dx = new_startX - new_endX;
     let dy = new_startY - new_endY;
@@ -343,7 +386,6 @@ class Message {
         dx = new_endX - new_startX;
         dy = new_endY - new_startY;
         angle = Math.atan2(dy, dx);
-        console.log("Switch!");
     }
 
     // rotate the context
@@ -361,7 +403,6 @@ class Message {
             dx = new_startX - new_endX;
             dy = new_startY - new_endY;
             angle = Math.atan2(dy, dx);
-            console.log("Switch!");
         }
 
         c.translate(((new_startX + new_endX) / 2), ((new_startY + new_endY) / 2));
@@ -483,7 +524,6 @@ class Node {
   
     run = () => {
       if (this.color == CRASHED) {
-        console.log(this.id);
         return 0;
       }
 
@@ -533,8 +573,12 @@ class Node {
         send_message_to_higher(MSG_ELECTION, this.id, node_array[this.index]);
         
       } else if (this.message_queue.length == 0) {
-        return 1;
-      }
+        if ( this.sent_leader_check) {
+          return 0;
+        } else {
+          return 1;
+        }
+      } 
       
   
       if (this.message_queue.length != 0) {
@@ -552,6 +596,7 @@ class Node {
             if (!this.sent_election) {
                 send_message_to_higher(MSG_ELECTION, this.id, node_array[this.index]);
                 this.sent_election = true;
+                this.color = CALL_ELECTION;
             }
 
         } else if (msg.type == MSG_LEADER) {
@@ -563,6 +608,7 @@ class Node {
         } else { // MSG_BULLY
             this.counting_to_leader = false;
             this.sent_election = false;
+            this.color = RUNNING_PROCESS;
             if (msg.start_node.id == this.leader) {
                 this.check_leader_timer = 0;
                 this.leader_reply_timer = 0;
@@ -626,7 +672,7 @@ class Node {
   
       c.strokeStyle = 'black';
       c.fillStyle = 'black';
-      /*
+      
       c.beginPath();
       if (this.message_queue.length == 0) {
         c.rect(this.x + msg_offset, this.y + 2, 80, 0 - font_size);
@@ -648,7 +694,7 @@ class Node {
           c.stroke();
           c.fillText('B: ' + this.message_queue[0].payload, this.x + msg_offset, this.y);
         }
-      } */
+      } 
       // ********** END OF QUEUE DEBUGGING SECTION ************
 
       c.font = "15px Arial";
