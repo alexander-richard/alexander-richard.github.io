@@ -672,7 +672,7 @@ class Node {
   
       c.strokeStyle = 'black';
       c.fillStyle = 'black';
-      
+      /*
       c.beginPath();
       if (this.message_queue.length == 0) {
         c.rect(this.x + msg_offset, this.y + 2, 80, 0 - font_size);
@@ -695,6 +695,7 @@ class Node {
           c.fillText('B: ' + this.message_queue[0].payload, this.x + msg_offset, this.y);
         }
       } 
+      */
       // ********** END OF QUEUE DEBUGGING SECTION ************
 
       c.font = "15px Arial";
