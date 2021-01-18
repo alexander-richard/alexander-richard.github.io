@@ -108,7 +108,6 @@ function toggle_crashed_node(node) {
 
   } else {
     node.color = CRASHED;
-    node.leader = -1;
     node.draw();
   }
 }
@@ -150,26 +149,6 @@ function set_timing_interval(interval) {
 
 function step() {
   pause_flag = false;
-}
-
-function check_negatives (input) {
-  for (let i = 0; i < input.length; i++) {
-    if (input[i] < 0) {
-      return true;
-    }
-  }
-  return false;
-}
-
-function check_repeat_ids (input) {
-  let seen = [];
-  for (let i = 0; i < input.length; i++) {
-    if (seen.includes(input[i])) {
-      return true;
-    }
-    seen.push(input[i]);
-  }
-  return false;
 }
 
 function parse_input() {
@@ -501,30 +480,6 @@ class Node {
       this.draw();
     }
   
-    determine_msg_priority = () => {
-      if (this.message_queue.length <= 1) {
-        return;
-      }
-  
-      let highest_pri = new Message(MSG_ELECTION, -1);
-  
-      for (let i=0; i < this.message_queue.length; i++) {
-        if (this.message_queue[i].type == MSG_LEADER) {
-          if (highest_pri.type == MSG_ELECTION) {
-            highest_pri = this.message_queue[i];
-          } else if (this.message_queue[i].payload >= highest_pri.payload) {
-            highest_pri = this.message_queue[i];
-          }
-        } else {
-          if (highest_pri.type == MSG_ELECTION && highest_pri.payload <= this.message_queue[i].payload) {
-            highest_pri = this.message_queue[i];
-          }
-        }
-      }
-  
-      this.message_queue = [highest_pri];
-    }
-  
     run = () => {
       if (this.color == CRASHED) {
         this.leader = -1;
@@ -655,7 +610,6 @@ class Node {
       c.strokeStyle = 'black';
       c.fillStyle = 'black';
    
-      // ********** QUEUE DEBUGGING SECTION (uncomment to debug) ************
       // add the messages
       font_size = 150 / node_array.length;
       c.font = toString(font_size) + "px Arial";
@@ -670,31 +624,6 @@ class Node {
   
       c.strokeStyle = 'black';
       c.fillStyle = 'black';
-      /*
-      c.beginPath();
-      if (this.message_queue.length == 0) {
-        c.rect(this.x + msg_offset, this.y + 2, 80, 0 - font_size);
-        c.stroke();
-      }
-  
-      
-      if (this.message_queue.length != 0) {
-        if (this.message_queue[0].type == MSG_ELECTION) {
-          c.rect(this.x + msg_offset, this.y + 3, c.measureText("E: " + this.payload).width / 2, 0 - font_size);
-          c.stroke();
-          c.fillText('E: ' + this.message_queue[0].payload, this.x + msg_offset, this.y);
-        } else if (this.message_queue[0].type == MSG_LEADER) {
-          c.rect(this.x + msg_offset, this.y + 3, c.measureText("L: " + this.payload).width / 2, 0 - (font_size));
-          c.stroke();
-          c.fillText('L: ' + this.message_queue[0].payload, this.x + msg_offset, this.y);
-        } else { // Bully
-          c.rect(this.x + msg_offset, this.y + 3, c.measureText("L: " + this.payload).width / 2, 0 - (font_size));
-          c.stroke();
-          c.fillText('B: ' + this.message_queue[0].payload, this.x + msg_offset, this.y);
-        }
-      } 
-      */
-      // ********** END OF QUEUE DEBUGGING SECTION ************
 
       c.font = "15px Arial";
       if (this.leader == -1) {
